@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: #fffce8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#logomain {
+    display: flex;
+    height: 77px;
+    justify-content: center; 
+    margin-bottom: 25px;
+    margin-top: 33px;
+    transition: transform 2s ease-in-out;
+}
+
+#logomain img:hover {
+    transform: scale(1.5);
+}
+
+nav ul {
+    display: flex;
+    font-size: 18px;
+    gap: 44px;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.links a {
+    color: #fffce8;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out;
+}
+
+.links a:hover {
+    color: chartreuse;  
+    font-size: 22px;
+    text-shadow: 0px 0px 33px chartreuse;
+}
+
+#nav-item3 a:hover {
+    color: red;
+    font-size: 25px;
+    text-shadow: 0px 0px 33px rgb(111, 111, 111);
+}
+
+.links li {
+    list-style: none; 
+    transition: translate 0.8s ease-in-out;
+    transition: rotate 2s ease-out;
+}
+
+.links li:active {
+   transform: translate(0px, -2px);
+   transform: rotate(180deg)
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#coin {
+    display: flex;
+    justify-content: center;
+    height: 333px;
+    margin: 0;
+    margin-top: -333px;
+    
+    
+}
+
+#clouds {
+    height: 333px;
+    width: 100%;
+    margin-top: 111px;
+}
+
+#cycloneascii {
+    margin-top: 133px;
+}
+
+#musicplayer {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 33px;
+    text-align: center;
+    gap: 11px;
+    color: chartreuse;
+}
