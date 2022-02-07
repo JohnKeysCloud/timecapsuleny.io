@@ -126,7 +126,7 @@ footer a:hover{
     text-shadow: 0px 0px 15px rgb(111, 111, 111);
 }
 
-footer a:active{
+footer:active{
     transform: rotate(180deg);
 }
 
