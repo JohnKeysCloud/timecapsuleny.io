@@ -11,11 +11,10 @@ body{
     color: #fffce8;
     display: flex;
     flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
     height: 100vh;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 #logomain {
@@ -65,7 +64,8 @@ nav ul {
     transition: rotate 2s ease-out;
 }
 
-.links li:active {
+.links li:active,
+footer a:active {
    transform: translate(0px, -2px);
    transform: rotate(180deg)
 }
@@ -82,26 +82,42 @@ section {
     height: 333px;
     margin: 0;
     margin-top: -333px;
-    
-    
 }
 
 #clouds {
     height: 333px;
     width: 100%;
-    margin-top: px;
-}
-
-#cycloneascii {
-    margin-top: 133px;
 }
 
 #musicplayer {
     display: flex;
     flex-direction: column;
     float: right;
-    margin-top: 33px;
+    margin-top: 55px;
     text-align: center;
     gap: 11px;
     color: chartreuse;
+}
+
+footer {
+    background-color: #fffce8;
+    color: black;
+    font-weight: 200;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+footer a{
+    color: #fffce8;
+    text-decoration: none;
+    transition: 2s all ease-in-out;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer p {
+    font-size: 11px;
+    margin: 0;
 }
