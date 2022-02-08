@@ -17,28 +17,19 @@ body{
     margin: 0;
 }
 
-#cloudsabove {
+#logomain {
     background-image: transparent;
     background-image: linear-gradient(transparent, black), url('imgs/cloudsabove.gif');
     background-size: cover;
-    height: 244px;
-    margin-top: -77px;
-    margin-bottom: -177px;
-    opacity: 100%;
-    width: 100%;
-}
-
-#logomain {
     display: flex;
-    height: 88px;
+    width: 100%;
+    height: 111px;
     justify-content: center; 
-    margin-bottom: 25px;
-    margin-top: -55px;
-    transition: transform 2s ease-in-out;
+    margin-bottom: 8px;
 }
 
 #logomain img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 nav ul {
