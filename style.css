@@ -69,13 +69,11 @@ nav ul {
 
 .links li {
     list-style: none; 
-    transition: translate 0.8s ease-in-out;
     transition: rotate 2s ease-out;
 }
 
 .links li:active,
 footer a:active {
-   transform: translate(0px, -2px);
    transform: rotate(180deg)
 }
 
