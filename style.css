@@ -116,6 +116,8 @@ footer {
     font-weight: 200;
     padding-top: 15px;
     text-align: center;
+    transition: all 0.8s ease-in-out;
+
 }
 
 footer:active{
