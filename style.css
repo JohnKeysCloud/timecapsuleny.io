@@ -57,7 +57,8 @@ nav ul {
 #nav-item3 a:hover {
     color: red;
     font-size: 28px;
-    text-shadow: 0px 0px 22px skyblue;
+    text-shadow: 0px 0px 11px skyblue;
+    padding: 8px;
 }
 
 .links li {
