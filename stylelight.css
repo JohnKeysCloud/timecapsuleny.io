@@ -60,9 +60,9 @@ nav ul {
 }
 
 #nav-item3 a:hover {
-    color: red;
+    color: #c10000;
     font-size: 28px;
-    text-shadow: 0px 0px 22px black;
+    text-shadow: 0px 0px 26px #1f586e;
     padding: 8px;
 }
 
