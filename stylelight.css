@@ -7,7 +7,7 @@ html {
 }
 
 body{
-    background-color: black;
+    background-color: #fffce8;
     color: #fffce8;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body{
 
 #logomain {
     align-items: center;
-    background-image: linear-gradient(transparent, black), url('imgs/cloudsabove.gif');
+    background-image: linear-gradient(transparent, #fffce8), url('imgs/cloudsabove.gif');
     background-size: cover;
     display: flex;
     width: 100%;
@@ -44,7 +44,6 @@ nav ul {
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    text-shadow: 0px 0px 8px #fffce8;
 }
 
 .links a {
@@ -52,18 +51,19 @@ nav ul {
     font-weight: 800;
     text-decoration: none;
     transition: all 0.8s ease-in-out;
+    text-shadow: 0px 0px 8px black;
 }
 
 .links a:hover {
-    color: chartreuse;  
+    color: black;  
     font-size: 25px;
-    text-shadow: 0px 0px 22px chartreuse;
+    text-shadow: 0px 0px 5px chartreuse;
 }
 
 #nav-item3 a:hover {
     color: red;
     font-size: 28px;
-    text-shadow: 0px 0px 11px skyblue;
+    text-shadow: 0px 0px 22px black;
     padding: 8px;
 }
 
@@ -86,7 +86,7 @@ section {
 #cloudsbelow {
     height: 333px;
     width: 100%;
-    opacity: 11%;
+    /* opacity: 11%; */
 }
 
 #coin {
@@ -124,8 +124,8 @@ footer:active{
 
 footer:hover {
     background-color: black;
-    color: red;
-    text-shadow: 0px 0px 15px #fffce8;
+    color: chartreuse;
+    text-shadow: 0px 0px 11px #fffce8;
 }
 
 footer a{
@@ -136,8 +136,8 @@ footer a{
 }
 
 footer a:hover{
-    color: chartreuse;
-    text-shadow: 0px 0px 15px rgb(111, 111, 111);
+    color: red;
+    text-shadow: 0px 0px 15px chartreuse;
 }
 
 footer p {
