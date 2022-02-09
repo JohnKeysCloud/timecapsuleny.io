@@ -30,6 +30,7 @@ body{
 
 #logomain img:hover {
     transform: scale(1.1);
+    opacity: 77%;
 }
 
 nav ul {
