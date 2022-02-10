@@ -46,17 +46,17 @@ nav ul {
 }
 
 .links a {
-    color: #fffce8;
+    color: black;
     font-weight: 800;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 8px chartreuse;
 }
 
 .links a:hover {
-    color: black;  
+    color: chartreuse;  
     font-size: 25px;
-    text-shadow: 0px 0px 5px chartreuse;
+    text-shadow: 0px 0px 7px black;
 }
 
 #nav-item3 a:hover {
@@ -77,9 +77,14 @@ footer a:active {
 }
 
 section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 88px;
+}
+
+section h2{
+    margin-bottom: 88px;
 }
 
 #cloudsbelow {
@@ -93,6 +98,12 @@ section {
     height: 333px;
     margin: 0;
     margin-top: -333px;
+    transition: all 3s ease-in-out;
+}
+
+#midlogo:hover {
+    transform: scale(1.5) 
+               rotate(720deg);
 }
 
 #musicplayer {
