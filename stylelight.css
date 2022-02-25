@@ -15,7 +15,7 @@ body{
     background-color: #fffce8;
     display: flex;
     flex-direction: column;
-    font-family: 'GoshaSansRegular', Courier, monospace;
+    font-family: 'GoshaSansRegular', 'Roboto Mono', 'Courier New', Courier, monospace;
     height: 100vh;
     justify-content: space-between;
     margin: 0;
