@@ -110,6 +110,10 @@ section h2{
                rotate(720deg);
 }
 
+figcaption {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+
 #musicplayer {
     color: chartreuse;
     display: flex;
