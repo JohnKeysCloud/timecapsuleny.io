@@ -43,7 +43,7 @@ body{
 
 nav ul {
     display: flex;
-    font-size: 18px;
+    font-size: 22px;
     gap: 44px;
     justify-content: space-evenly;
     margin: 0;
@@ -60,19 +60,19 @@ nav ul {
 
 .links a:hover {
     color: chartreuse;  
-    font-size: 25px;
+    font-size: 26px;
     text-shadow: 0px 0px 7px black;
 }
 
 #nav-item3 a:hover {
     color: #c10000;
-    font-size: 28px;
+    font-size: 30px;
     text-shadow: 0px 0px 26px #1f586e;
 }
 
 .links li {
     list-style: none; 
-    transition: rotate 2s ease-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .links li:active,
