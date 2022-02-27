@@ -72,13 +72,19 @@ nav ul {
 
 .links li {
     list-style: none; 
-    transition: all 0.03s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 .links li:active,
 footer a:active {
    transform: rotate(360deg)
 }
+
+/* #nav-item3:active {
+    font-family: MAKE PIXELATED;
+    transform: IDK DO SUMN DIF
+
+} */
 
 section {
     align-items: center;
