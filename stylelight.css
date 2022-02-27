@@ -60,14 +60,14 @@ nav ul {
 
 .links a:hover {
     color: chartreuse;  
-    font-size: 26px;
+    font-size: 27px;
     text-shadow: 0px 0px 7px black;
 }
 
 #nav-item3 a:hover {
-    color: #c10000;
+    color: #cc3333;
     font-size: 30px;
-    text-shadow: 0px 0px 26px #1f586e;
+    text-shadow: 0px 0px 15px rgb(116, 7, 7);
 }
 
 .links li {
