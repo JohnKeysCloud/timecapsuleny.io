@@ -4,6 +4,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 body{
@@ -39,7 +40,7 @@ body{
 
 nav ul {
     display: flex;
-    font-size: 18px;
+    font-size: 1.8rem;
     gap: 44px;
     justify-content: space-evenly;
     margin: 0;
@@ -56,13 +57,13 @@ nav ul {
 
 .links a:hover {
     color: chartreuse;  
-    font-size: 25px;
+    font-size: 2.5rem;
     text-shadow: 0px 0px 22px chartreuse;
 }
 
 #nav-item3 a:hover {
     color: red;
-    font-size: 28px;
+    font-size: 2.8rem;
     text-shadow: 0px 0px 11px skyblue;
 }
 
@@ -112,7 +113,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 1.8rem;
     gap: 11px;
     margin-top: 133px;
     opacity: 80%;
@@ -153,6 +154,6 @@ footer a:hover{
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin: 0;
 }
