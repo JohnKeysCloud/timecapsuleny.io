@@ -5,6 +5,18 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    
+    /*Set the root HTML font-size as a percentage. 
+    That’s a percentage of the user’s default browser 
+    font-size. A typical method is to set the HTML 
+    font-size to 62.5%. That’s because 62.5% of 16px 
+    (typical default browser font-size) is 10px. 
+    That would still make 1.6rem = 16px. 
+    This now means that if the user’s default browser 
+    font-size is changed to, for example, 20px, 
+    1.6rem would now equal 20px. So if your user wants 
+    bigger fonts, let them. Happy designer. Happy 
+    developer. All numbers are still easy to work with. */
 }
 
 body{
