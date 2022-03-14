@@ -174,9 +174,13 @@ footer p {
 
 /* shop input styles below */
 
-.size_labels {
-    font-size: 2.4rem;
+.hoodie_clr_sel {
+    display: flex;
+    
+}
 
+.size_labels {
+    font-size: 2.3rem;
 }
 
 .color_opt {
@@ -193,9 +197,11 @@ input[type="radio"] {
     height: 1.3rem;
     background-color: #fffce8;
     border-radius: 1.6rem;
-    border: 1px solid chartreuse;
+    border: 2px solid chartreuse;
     outline: none;
+    transform: scale(1.5);
 }
+
 input[type="radio"]::before {
     display: block;
     content: " ";
@@ -211,12 +217,12 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
     display: block;
     content: "";
-    width: 1rem;
-    height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
     border-radius: 10px;
     background-color: black;
     font-size: 1.2em;
-    transform: translate(0px, 0px) scale(0.8);
+    transform: translate(-1px, -1px) scale(0.8);
     transform-origin: center;
     transition: all 0.3s ease-in;
 }
@@ -230,12 +236,13 @@ input[type="radio"]:checked {
 }
 @keyframes border-pulse {
     from {
-        border: 1px solid red;
+        border: 1.8px solid red;
     }
 
     to {
-        border: 3px solid chartreuse;
+        border: 3.3px solid chartreuse;
     }
 }
 
 /* shop input styles above */
+
