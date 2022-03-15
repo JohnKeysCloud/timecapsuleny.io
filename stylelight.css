@@ -32,7 +32,6 @@ body{
     justify-content: space-between;
     margin: 0;
 }
-
 #logomain {
     align-items: center;
     background-image: linear-gradient(transparent, #fffce8), url('imgs/cloudsabove.gif');
@@ -113,28 +112,29 @@ footer a:active {
     font-size: 1.5rem;
     font-weight: bold;
 }
-c_img {
+/* c_img {
     position: relative;
-}
+} */
 /* c_span:before {
     position: absolute;
     content: url(imgs/c.gif);
     transform: scale(1);
 is this useless? 
 } */
+
 #color_box {
     position: relative;
     border: none;
-    margin: 3rem 0 0 8rem;
+    margin: 5.5rem 0 0 12rem;
     font-size: 2.3rem;
 }
 #color_box_span:before {
     position: absolute;
     content: url(/imgs/size_cloud.gif);
-    opacity: 44%;
+    opacity: 55%;
     transform: scale(1.5);
-    top: -3rem;
-    left: -6.2rem;
+    top: -3.5rem;
+    left: -5.9rem;
     z-index: 0;
 }
 .color_opt {
@@ -162,7 +162,7 @@ input[type="radio"] {
     border-radius: 1.6rem;
     border: 2px solid chartreuse;
     outline: none;
-    transform: scale(1.5);
+    transform: scale(1.8);
 }
 input[type="radio"]::before {
     display: block;
