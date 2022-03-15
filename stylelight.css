@@ -89,6 +89,28 @@ footer a:active {
     margin: 0;
     margin-top: 10rem;
 }
+.hoodie_clr_sel_RIGHT {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+
+}
+.hoodie_clr_sel_RIGHT > h3 {
+    font-size: 3.3rem;
+    margin: 0
+}
+.hoodie_clr_sel_RIGHT > h4 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: 5px 5px 0;
+    
+}
+#hoodie_des_list li {
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 c_img {
     position: relative;
 }
@@ -97,17 +119,6 @@ c_span:before {
     content: url(imgs/c.gif);
     transform: scale(1);
 
-}
-.hoodie_clr_sel_RIGHT {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-
-
-}
-.hoodie_clr_sel_RIGHT>h3 {
-    font-size: 3.3rem;
-    margin: 0
 }
 .size_labels {
     font-size: 2.3rem;
