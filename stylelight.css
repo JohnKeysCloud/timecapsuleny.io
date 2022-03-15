@@ -172,7 +172,7 @@ footer p {
     margin: 0;
 }
 
-/* shop input styles below */
+/* right side shop stuff */
 
 .hoodie_clr_sel {
     display: flex;
@@ -275,5 +275,5 @@ input[type="radio"]:checked {
     }
 }
 
-/* shop input styles above */
+/* right side shop stuff */
 
