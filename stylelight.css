@@ -176,7 +176,37 @@ footer p {
 
 .hoodie_clr_sel {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    margin: 0;
+    margin-top: 10rem;
+}
+
+c_img {
+    position: relative;
+}
+
+c_span:before {
+   position: absolute;
+   content: url(imgs/c.gif);
+   transform: scale(1);
+
+}
+
+.hoodie_clr_sel_RIGHT {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     
+ 
+}
+
+.hoodie_clr_sel_RIGHT > h3 {
+    font-size: 3.3rem;
+    margin:0
+
+   
+
 }
 
 .size_labels {
@@ -231,6 +261,7 @@ input[type="radio"]:indeterminate {
     animation: 0.4s linear infinite alternate border-pulse;
 }
 input[type="radio"]:checked {
+    box-shadow: 0 0 6px black;
     border: 2px solid chartreuse;
     animation: 0.2s linear infinite alternate border-pulse;
 }
