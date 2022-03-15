@@ -76,143 +76,42 @@ nav ul {
     list-style: none; 
     transition: all 0.1s ease-out;
 }
-
 .links li:active,
 footer a:active {
    transform: rotate(360deg)
 }
-/* #nav-item3:active {
-    font-family: MAKE PIXELATED;
-    transform: IDK DO SUMN DIF
 
-} */
-section {
-    align-items: center;
-    font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
-    margin-top: 88px;
-}
-
-section h2{
-    margin-bottom: 88px;
-}
-
-#cloudsbelow {
-    height: 333px;
-    width: 100%;
-}
-
-#midlogo {
-    display: flex;
-    justify-content: center;
-    height: 333px;
-    margin: 0;
-    margin-top: -333px;
-    transition: all 3s ease-in-out;
-}
-
-#midlogo:hover {
-    transform: scale(1.5) 
-               rotate(720deg);
-}
-
-figcaption {
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-}
-
-#musicplayer {
-    color: chartreuse;
-    display: flex;
-    flex-direction: column;
-    font-weight: bolder;
-    font-size: 1.8rem;
-    gap: 11px;
-    margin-top: 133px;
-    opacity: 80%;
-    text-align: center;
-    text-shadow: 0px 0px 5px black;
-}
-
-footer {
-    background-color: #fffce8;
-    color: black;
-    font-weight: 200;
-    padding-top: 15px;
-    text-align: center;
-    transition: color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-}
-
-footer:active{
-    transform: rotate(180deg);
-}
-
-footer:hover {
-    background-color: black;
-    color: chartreuse;
-    text-shadow: 0px 0px 11px #fffce8;
-}
-
-footer a{
-    color: #fffce8;
-    font-weight: 800;
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: all 1.8s ease-in-out;
-}
-
-footer a:hover{
-    color: skyblue;
-    text-shadow: 0px 0px 15px #fffce8;
-}
-
-footer p {
-    font-size: 1.4rem;
-    margin: 0;
-}
-
-/* right side shop stuff */
-
+/* hoodie section for shop */
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     margin: 0;
     margin-top: 10rem;
 }
-
 c_img {
     position: relative;
 }
-
 c_span:before {
-   position: absolute;
-   content: url(imgs/c.gif);
-   transform: scale(1);
+    position: absolute;
+    content: url(imgs/c.gif);
+    transform: scale(1);
 
 }
-
 .hoodie_clr_sel_RIGHT {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    
- 
-}
 
-.hoodie_clr_sel_RIGHT > h3 {
+
+}
+.hoodie_clr_sel_RIGHT>h3 {
     font-size: 3.3rem;
-    margin:0
-
-   
-
+    margin: 0
 }
-
 .size_labels {
     font-size: 2.3rem;
 }
-
 .color_opt {
     display: flex;
     align-items: center;
@@ -231,7 +130,6 @@ input[type="radio"] {
     outline: none;
     transform: scale(1.5);
 }
-
 input[type="radio"]::before {
     display: block;
     content: " ";
@@ -274,6 +172,84 @@ input[type="radio"]:checked {
         border: 3.3px solid chartreuse;
     }
 }
+/* hoodie section for shop */
 
-/* right side shop stuff */
+/* #nav-item3:active {
+    font-family: MAKE PIXELATED;
+    transform: IDK DO SUMN DIF
+
+} */
+.temp_section {
+    align-items: center;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 88px;
+}
+.temp_section h2{
+    margin-bottom: 88px;
+}
+#cloudsbelow {
+    height: 333px;
+    width: 100%;
+}
+#midlogo {
+    display: flex;
+    justify-content: center;
+    height: 333px;
+    margin: 0;
+    margin-top: -333px;
+    transition: all 3s ease-in-out;
+}
+#midlogo:hover {
+    transform: scale(1.5) 
+               rotate(720deg);
+}
+figcaption {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+#musicplayer {
+    color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    gap: 11px;
+    margin-top: 133px;
+    opacity: 80%;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+}
+footer {
+    background-color: #fffce8;
+    color: black;
+    font-weight: 200;
+    padding-top: 15px;
+    text-align: center;
+    transition: color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+footer:active{
+    transform: rotate(180deg);
+}
+footer:hover {
+    background-color: black;
+    color: chartreuse;
+    text-shadow: 0px 0px 11px #fffce8;
+}
+footer a{
+    color: #fffce8;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 1.8s ease-in-out;
+}
+footer a:hover{
+    color: skyblue;
+    text-shadow: 0px 0px 15px #fffce8;
+}
+footer p {
+    font-size: 1.4rem;
+    margin: 0;
+}
 
