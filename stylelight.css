@@ -160,7 +160,7 @@ input[type="radio"]:checked::before {
     height: 0.9rem;
     border-radius: 10px;
     /* make brown maybe? */
-    background-color: black;
+    background-color: #633e1a;
     font-size: 1.2em;
     transform: translate(-0.5px, -0.5px) scale(0.8);
     transform-origin: center;
