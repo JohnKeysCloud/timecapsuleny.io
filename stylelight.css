@@ -87,7 +87,7 @@ footer a:active {
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0;
     margin-top: 10rem;
 }
@@ -102,15 +102,26 @@ footer a:active {
     margin: 0
 }
 .hoodie_clr_sel_RIGHT > h4 {
+    display: flex;
+    justify-content: flex-end;
     font-size: 1.7rem;
     font-weight: 300;
-    margin: 5px 5px 0;
-    
+    margin: 0;
+}
+#cloud_soft {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem 0 0 0;
+    font-size: 1.3rem;
+}
+#hoodie_des_list{
+    margin: 0 0 0 0;
 }
 #hoodie_des_list li {
     font-family: 'Roboto Mono';
     font-size: 1.5rem;
     font-weight: bold;
+    text-shadow: 0 0 8px rgb(78, 183, 224);
 }
 /* c_img {
     position: relative;
