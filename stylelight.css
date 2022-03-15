@@ -23,6 +23,7 @@ html {
 }
 body{
     background-color: #fffce8;
+    color: #633e1a;
     display: flex;
     flex-direction: column;
     font-family: 'GoshaSansRegular', 'Roboto Mono', 'Courier New', Courier, monospace;
