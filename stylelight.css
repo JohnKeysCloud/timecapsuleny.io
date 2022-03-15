@@ -27,10 +27,12 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'GoshaSansRegular', 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
     height: 100vh;
     justify-content: space-between;
     margin: 0;
 }
+
 #logomain {
     align-items: center;
     background-image: linear-gradient(transparent, #fffce8), url('imgs/cloudsabove.gif');
@@ -94,8 +96,7 @@ footer a:active {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-
-
+    position: relative;
 }
 .hoodie_clr_sel_RIGHT > h3 {
     font-size: 3.3rem;
@@ -119,16 +120,45 @@ c_span:before {
     position: absolute;
     content: url(imgs/c.gif);
     transform: scale(1);
+/* is this useless? */
+}
+#color_box {
+    position: relative;
+    border: none;
+    margin: 3rem 0 0 8rem;
+    font-size: 2.3rem;
+    /* background: url(/imgs/size_cloud.gif); */
 
 }
-.size_labels {
-    font-size: 2.3rem;
+/* WORKING HEREEEEEEEE */
+#color_box_span:before {
+    position: absolute;
+    content: url(/imgs/size_cloud.gif);
+    z-index: 0;
+    opacity: 44%;
+    transform: scale(1.3);
+    top: -3rem;
+    left: -6.2rem;
+    z-index: 0;
 }
+
+/* #color_box:after {
+    position: absolute;
+    content: url(/imgs/size_cloud.gif);
+    z-index: 0;
+    opacity: 44%;
+    transform: scale(1.3);
+    top: -3rem;
+    left: -6.2rem;
+    z-index: 0;
+} */
 .color_opt {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 3.3px;
+    gap: 1.3rem;
     margin-bottom: 3px;
+    z-index: 1;
 }
 input[type="radio"] {
     -webkit-appearance: none;
@@ -160,12 +190,11 @@ input[type="radio"]:checked::before {
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 10px;
-    /* make brown maybe? */
     background-color: #633e1a;
     font-size: 1.2em;
     transform: translate(-0.5px, -0.5px) scale(0.8);
     transform-origin: center;
-    transition: all 0.3s ease-in;
+    transition: all 0.8s ease-in;
 }
 input[type="radio"]:indeterminate {
     border: 2px solid chartreuse;
@@ -201,6 +230,7 @@ input[type="radio"]:checked {
 }
 .temp_section h2{
     margin-bottom: 88px;
+    color: black;
 }
 #cloudsbelow {
     height: 333px;
