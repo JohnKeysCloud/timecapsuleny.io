@@ -148,6 +148,9 @@ is this useless?
 #color_box_legend {
     position: relative;
     z-index: 1;
+    font-weight: bold;
+    font-size: 2.7rem;
+    text-shadow: 0 0 2px red;
 }
 input[type="radio"] {
     -webkit-appearance: none;
