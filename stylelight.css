@@ -132,7 +132,7 @@ c_span:before {
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
-    box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px #633e1a;
     width: 1.3rem;
     height: 1.3rem;
     background-color: #fffce8;
@@ -171,13 +171,13 @@ input[type="radio"]:indeterminate {
     animation: 0.4s linear infinite alternate border-pulse;
 }
 input[type="radio"]:checked {
-    box-shadow: 0 0 6px black;
+    box-shadow: 0 0 6px #633e1a;
     border: 2px solid chartreuse;
     animation: 0.2s linear infinite alternate border-pulse;
 }
 @keyframes border-pulse {
     from {
-        border: 1.8px solid red;
+        border: 1.3px solid red;
     }
 
     to {
