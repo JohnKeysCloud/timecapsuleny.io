@@ -115,13 +115,13 @@ footer a:active {
     font-size: 1.3rem;
 }
 #hoodie_des_list{
-    margin: 0 0 0 0;
+    margin: 0 0 0 0rem;
 }
 #hoodie_des_list li {
     font-family: 'Roboto Mono';
     font-size: 1.5rem;
     font-weight: bold;
-    text-shadow: 0 0 8px rgb(78, 183, 224);
+    text-shadow: 0 0 25px chartreuse;
 }
 /* c_img {
     position: relative;
@@ -145,20 +145,22 @@ is this useless?
     opacity: 55%;
     transform: scale(1.5);
     top: -3.5rem;
-    left: -5.9rem;
+    left: -3.8rem;
     z-index: 0;
 }
 .color_opt {
+    display: flex;
     position: relative;
     display: flex;
     align-items: center;
     gap: 1.3rem;
-    margin-bottom: 3px;
+    text-shadow: 0 0 1px red;
     z-index: 1;
 }
 #color_box_legend {
     position: relative;
     z-index: 1;
+    margin-left: 3.8rem;
     font-weight: bold;
     font-size: 2.7rem;
     text-shadow: 0 0 2px red;
