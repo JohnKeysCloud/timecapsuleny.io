@@ -125,8 +125,22 @@ footer a:active {
     justify-content: space-between;
     transition: all 1s ease-in-out;
 }
-#cloud_hoodie_header > h4 {
-    
+#timelessArtifact {
+    position: absolute;
+    font-size: 1.8rem;
+    color: #ffffff;
+    top: 8.9rem;
+    right: 7.5rem;
+    text-shadow: 0 0 6px black;
+    transition: all 0.8s ease-in-out;
+    transform: scale(0.8);
+}
+#timelessArtifact:hover {
+    color: #633e1a;
+    font-weight: bold;
+    transform: scale(0.9);
+    text-shadow: 0 0px 2px red;
+
 }
 #whole_level {
     color: red;
@@ -192,7 +206,7 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 15.8rem;
+    bottom: 13rem;
     padding: 0.3rem;
     left: 12.8rem;
     border: 88px ridge rgb(77, 33, 155);
