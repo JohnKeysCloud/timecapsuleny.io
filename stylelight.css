@@ -123,15 +123,22 @@ footer a:active {
     font-weight: bold;
     text-shadow: 0 0 25px chartreuse;
 }
-/* c_img {
+c_img {
     position: relative;
-} */
-/* c_span:before {
+}
+#cloud_span:before {
     position: absolute;
-    content: url(imgs/c.gif);
-    transform: scale(1);
-is this useless? 
-} */
+    content: url(/imgs/c.gif);
+    transform: scale(0.13);
+    bottom: 22.2rem;
+    right: 19.5rem;
+    border: 33px ridge #633e1a;
+    border-radius: 1000px;
+    box-shadow: inset 0 0 300px skyblue;
+    
+
+
+}
 
 #color_box {
     position: relative;
