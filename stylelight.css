@@ -139,7 +139,7 @@ c_img {
 #color_box {
     position: relative;
     border: none;
-    margin: 5.5rem 0 0 12rem;
+    margin: 3.3rem 0 0 10rem;
     font-size: 2.3rem;
 }
 #color_box_span:before {
@@ -227,23 +227,33 @@ input[type="radio"]:checked {
     }
 }
 #cart_add_btn {
-    background: linear-gradient(to bottom, white, skyblue);
-    padding: 11px;
-    border: 2px groove red;
+    background: linear-gradient(to bottom, white, rgb(128, 208, 240));
+    padding: 8px;
+    border: 2px groove silver;
     border-radius: 30px;
   
 }
 #cart_add_btn > a {
     text-decoration: none;
     font-family: 'GoshaSansRegular';
-    color: #633e1a;
+    color: red;
     font-size: 1.8rem;   
 }
 #send_2_moon {
     display: flex;
-    margin: 4.5rem 0 0 8rem;
+    margin: 4.5rem 0 0 4rem;
     justify-content: center;
-    gap: 8rem;
+    gap: 4rem;
+}
+#hoodie_size {
+    background: linear-gradient(to bottom, white, rgb(241, 240, 238));
+    border: 0.8px groove silver;
+    color: #633e1a;
+    border-radius: 33px;
+    padding: 18px;
+    font-size: 1.8rem;
+    text-shadow: 0 0 2px red;
+    font-family: 'roboto mono';
 }
 
 /* hoodie section for shop */
