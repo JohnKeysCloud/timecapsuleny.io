@@ -2,6 +2,10 @@
     font-family: "GoshaSansRegular";
     src: url(fonts/GoshaSansRegular.woff2);
 }
+@font-face {
+    font-family: "PixeBoy";
+    src: url(fonts/pixeboy.woff2);
+}
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -83,7 +87,7 @@ footer a:active {
    transform: rotate(360deg)
 }
 
-/* hoodie section for shop */
+/* hoodie section for shop START */
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
@@ -98,7 +102,10 @@ footer a:active {
     position: relative;
 }
 .hoodie_clr_sel_RIGHT > h3 {
-    font-size: 3.3rem;
+    font-size: 4rem;
+    font-family: "pixeboy";
+    color: chartreuse;
+    text-shadow: 0 3px 8px black;
     margin: 0
 }
 .hoodie_clr_sel_RIGHT > h4 {
@@ -107,6 +114,43 @@ footer a:active {
     font-size: 1.7rem;
     font-weight: 300;
     margin: 0;
+}
+#level_label {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    /* background: linear-gradient(to bottom, #fffce8,  white); */
+    font-family: "PixeBoy";
+    font-size: 4rem;
+    border-radius: 20px;
+    padding :5px;
+    font-weight: bold;
+    color:red;
+    text-shadow: 0 3px 3.3px black;
+    transition: all 1s ease-in;
+}
+#level_label:hover {
+    color: green;
+    transform: scale(1.3) rotate(360deg);
+}
+#timeless_artifact {
+    display: flex;
+    font-size: 2.4rem;
+    align-items: center;
+    transition: all 2s ease-in-out;
+}
+#level_semicolon {
+    color: #633e1a;
+    margin: 0 0.8rem;
+    font-weight: bold;
+    font-size: 4.3rem;
+}
+#level_num {
+    color: rebeccapurple;
+    font-size: 5rem;
+    text-shadow: 0 3px 2px white;
+    margin-top: 0.3rem;
+    
 }
 #cloud_soft {
     display: flex;
@@ -129,12 +173,16 @@ c_img {
 #cloud_span:before {
     position: absolute;
     content: url(/imgs/c.gif);
-    transform: scale(0.13);
-    bottom: 22.2rem;
-    right: 19.5rem;
-    border: 33px ridge #633e1a;
+    transform: scale(0.1);
+    bottom: 9rem;
+    padding: 3px;
+    left: 65px;
+    border: 88px ridge #633e1a;
     border-radius: 1000px;
-    box-shadow: inset 0 0 150px red;
+    box-shadow: inset 0 0 150px blue;
+}
+#cloud_span:hover {
+    transform: scale(1.5);
 }
 #color_box {
     position: relative;
@@ -227,7 +275,7 @@ input[type="radio"]:checked {
     }
 }
 #cart_add_btn {
-    background: linear-gradient(to bottom, white, rgb(128, 208, 240));
+    background: linear-gradient(to bottom, #fffce8, wheat);
     padding: 8px;
     border: 2px groove silver;
     border-radius: 30px;
@@ -236,27 +284,27 @@ input[type="radio"]:checked {
 #cart_add_btn > a {
     text-decoration: none;
     font-family: 'GoshaSansRegular';
-    color: red;
+    color: #633e1a;
     font-size: 1.8rem;   
 }
 #send_2_moon {
     display: flex;
-    margin: 4.5rem 0 0 4rem;
+    margin: 4.5rem 0 0 2.5rem;
     justify-content: center;
     gap: 4rem;
 }
 #hoodie_size {
-    background: linear-gradient(to bottom, white, rgb(241, 240, 238));
-    border: 0.8px groove silver;
+    background: linear-gradient(to bottom, white, #fffce8);
+    border: 2px groove silver;
     color: #633e1a;
     border-radius: 33px;
     padding: 18px;
     font-size: 1.8rem;
-    text-shadow: 0 0 2px red;
+    font-weight: 700;
+    /* text-shadow: 0 0 2px red; */
     font-family: 'roboto mono';
 }
-
-/* hoodie section for shop */
+/* hoodie section for shop END */
 
 /* #nav-item3:active {
     font-family: MAKE PIXELATED;
