@@ -127,19 +127,20 @@ footer a:active {
 }
 #timelessArtifact {
     position: absolute;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #ffffff;
-    top: 8.9rem;
-    right: 7.5rem;
+    top: 9.3rem;
+    right: 7.1rem;
     text-shadow: 0 0 6px black;
-    transition: all 0.8s ease-in-out;
-    transform: scale(0.8);
+    transition: all 0.5s ease-in-out;
 }
 #timelessArtifact:hover {
-    color: #633e1a;
+    color: blue;
     font-weight: bold;
-    transform: scale(0.9);
-    text-shadow: 0 0px 2px red;
+    margin: 0 2.1rem 14rem 0;
+    transform: scale(1.2);
+    text-shadow: 0 0px 10px yellow;
+    /* START HERE */
 
 }
 #whole_level {
