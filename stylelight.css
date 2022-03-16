@@ -115,45 +115,60 @@ footer a:active {
     font-weight: 300;
     margin: 0;
 }
-#level_label {
+#cloud_hoodie_header {
+    color: #633e1a;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2rem;
+    font-size: 2.4rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+#cloud_hoodie_header > h4 {
+    
+}
+#whole_level {
     color: red;
     display: flex;
     align-items: center;
-    margin: 0 0 0 10px;
-    /* background: linear-gradient(to bottom, #fffce8,  white); */
+    margin: 0 7rem 0 0;
     font-family: "PixeBoy";
     font-size: 4rem;
     border-radius: 20px;
-    padding :5px;
     font-weight: bold;
     text-shadow: 0 3px 3.3px black;
-    transition: all 1s ease-in;
+    transition: all 0.5s ease-in;
 }
-#level_label:hover {
-    color: green;
-    transform: scale(1.3) rotate(360deg);
-}
-#timeless_artifact {
-    display: flex;
-    font-size: 2.4rem;
-    align-items: center;
-    transition: all 2s ease-in-out;
+#whole_level:hover {
+    color: #01FFF4;
+    text-shadow: 0 3px 3.3px red;
+    transform: scale(1.1);
 }
 #level_semicolon {
     color: #633e1a;
-    margin: 0 0.8rem;
+    margin: -0.3rem 0.8rem 0 0.8rem;
     font-weight: bold;
     font-size: 4.3rem;
 }
 #level_num {
-    color: rebeccapurple;
+    color: rgb(77, 33, 155);
     font-size: 5rem;
     text-shadow: 0 3px 2px white;
-    margin-top: 0.3rem;
-    
+    margin-top: 0.3rem; 
+    transition: all 1s ease-in-out; 
+}
+#level_num:hover {
+        text-shadow: 0 3px 3.3px red;
+}
+#price_row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: -1.7rem 0 0 0;
 }
 #price {
-    margin: 0 0 0 2.5rem;
+    margin: 0.5rem 0 0 0;
     font-family: "pixeboy";
     font-size: 5.5rem;
     text-shadow: 0 0 2px red;
@@ -173,19 +188,21 @@ footer a:active {
     font-weight: bold;
     text-shadow: 0 0 25px chartreuse;
 }
-c_img {
-    position: relative;
-}
-#cloud_span:before {
+#level_icon:before {
     position: absolute;
     content: url(/imgs/c.gif);
-    transform: scale(0.1);
-    bottom: 9rem;
-    padding: 3px;
-    left: 65px;
-    border: 88px ridge #633e1a;
+    transform: scale(0.09);
+    bottom: 15.8rem;
+    padding: 0.3rem;
+    left: 12.8rem;
+    border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    box-shadow: inset 0 0 150px blue;
+    box-shadow: inset 0 0 20rem rgb(109, 4, 150);
+    transition: scale, rotate, 1.2s ease-out;
+}
+#level_icon:hover:before {
+    transform: scale(0.13) rotate(360deg);
+    margin-right: 50rem;
 }
 #cloud_span:hover {
     transform: scale(1.5);
