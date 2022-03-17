@@ -117,31 +117,11 @@ footer a:active {
 }
 #cloud_hoodie_header {
     color: #633e1a;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.2rem;
+    margin-top: 2rem;
     font-size: 2.4rem;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     justify-content: space-between;
     transition: all 1s ease-in-out;
-}
-#timelessArtifact {
-    position: absolute;
-    font-size: 1.5rem;
-    color: #ffffff;
-    top: 9.3rem;
-    right: 7.1rem;
-    text-shadow: 0 0 6px black;
-    transition: all 0.5s ease-in-out;
-}
-#timelessArtifact:hover {
-    color: blue;
-    font-weight: bold;
-    margin: 0 2.1rem 14rem 0;
-    transform: scale(1.2);
-    text-shadow: 0 0px 10px yellow;
-    /* START HERE */
-
 }
 #whole_level {
     color: red;
@@ -173,6 +153,24 @@ footer a:active {
     margin-top: 0.3rem; 
     transition: all 1s ease-in-out; 
 }
+#timelessArtifact {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ffffff;
+    top: 9.3rem;
+    right: 7.1rem;
+    text-shadow: 0 0 0.5rem black;
+    transition: all 0.7s ease-in-out;
+}
+#timelessArtifact:hover {
+    color: cyan;
+    font-weight: bold;
+    margin: 0 2.1rem 14rem 0;
+    transform: scale(1.1);
+    text-shadow: 0 0px 4px black;
+    /* START HERE */
+
+}
 #level_num:hover {
         text-shadow: 0 3px 3.3px red;
 }
@@ -195,13 +193,14 @@ footer a:active {
     font-size: 1.3rem;
 }
 #hoodie_des_list{
-    margin: 0 0 0 0rem;
+    margin: 1rem 0 0 0rem;
 }
 #hoodie_des_list li {
     font-family: 'Roboto Mono';
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 0 0 25px chartreuse;
+    list-style-type: none;
 }
 #level_icon:before {
     position: absolute;
