@@ -206,7 +206,7 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 21rem;
+    bottom: 24rem;
     padding: 0.3rem;
     left: 12.8rem;
     border: 88px ridge rgb(77, 33, 155);
