@@ -236,6 +236,16 @@ footer a:active {
     left: -3.8rem;
     z-index: 0;
 }
+/* #wonderkid {
+    position: absolute;
+    content: url(/imgs/wonderkid.png); ?
+    height: 9rem;
+    bottom: 38rem;
+    left: 0rem;
+} */
+#vanilla_input {
+
+}
 .color_opt {
     color: #633e1a;
     display: flex;
