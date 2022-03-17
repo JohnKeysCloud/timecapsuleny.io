@@ -243,8 +243,18 @@ footer a:active {
     bottom: 38rem;
     left: 0rem;
 } */
-#vanilla_input {
-
+#vanilla_select {
+    background: #fffce8;
+    border: 2px ridge silver;
+    border-radius: 20px;
+    font-family: "GoshaSansRegular";
+    font-size: 1.4;
+    text-align: center;    
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: max-content;
+    height: 2.2rem;
+    box-shadow: 0px 3px 3px black;
 }
 .color_opt {
     color: #633e1a;
