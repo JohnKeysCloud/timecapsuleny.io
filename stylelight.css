@@ -219,7 +219,7 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 24rem;
+    bottom: 28.5rem;
     padding: 0.3rem;
     left: 14rem;
     border: 88px ridge rgb(77, 33, 155);
@@ -251,6 +251,11 @@ footer a:active {
 }
 #scent_list_item {
     margin-top: 13px;
+    border:4px red solid;  
+    padding: 20;  
+    border-radius: 20px;
+    list-style-type: none;
+    /* fuck with this */
 }
 #theWonderKid_in_list {
     font-family: "GoshaSansRegular";
