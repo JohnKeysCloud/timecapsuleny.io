@@ -190,13 +190,29 @@ footer a:active {
     font-size: 5.5rem;
     text-shadow: 0 0 2px red;
 }
+#level_icon:before {
+    position: absolute;
+    content: url(/imgs/c.gif);
+    transform: scale(0.09);
+    bottom: 30rem;
+    padding: 0.3rem;
+    left: 14rem;
+    border: 88px ridge rgb(77, 33, 155);
+    border-radius: 1000px;
+    box-shadow: inset 0 0 20rem rgb(109, 4, 150);
+    transition: scale, rotate, 1.2s ease-out;
+}
+#level_icon:hover:before {
+    transform: scale(0.13) rotate(360deg);
+    /* margin-right: 50rem; */
+}
 #cloud_soft {
     display: flex;
     justify-content: flex-end;
     margin: 0.5rem 0 0 0;
     font-size: 1.3rem;
 }
-#hoodie_des_list{
+#hoodie_ul{
     display: flex;
     margin-left: -20px;
     flex-direction: column;
@@ -218,22 +234,7 @@ footer a:active {
     text-shadow: 0 0 25px chartreuse;
     padding-left: 1rem;
 }
-#level_icon:before {
-    position: absolute;
-    content: url(/imgs/c.gif);
-    transform: scale(0.09);
-    bottom: 34rem;
-    padding: 0.3rem;
-    left: 14rem;
-    border: 88px ridge rgb(77, 33, 155);
-    border-radius: 1000px;
-    box-shadow: inset 0 0 20rem rgb(109, 4, 150);
-    transition: scale, rotate, 1.2s ease-out;
-}
-#level_icon:hover:before {
-    transform: scale(0.13) rotate(360deg);
-    margin-right: 50rem;
-}
+
 #cloud_span:hover {
     transform: scale(1.5);
 }
@@ -262,6 +263,10 @@ footer a:active {
     width: 69%;
     list-style-type: none;
     box-shadow: inset 0 0 10px chartreuse;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 25px chartreuse;
+    padding-left: 1rem;
 }
 #theWonderKid_in_list {
     font-family: "GoshaSansRegular";
@@ -272,13 +277,6 @@ footer a:active {
     text-shadow: 0 0 3px black;
 
 }
-/* #wonderkid {
-    position: absolute;
-    content: url(/imgs/wonderkid.png); ?
-    height: 9rem;
-    bottom: 38rem;
-    left: 0rem;
-} */
 #vanilla_select {
     background: linear-gradient(to bottom,#fffce8, white, skyblue);
     border: 1px ridge silver;

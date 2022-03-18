@@ -42,7 +42,6 @@
         </div>
         <div class="hoodie_clr_sel_RIGHT">
             <h3 id="c_img">
-                <span id="level_icon"></span>
                 Cloud Hoodie: First Edition
             </h3>
             <h4 id="cloud_hoodie_header"> 
@@ -53,9 +52,10 @@
                         <span id="level_num">99</span>
                     </span>
                 </div>
+                <span id="level_icon"></span>
+                <div id="timelessArtifact">timelessArtifact™</div>
             </h4>
-            <div id="timelessArtifact">timelessArtifact™</div>
-            <ul id="hoodie_des_list">
+            <ul id="hoodie_ul">
               <div id="actual_des_list">
                   <li class="hoodie_des_list_item">meta tailored</li>
                   <li class="hoodie_des_list_item">hand-cut & sewn</li>
@@ -64,20 +64,6 @@
                   <li class="hoodie_des_list_item">generally, just cozy af</li>
                   <li class="hoodie_des_list_item">designed in New York City with love </li>
               </div>
-              <li class="hoodie_des_list_item" id="scent_list_item">      
-                  <span id="scent_pop_up">
-                     <span id="theWonderKid_in_list">theWonderKid™</span> scented?
-                     <div style="font-size: 1rem;">(fractionated coconut oil, vanilla fragrance)</div> 
-                     <span id="vanilla_input">
-                     <form action="" method="post">
-                         <select name="" id="vanilla_select">
-                             <option value="no_vanilla" selected>no</option>
-                             <option value="normal_vanilla">yea 😎</option>
-                             <option value="xtra_vanilla">EXTRA VANILLIES SUPREME🍦 </option>
-                         </select>
-                     </form>                        
-                  </span>
-              </li>
             </ul>
             <p id="cloud_soft">CloudSoft™ </p>
             <form>
@@ -98,11 +84,18 @@
                     <span id="color_box_span"></span>
               </fieldset>
             </form>
-            <p>
-              <span id="wonderkid"></span>
-
-              </span>     
-            </p>
+            <div id="scent_list_item">
+                <span id="theWonderKid_in_list">theWonderKid™</span> scented?
+                <div style="font-size: 1rem;">(fractionated coconut oil, vanilla fragrance)</div> 
+                <span id="vanilla_input">
+                <form action="" method="post">
+                    <select name="" id="vanilla_select">
+                        <option value="vanilla_no" selected>no</option>
+                        <option value="vanilla_yes">yea 😎</option>
+                        <option value="vanilla_xtra">EXTRA VANILLIES SUPREME🍦 </option>
+                    </select>
+                </form>                        
+            </div>
             <div id="send_to_moon">
                   <form action="" method="post" id="send_2_moon">
                       <select id="hoodie_size" name="hoodie_size">
@@ -111,6 +104,8 @@
                           <option value="large">large</option>
                           <option value="x_large">x-large</option>
                       </select>
+
+                      
                       <button id="cart_add_btn">
                           <a href="">send to moon</a>
                       </button>
