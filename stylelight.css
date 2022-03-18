@@ -124,14 +124,15 @@ footer a:active {
     transition: all 1s ease-in-out;
 }
 #whole_level {
+    position: relative;
+    align-items: center;
+    border-radius: 20px;
     color: red;
     display: flex;
-    align-items: center;
-    margin: 0 7rem 0 0;
     font-family: "PixeBoy";
     font-size: 4rem;
-    border-radius: 20px;
     font-weight: bold;
+    margin: 0 0 0 6.2rem;
     text-shadow: 0 3px 3.3px black;
     transition: all 0.5s ease-in;
 }
@@ -166,7 +167,7 @@ footer a:active {
 #timelessArtifact:hover {
     color: cyan;
     font-weight: bold;
-    margin: 0 2.1rem 14rem 0;
+    margin: 0 -0.8rem 0 0;
     transform: scale(1.1);
     text-shadow: 0 0px 4px black;
     /* START HERE */
@@ -188,13 +189,13 @@ footer a:active {
     text-shadow: 0 0 2px red;
 }
 #level_icon:before {
-    position: absolute;
+    position: fixed;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 30rem;
-    padding: 0.3rem;
-    left: 14rem;
+    top: 4.5rem;
+    right: -24rem;    
     border: 88px ridge rgb(77, 33, 155);
+    padding: 0.3rem;
     border-radius: 1000px;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     transition: scale, rotate, 1.2s ease-out;
@@ -219,10 +220,9 @@ footer a:active {
     transition: all 0.5s ease-in-out;
 
 }
-
 #hoodie_ul:hover {
     transform: scale(1.1);
-    margin-left: 0.07rem;
+    margin: 2rem 0 3rem 0;
 }
 .hoodie_des_list_item {
     font-size: 1.5rem;
@@ -230,7 +230,6 @@ footer a:active {
     text-shadow: 0 0 25px chartreuse;
     padding-left: 1rem;
 }
-
 #cloud_span:hover {
     transform: scale(1.5);
 }
@@ -252,7 +251,7 @@ footer a:active {
 #scent_box {
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
     border-radius: 10rem;
-    border: 1px ridge red;
+    border: 3px ridge silver;
     box-shadow: inset 0 0 10px chartreuse;
     display: flex;
     flex-direction: column;
@@ -265,23 +264,23 @@ footer a:active {
     padding-left: 1rem;
     padding: 1.3rem 0 0rem 1.3rem;
     text-shadow: 0 0 25px chartreuse;
-    width: 69%;
+    width: 43%;
+    /* width makes scent_box more round */
     transition: all 0.5s ease-in-out;
 }
 #scent_box:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 #scent_des {
     font-size: 1.4rem;
 }
-#theWonderKid_in_list {
+#twk_scentbox {
     font-family: "GoshaSansRegular";
     background: linear-gradient(to bottom, #fffce8, white, #fffce8);
     border-radius: 10px;
     color: rgb(0, 255, 255);
-    font-size: 1.8rem;
-    text-shadow: 0 0 3px black;
-
+    font-size: 2.2rem;
+    text-shadow: 0 0 4px red;
 }
 #vanilla_select {
     background: linear-gradient(to bottom,#fffce8, white, skyblue);
@@ -322,9 +321,6 @@ footer a:active {
     text-shadow: 0 0 2px red;
 }
 /* make id for below? */
-form {
-    position: relative;
-}
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
