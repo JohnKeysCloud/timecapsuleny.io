@@ -156,10 +156,10 @@ footer a:active {
 }
 #timelessArtifact {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #ffffff;
     top: 10rem;
-    right: 7.0rem;
+    right: 7rem;
     text-shadow: 0 0 0.5rem black;
     transition: all 0.7s ease-in-out;
 }
@@ -191,7 +191,7 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 30rem;
+    bottom: 30.5rem;
     padding: 0.3rem;
     left: 14rem;
     border: 88px ridge rgb(77, 33, 155);
@@ -211,19 +211,18 @@ footer a:active {
 }
 #hoodie_ul{
     display: flex;
-    margin-left: -20px;
+    margin-left: -0.92rem;
     flex-direction: column;
     font-family: 'Roboto Mono';
     list-style-type: '\1F4AD';
-
-}
-#actual_des_list {
+    transform: scale(1.05);
     transition: all 0.5s ease-in-out;
+
 }
 
-#actual_des_list:hover {
-    transform: scale(1.08);
-    margin-left: 1.9rem;
+#hoodie_ul:hover {
+    transform: scale(1.1);
+    margin-left: 0.07rem;
 }
 .hoodie_des_list_item {
     font-size: 1.5rem;
