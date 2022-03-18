@@ -191,7 +191,7 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 30.5rem;
+    bottom: 30rem;
     padding: 0.3rem;
     left: 14rem;
     border: 88px ridge rgb(77, 33, 155);
@@ -379,11 +379,23 @@ input[type="radio"]:checked {
         border: 3.3px solid chartreuse;
     }
 }
+#size_input {
+    background: linear-gradient(to bottom, white, #fffce8);
+    border: 2px groove silver;
+    color: #633e1a;
+    border-radius: 33px;
+    padding: 0px 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0 0 2px red;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
 #cart_add_btn {
     background: linear-gradient(to bottom, #fffce8, wheat);
-    padding: 0 8px;
+    padding: 0 0.8rem;
     border: 2px groove silver;
     border-radius: 30px;
+    height: 3rem;
   
 }
 #cart_add_btn > a {
@@ -396,18 +408,9 @@ input[type="radio"]:checked {
     display: flex;
     margin: 1rem 0 0 2rem;
     justify-content: center;
-    gap: 3rem;
-}
-#hoodie_size {
-    background: linear-gradient(to bottom, white, #fffce8);
-    border: 2px groove silver;
-    color: #633e1a;
-    border-radius: 33px;
-    padding: 18px;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-shadow: 0 0 2px red;
-    font-family: 'roboto mono';
+    align-items: center;
+    gap: 5rem;
+    height: 6rem;
 }
 /* hoodie section for shop END */
 
