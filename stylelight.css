@@ -112,17 +112,14 @@ footer a:active {
     margin: 0
 }
 .hoodie_clr_sel_RIGHT > h4 {
-    display: flex;
-    justify-content: flex-end;
     font-size: 1.7rem;
-    font-weight: 300;
     margin: 0;
 }
-#cloud_hoodie_header {
+#cloud_hoodie_subheader {
     color: #633e1a;
     margin-top: 2rem;
     font-size: 2.4rem;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     justify-content: space-between;
     transition: all 1s ease-in-out;
 }
@@ -253,20 +250,30 @@ footer a:active {
     left: -3.8rem;
     z-index: 0;
 }
-#scent_list_item {
+#scent_box {
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
-    margin-top: 1.3rem;
-    margin-left: 4rem;
-    border: 1px ridge red;  
-    padding: 1.3rem 0 0.3rem 1.3rem;  
-    border-radius: 20px;
-    width: 69%;
-    list-style-type: none;
+    border-radius: 10rem;
+    border: 1px ridge red;
     box-shadow: inset 0 0 10px chartreuse;
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
     font-weight: bold;
-    text-shadow: 0 0 25px chartreuse;
+    list-style-type: none;
+    margin-left: 8rem;
+    margin-top: 5rem;
     padding-left: 1rem;
+    padding: 1.3rem 0 0rem 1.3rem;
+    text-shadow: 0 0 25px chartreuse;
+    width: 69%;
+    transition: all 0.5s ease-in-out;
+}
+#scent_box:hover {
+    transform: scale(1.1);
+}
+#scent_des {
+    font-size: 1.4rem;
 }
 #theWonderKid_in_list {
     font-family: "GoshaSansRegular";
@@ -288,12 +295,12 @@ footer a:active {
     margin-bottom: 2rem;
     width: max-content;
     height: 2.2rem;
+    padding: 0 5rem;
     box-shadow: 0px 3px 5px red;
     transition: all 0.5s ease-in-out;
 }
 #vanilla_select:hover {
     transform: scale(1.3);
-    margin-left: 3rem;
     box-shadow: 0px 3px 8px red;
 }
 .color_opt {
@@ -375,7 +382,7 @@ input[type="radio"]:checked {
 }
 #cart_add_btn {
     background: linear-gradient(to bottom, #fffce8, wheat);
-    padding: 8px;
+    padding: 0 8px;
     border: 2px groove silver;
     border-radius: 30px;
   
@@ -388,9 +395,9 @@ input[type="radio"]:checked {
 }
 #send_2_moon {
     display: flex;
-    margin: 4.5rem 0 0 2.5rem;
+    margin: 1rem 0 0 2rem;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 #hoodie_size {
     background: linear-gradient(to bottom, white, #fffce8);
