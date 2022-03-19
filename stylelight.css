@@ -189,20 +189,25 @@ footer a:active {
     text-shadow: 0 0 2px red;
 }
 #level_icon:before {
-    position: fixed;
+    position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    top: 4.5rem;
-    right: -24rem;    
+    bottom: 34.8rem;
+    right: -26.5rem;    
     border: 88px ridge rgb(77, 33, 155);
     padding: 0.3rem;
     border-radius: 1000px;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
-    transition: scale, rotate, 1.2s ease-out;
+    transition: scale, rotate, 5s ease-out;
 }
 #level_icon:hover:before {
-    transform: scale(0.13) rotate(360deg);
-    /* margin-right: 50rem; */
+    transform: scale(1.6) rotate(1080deg);
+    border: 11px ridge rgb(77, 33, 155);
+    /* right: -17.54rem; */
+    right: 50.5rem;
+    bottom: 22.8rem;
+    z-index: 0;
+
 }
 #cloud_soft {
     display: flex;
@@ -212,17 +217,17 @@ footer a:active {
 }
 #hoodie_ul{
     display: flex;
-    margin-left: -0.92rem;
+    margin-left: -2rem;
     flex-direction: column;
     font-family: 'Roboto Mono';
     list-style-type: '\1F4AD';
-    transform: scale(1.05);
+    transform: scale(1);
     transition: all 0.5s ease-in-out;
 
 }
 #hoodie_ul:hover {
-    transform: scale(1.1);
-    margin: 2rem 0 3rem 0;
+    transform: scale(1.3);
+    margin: 2rem 0 3rem 3.6rem;
 }
 .hoodie_des_list_item {
     font-size: 1.5rem;
