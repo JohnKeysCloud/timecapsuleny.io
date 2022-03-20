@@ -1,3 +1,10 @@
+/* 
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │ Put scent thing in div and flex row dat sh*t in                          │
+  │ a container with the hoodie ul                                           │
+  └─────────────────────────────────────────────────────────────────────────────┘
+ */
+
 @font-face {
     font-family: "GoshaSansRegular";
     src: url(fonts/GoshaSansRegular.woff2);
@@ -170,8 +177,6 @@ footer a:active {
     margin: 0 -0.8rem 0 0;
     transform: scale(1.1);
     text-shadow: 0 0px 4px black;
-    /* START HERE */
-
 }
 #level_num:hover {
         text-shadow: 0 3px 3.3px red;
@@ -322,6 +327,11 @@ footer a:active {
     font-weight: bold;
     font-size: 2.7rem;
     text-shadow: 0 0 2px red;
+    transition: all 0.4s ease-in;
+}
+#color_box_legend:hover {
+    transform: rotate(720deg) scale(2);
+    text-shadow: 0 0 5px red;
 }
 /* make id for below? */
 input[type="radio"] {
