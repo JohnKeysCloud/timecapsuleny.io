@@ -1,4 +1,4 @@
-/* 
+/*
   ┌─────────────────────────────────────────────────────────────────────────────┐
   │ Put scent thing in div and flex row dat sh*t in                          │
   │ a container with the hoodie ul                                           │
@@ -20,16 +20,16 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
-    /*Set the root HTML font-size as a percentage. 
-    That’s a percentage of the user’s default browser 
-    font-size. A typical method is to set the HTML 
-    font-size to 62.5%. That’s because 62.5% of 16px 
-    (typical default browser font-size) is 10px. 
-    That would still make 1.6rem = 16px. 
-    This now means that if the user’s default browser 
-    font-size is changed to, for example, 20px, 
-    1.6rem would now equal 20px. So if your user wants 
-    bigger fonts, let them. Happy designer. Happy 
+    /*Set the root HTML font-size as a percentage.
+    That’s a percentage of the user’s default browser
+    font-size. A typical method is to set the HTML
+    font-size to 62.5%. That’s because 62.5% of 16px
+    (typical default browser font-size) is 10px.
+    That would still make 1.6rem = 16px.
+    This now means that if the user’s default browser
+    font-size is changed to, for example, 20px,
+    1.6rem would now equal 20px. So if your user wants
+    bigger fonts, let them. Happy designer. Happy
     developer. All numbers are still easy to work with. */
 }
 body{
@@ -76,7 +76,7 @@ nav ul {
     text-shadow: 0px 0px 8px chartreuse;
 }
 .links a:hover {
-    color: chartreuse;  
+    color: chartreuse;
     font-size: 2.7rem;
     text-shadow: 0px 0px 7px black;
 }
@@ -86,7 +86,7 @@ nav ul {
     text-shadow: 0px 0px 15px rgb(116, 7, 7);
 }
 .links li {
-    list-style: none; 
+    list-style: none;
     transition: all 0.1s ease-out;
 }
 .links li:active,
@@ -107,6 +107,8 @@ footer a:active {
     flex-direction: column;
     align-content: space-between;
     position: relative;
+}
+.hoodie_clr_sel_LEFT {
 }
 .hoodie_clr_sel_RIGHT > h3 {
     font-size: 4rem;
@@ -159,8 +161,8 @@ footer a:active {
     color: rgb(77, 33, 155);
     font-size: 5rem;
     text-shadow: 0 3px 2px white;
-    margin-top: 0.3rem; 
-    transition: all 1s ease-in-out; 
+    margin-top: 0.3rem;
+    transition: all 1s ease-in-out;
 }
 #timelessArtifact {
     position: absolute;
@@ -197,8 +199,8 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    bottom: 34.8rem;
-    right: -26.5rem;    
+    /* bottom: 34.8rem; */
+    /* right: -26.5rem; */
     border: 88px ridge rgb(77, 33, 155);
     padding: 0.3rem;
     border-radius: 1000px;
@@ -227,16 +229,10 @@ footer a:active {
     list-style-type: '\1F4AD';
     transform: scale(1);
     transition: all 0.5s ease-in-out;
-    width: 50%;
-
+    width: 50%
 }
 #hoodie_ul:hover {
     transform: scale(1.125);
-}
-#list_and_scent {
-    display: flex;
-    justify-content: center;
-    
 }
 .hoodie_des_list_item {
     font-size: 1.5rem;
@@ -275,9 +271,11 @@ footer a:active {
     list-style-type: none;
     padding-left: 1rem;
     padding: 1.3rem 0 0rem 1.3rem;
+    position: absolute;
+    top: 14.5rem;
+    left: 25rem;
     text-shadow: 0 0 25px chartreuse;
-    width: 50%;
-    /* width makes scent_box more round */
+    width: 18rem;
     transition: all 0.5s ease-in-out;
 }
 #scent_box:hover {
@@ -300,7 +298,7 @@ footer a:active {
     border-radius: 20px;
     font-family: "GoshaSansRegular";
     font-size: 1.4;
-    text-align: center;    
+    text-align: center;
     margin-top: 0.8rem;
     margin-bottom: 2rem;
     width: max-content;
@@ -409,13 +407,13 @@ input[type="radio"]:checked {
     border: 2px groove silver;
     border-radius: 30px;
     height: 3rem;
-  
+
 }
 #cart_add_btn > a {
     text-decoration: none;
     font-family: 'GoshaSansRegular';
     color: #633e1a;
-    font-size: 1.8rem;   
+    font-size: 1.8rem;
 }
 #send_2_moon {
     display: flex;
@@ -456,7 +454,7 @@ input[type="radio"]:checked {
     transition: all 3s ease-in-out;
 }
 #midlogo:hover {
-    transform: scale(1.5) 
+    transform: scale(1.5)
                rotate(720deg);
 }
 figcaption {
