@@ -20,7 +20,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
-    /*Set the root HTML font-size as a percentage.
+    /* Set the root HTML font-size as a percentage.
     That’s a percentage of the user’s default browser
     font-size. A typical method is to set the HTML
     font-size to 62.5%. That’s because 62.5% of 16px
@@ -423,7 +423,6 @@ input[type="radio"]:checked {
     gap: 5rem;
     height: 6rem;
 }
-/* hoodie section for shop END */
 
 /* #nav-item3:active {
     font-family: MAKE PIXELATED;
