@@ -6,12 +6,12 @@
  */
 
 @font-face {
-    font-family: "GoshaSansRegular";
     src: url(../fonts/GoshaSansRegular.woff2);
+    font-family: "GoshaSansRegular";
 }
 @font-face {
-    font-family: "PixeBoy";
     src: url(../fonts/pixeboy.woff2);
+    font-family: "PixeBoy";
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -58,8 +58,8 @@ footer a:active {
     color: black;
     font-weight: 800;
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
     text-shadow: 0px 0px 8px chartreuse;
+    transition: all 0.5s ease-in-out;
 }
 .links a:hover {
     color: chartreuse;
@@ -71,17 +71,17 @@ footer a:active {
     background-image: linear-gradient(transparent, #fffce8), url('../imgs/cloudsabove.gif');
     background-size: cover;
     display: flex;
-    width: 100%;
     height: 133px;
     justify-content: center;
+    width: 100%;
 }
 #logomain img {
     height: 77%;
     transition: all 0.3s ease-in-out;
 }
 #logomain img:hover {
-    transform: scale(1.3);
     opacity: 77%;
+    transform: scale(1.3);
 }
 nav ul {
     display: flex;
@@ -109,37 +109,36 @@ nav ul {
     margin-top: 10rem;
 }
 .hoodie_clr_sel_RIGHT {
+    align-content: space-between;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     position: relative;
 }
 .hoodie_clr_sel_LEFT {
 }
 .hoodie_clr_sel_RIGHT > h3 {
-    font-size: 4rem;
-    font-family: "pixeboy";
-    color: chartreuse;
     background-color: black;
     border-radius: 10px;
+    color: chartreuse;
+    font-family: "pixeboy";
+    font-size: 4rem;
+    margin: 0;
     padding: 5px;
-    text-shadow: 0 3px 8px black;
-    margin: 0
+    text-shadow: 0 3px 8px black
 }
 .hoodie_clr_sel_RIGHT > h4 {
     font-size: 1.7rem;
     margin: 0;
 }
 #cloud_hoodie_subheader {
-    color: #633e1a;
-    margin-top: 2rem;
-    font-size: 2.4rem;
     align-items: flex-end;
+    color: #633e1a;
+    font-size: 2.4rem;
     justify-content: space-between;
+    margin-top: 2rem;
     transition: all 1s ease-in-out;
 }
 #whole_level {
-    position: relative;
     align-items: center;
     border-radius: 20px;
     color: red;
@@ -148,91 +147,92 @@ nav ul {
     font-size: 4rem;
     font-weight: bold;
     margin: 0 0 0 6.2rem;
+    position: relative;
     text-shadow: 0 3px 3.3px black;
     transition: all 0.5s ease-in;
 }
 #whole_level:hover {
     color: #01FFF4;
-    text-shadow: 0 3px 3.3px red;
     margin-bottom: 0rem;
+    text-shadow: 0 3px 3.3px red;
     transform: scale(1.1);
 }
 #level_semicolon {
     color: #633e1a;
-    margin: -0.3rem 0.8rem 0 0.8rem;
-    font-weight: bold;
     font-size: 4.3rem;
+    font-weight: bold;
+    margin: -0.3rem 0.8rem 0 0.8rem;
 }
 #level_num {
     color: rgb(77, 33, 155);
     font-size: 5rem;
-    text-shadow: 0 3px 2px white;
     margin-top: 0.3rem;
+    text-shadow: 0 3px 2px white;
     transition: all 1s ease-in-out;
 }
 #timelessArtifact {
-    position: absolute;
-    font-size: 1.7rem;
     color: #ffffff;
-    top: 10rem;
+    font-size: 1.7rem;
+    position: absolute;
     right: 7rem;
     text-shadow: 0 0 0.5rem black;
+    top: 10rem;
     transition: all 0.7s ease-in-out;
 }
 #timelessArtifact:hover {
     color: cyan;
     font-weight: bold;
     margin: 0 -0.8rem 0 0;
-    transform: scale(1.1);
     text-shadow: 0 0px 4px black;
+    transform: scale(1.1);
 }
 #level_num:hover {
         text-shadow: 0 3px 3.3px red;
 }
 #price_row {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     margin: -1.7rem 0 0 0;
+    width: 100%;
 }
 #price {
-    margin: 0.5rem 0 0 0;
     font-family: "pixeboy";
     font-size: 5.5rem;
+    margin: 0.5rem 0 0 0;
     text-shadow: 0 0 2px red;
 }
 #level_icon:before {
-    position: absolute;
-    content: url(/imgs/c.gif);
-    transform: scale(0.09);
-    bottom: 20.6rem;
-    right: -27rem;
     border: 88px ridge rgb(77, 33, 155);
-    padding: 0.3rem;
     border-radius: 1000px;
+    bottom: 20.6rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
+    content: url(/imgs/c.gif);
+    padding: 0.3rem;
+    position: absolute;
+    right: -27rem;
+    transform: scale(0.09);
     transition: scale, rotate, 3.3s ease-in-out;
 }
 #level_icon:hover:before {
-    transform: scale(1.6) rotate(720deg);
     border: 3px ridge rgb(77, 33, 155);
-    right: 51.5rem;
     bottom: 8rem;
+    right: 51.5rem;
+    transform: scale(1.6) rotate(720deg);
     /* opacity: 0%; */
     z-index: 1;
 }
 #cloud_soft {
     display: flex;
+    font-size: 1.3rem;
     justify-content: flex-end;
     margin: 0.5rem 0 0 0;
-    font-size: 1.3rem;
 }
 #hoodie_ul{
     display: flex;
-    margin-left: 0.5rem;
     flex-direction: column;
     font-family: 'Roboto Mono';
     list-style-type: '\1F4AD';
+    margin-left: 0.5rem;
     transform: scale(1);
     transition: all 0.5s ease-in-out;
     width: 50%
@@ -243,8 +243,8 @@ nav ul {
 .hoodie_des_list_item {
     font-size: 1.5rem;
     font-weight: bold;
-    text-shadow: 0 0 25px chartreuse;
     padding-left: 1rem;
+    text-shadow: 0 0 25px chartreuse;
 }
 #cloud_span:hover {
     transform: scale(1.5);
@@ -256,33 +256,33 @@ nav ul {
     position: relative;
 }
 #color_box_span:before {
-    position: absolute;
     content: url(/imgs/size_cloud.gif);
-    opacity: 55%;
-    transform: scale(1.5);
-    top: -3.5rem;
     left: -3.8rem;
+    opacity: 55%;
+    position: absolute;
+    top: -3.5rem;
+    transform: scale(1.5);
     z-index: 0;
 }
 #scent_box {
+    align-items: center;
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
-    border-radius: 10rem;
     border: 3px ridge silver;
+    border-radius: 10rem;
     box-shadow: inset 0 0 10px chartreuse;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 1.7rem;
     font-weight: bold;
-    list-style-type: none;
-    padding-left: 1rem;
-    padding: 1.3rem 0 0rem 1.3rem;
-    position: absolute;
-    top: 14.5rem;
     left: 25rem;
+    list-style-type: none;
+    padding: 1.3rem 0 0rem 1.3rem;
+    padding-left: 1rem;
+    position: absolute;
     text-shadow: 0 0 25px chartreuse;
-    width: 18rem;
+    top: 14.5rem;
     transition: all 0.5s ease-in-out;
+    width: 18rem;
 }
 #scent_box:hover {
     transform: scale(1.08);
@@ -291,10 +291,10 @@ nav ul {
     font-size: 1.4rem;
 }
 #twk_scentbox {
-    font-family: "GoshaSansRegular";
     background: linear-gradient(to bottom, #fffce8, white, #fffce8);
     border-radius: 10px;
     color: rgb(0, 255, 255);
+    font-family: "GoshaSansRegular";
     font-size: 2.2rem;
     text-shadow: 0 0 4px red;
 }
@@ -302,52 +302,52 @@ nav ul {
     background: linear-gradient(to bottom,#fffce8, white, skyblue);
     border: 1px ridge silver;
     border-radius: 20px;
+    box-shadow: 0px 3px 5px red;
     font-family: "GoshaSansRegular";
     font-size: 1.4;
-    text-align: center;
-    margin-top: 0.8rem;
-    margin-bottom: 2rem;
-    width: max-content;
     height: 2.2rem;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
     padding: 0 5rem;
-    box-shadow: 0px 3px 5px red;
+    text-align: center;
     transition: all 0.5s ease-in-out;
+    width: max-content;
 }
 #vanilla_select:hover {
-    transform: scale(1.3);
     box-shadow: 0px 3px 8px red;
+    transform: scale(1.3);
 }
 .color_opt {
+    gap: 1.3rem;
+    align-items: center;
     color: #633e1a;
     display: flex;
-    position: relative;
     display: flex;
-    align-items: center;
-    gap: 1.3rem;
+    position: relative;
     text-shadow: 0 0 1px red;
     z-index: 1;
 }
 #color_box_legend {
     color: #633e1a;
-    position: relative;
-    z-index: 1;
-    margin-left: 3.8rem;
-    font-weight: bold;
     font-size: 2.7rem;
+    font-weight: bold;
+    margin-left: 3.8rem;
+    position: relative;
     text-shadow: 0 0 2px red;
     transition: all 0.4s ease-in;
+    z-index: 1;
 }
 #color_box_legend:hover {
-    transform: rotate(720deg) scale(2);
     text-shadow: 0 0 5px red;
+    transform: rotate(720deg) scale(2);
 }
 /* make id for below? */
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     background-color: #fffce8;
-    border-radius: 1.6rem;
     border: 2px solid chartreuse;
+    border-radius: 1.6rem;
     box-shadow: 0 0 3px #633e1a;
     height: 1.3rem;
     outline: none;
@@ -361,31 +361,31 @@ input[type="radio"]::before {
     display: block;
     font-size: 1.2em;
     height: 1rem;
-    transform-origin: center;
     transform: translate(0px, -3px) scale(0.0);
+    transform-origin: center;
     transition: all 0.7s ease-in;
     width: 1rem;
 }
 input[type="radio"]:checked::before {
-    display: block;
-    content: "";
-    width: 0.9rem;
-    height: 0.9rem;
-    border-radius: 10px;
     background-color: #633e1a;
+    border-radius: 10px;
+    content: "";
+    display: block;
     font-size: 1.2em;
+    height: 0.9rem;
     transform: translate(-0.5px, -0.5px) scale(0.8);
     transform-origin: center;
     transition: all 0.8s ease-in;
+    width: 0.9rem;
 }
 input[type="radio"]:indeterminate {
-    border: 2px solid chartreuse;
     animation: 0.4s linear infinite alternate border-pulse;
+    border: 2px solid chartreuse;
 }
 input[type="radio"]:checked {
-    box-shadow: 0 0 6px #633e1a;
-    border: 2px solid chartreuse;
     animation: 0.2s linear infinite alternate border-pulse;
+    border: 2px solid chartreuse;
+    box-shadow: 0 0 6px #633e1a;
 }
 @keyframes border-pulse {
     from {
@@ -399,35 +399,35 @@ input[type="radio"]:checked {
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
     border: 2px groove silver;
-    color: #633e1a;
     border-radius: 33px;
-    padding: 0px 0.8rem;
+    color: #633e1a;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
     font-size: 1.8rem;
     font-weight: 700;
+    padding: 0px 0.8rem;
     text-shadow: 0 0 2px red;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
 }
 #cart_add_btn {
     background: linear-gradient(to bottom, #fffce8, wheat);
-    padding: 0 0.8rem;
     border: 2px groove silver;
     border-radius: 30px;
     height: 3rem;
+    padding: 0 0.8rem;
 
 }
 #cart_add_btn > a {
-    text-decoration: none;
-    font-family: 'GoshaSansRegular';
     color: #633e1a;
+    font-family: 'GoshaSansRegular';
     font-size: 1.8rem;
+    text-decoration: none;
 }
 #send_2_moon {
-    display: flex;
-    margin: 1rem 0 0 2rem;
-    justify-content: center;
-    align-items: center;
     gap: 5rem;
+    align-items: center;
+    display: flex;
     height: 6rem;
+    justify-content: center;
+    margin: 1rem 0 0 2rem;
 }
 
 /* #nav-item3:active {
@@ -437,14 +437,14 @@ input[type="radio"]:checked {
 } */
 .temp_section {
     align-items: center;
-    font-size: 1.4rem;
     display: flex;
     flex-direction: column;
+    font-size: 1.4rem;
     margin-top: 88px;
 }
 .temp_section h2{
-    margin-bottom: 88px;
     color: black;
+    margin-bottom: 88px;
 }
 #cloudsbelow {
     height: 333px;
@@ -452,8 +452,8 @@ input[type="radio"]:checked {
 }
 #midlogo {
     display: flex;
-    justify-content: center;
     height: 333px;
+    justify-content: center;
     margin: 0;
     margin-top: -333px;
     transition: all 3s ease-in-out;
@@ -466,12 +466,12 @@ figcaption {
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
 }
 #musicplayer {
+    gap: 11px;
     color: chartreuse;
     display: flex;
     flex-direction: column;
-    font-weight: bolder;
     font-size: 1.8rem;
-    gap: 11px;
+    font-weight: bolder;
     margin-top: 133px;
     opacity: 80%;
     text-align: center;
@@ -496,8 +496,8 @@ footer:hover {
 }
 footer a{
     color: #fffce8;
-    font-weight: 800;
     font-size: 1.3rem;
+    font-weight: 800;
     text-decoration: none;
     transition: all 1.8s ease-in-out;
 }
