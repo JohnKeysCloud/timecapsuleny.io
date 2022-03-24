@@ -98,13 +98,15 @@ nav ul {
 .hoodie_clr_sel_LEFT {
 }
 .hoodie_clr_sel_RIGHT > h3 {
-    background-color: black;
-    border-radius: 10px;
+    background: url('../imgs/cloudsabove.gif');
+    background-size: cover;
+    box-shadow: inset 0 0 22px #fffce8, 0 0 33px chartreuse;
+    border-radius: 13rem;
     color: chartreuse;
     font-family: "pixeboy";
     font-size: 4rem;
     margin: 0;
-    padding: 5px;
+    padding: 1.8rem;
     text-shadow: 0 3px 8px black
 }
 .hoodie_clr_sel_RIGHT > h4 {
