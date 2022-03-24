@@ -273,6 +273,7 @@ nav ul {
 }
 #twk_scentbox {
     background: linear-gradient(to bottom, #fffce8, white, #fffce8);
+    border: 3px ridge silver;
     border-radius: 10px;
     color: rgb(0, 255, 255);
     font-family: "GoshaSansRegular";
