@@ -43,6 +43,29 @@ body{
     justify-content: space-between;
     margin: 0;
 }
+
+/* nav start  */
+
+.links li {
+    list-style: none;
+    transition: all 0.1s ease-out;
+}
+.links li:active,
+footer a:active {
+   transform: rotate(360deg)
+}
+.links a {
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0px 0px 8px chartreuse;
+}
+.links a:hover {
+    color: chartreuse;
+    font-size: 2.7rem;
+    text-shadow: 0px 0px 7px black;
+}
 #logomain {
     align-items: center;
     background-image: linear-gradient(transparent, #fffce8), url('../imgs/cloudsabove.gif');
@@ -68,33 +91,16 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-.links a {
-    color: black;
-    font-weight: 800;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    text-shadow: 0px 0px 8px chartreuse;
-}
-.links a:hover {
-    color: chartreuse;
-    font-size: 2.7rem;
-    text-shadow: 0px 0px 7px black;
-}
 #nav-item3 a:hover {
     color: #cc3333;
     font-size: 3rem;
     text-shadow: 0px 0px 15px rgb(116, 7, 7);
 }
-.links li {
-    list-style: none;
-    transition: all 0.1s ease-out;
-}
-.links li:active,
-footer a:active {
-   transform: rotate(360deg)
-}
+
+/* nav end */
 
 /* hoodie section for shop START */
+
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
@@ -199,8 +205,8 @@ footer a:active {
     position: absolute;
     content: url(/imgs/c.gif);
     transform: scale(0.09);
-    /* bottom: 34.8rem; */
-    /* right: -26.5rem; */
+    bottom: 20.6rem;
+    right: -27rem;
     border: 88px ridge rgb(77, 33, 155);
     padding: 0.3rem;
     border-radius: 1000px;
@@ -210,9 +216,9 @@ footer a:active {
 #level_icon:hover:before {
     transform: scale(1.6) rotate(720deg);
     border: 3px ridge rgb(77, 33, 155);
-    right: 50.5rem;
-    bottom: 22.8rem;
-    opacity: 0%;
+    right: 51.5rem;
+    bottom: 8rem;
+    /* opacity: 0%; */
     z-index: 1;
 }
 #cloud_soft {
@@ -244,10 +250,10 @@ footer a:active {
     transform: scale(1.5);
 }
 #color_box {
-    position: relative;
     border: none;
-    margin: 2rem 0 0 13rem;
     font-size: 2.3rem;
+    margin: 2rem 0 0 13rem;
+    position: relative;
 }
 #color_box_span:before {
     position: absolute;
