@@ -257,15 +257,15 @@ nav ul {
     flex-direction: column;
     font-size: 1.7rem;
     font-weight: bold;
-    left: 25rem;
+    left: 26rem;
     list-style-type: none;
     padding: 1.3rem 0 0rem 1.3rem;
     padding-left: 1rem;
     position: absolute;
     text-shadow: 0 0 25px chartreuse;
-    top: 14.5rem;
+    top: 16.5rem;
     transition: all 0.5s ease-in-out;
-    width: 18rem;
+    width: 23rem;
 }
 #scent_box:hover {
     transform: scale(1.08);
