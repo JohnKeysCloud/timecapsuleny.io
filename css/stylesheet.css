@@ -24,16 +24,14 @@ body{
     justify-content: space-between;
     margin: 0;
 }
-
 /* nav start  */
-
 .links li {
     list-style: none;
     transition: all 0.1s ease-out;
 }
 .links li:active,
 footer a:active {
-   transform: rotate(360deg)
+    transform: rotate(360deg)
 }
 .links a {
     color: black;
@@ -77,11 +75,9 @@ nav ul {
     font-size: 3rem;
     text-shadow: 0px 0px 15px rgb(116, 7, 7);
 }
-
 /* nav end */
 
 /* hoodie section for shop START */
-
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
@@ -325,7 +321,7 @@ nav ul {
     text-shadow: 0 0 5px red;
     transform: rotate(720deg) scale(2);
 }
-/* make id for below? */
+/* TODO: make id for below? */
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
@@ -413,11 +409,10 @@ input[type="radio"]:checked {
     justify-content: center;
     margin: 1rem 0 0 2rem;
 }
-
+/* TODO: */
 /* #nav-item3:active {
     font-family: MAKE PIXELATED;
     transform: IDK DO SUMN DIF
-
 } */
 .temp_section {
     align-items: center;
@@ -443,8 +438,9 @@ input[type="radio"]:checked {
     transition: all 3s ease-in-out;
 }
 #midlogo:hover {
-    transform: scale(1.5)
-               rotate(720deg);
+    transform: 
+    scale(1.5)
+    rotate(720deg);
 }
 figcaption {
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
@@ -461,6 +457,8 @@ figcaption {
     text-align: center;
     text-shadow: 0px 0px 5px black;
 }
+/* TODO: */
+/* hoodie section for shop END */
 footer {
     background-color: #fffce8;
     color: black;
