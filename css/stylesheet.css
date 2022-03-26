@@ -91,8 +91,9 @@ nav ul {
     flex-direction: column;
     position: relative;
 }
-.hoodie_clr_sel_LEFT {
-}
+/* TODO: */
+/* .hoodie_clr_sel_LEFT {
+} */
 .hoodie_clr_sel_RIGHT > h3 {
     background: url('../imgs/cloudsabove.gif');
     background-size: cover;
