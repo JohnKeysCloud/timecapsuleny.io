@@ -1,3 +1,8 @@
+/* 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ |GENERAL|                                                               │
+  └─────────────────────────────────────────────────────────────────────────┘
+ */
 @font-face {
     src: url(../fonts/GoshaSansRegular.woff2);
     font-family: "GoshaSansRegular";
@@ -24,15 +29,12 @@ body{
     justify-content: space-between;
     margin: 0;
 }
-/* nav start  */
-.links li {
-    list-style: none;
-    transition: all 0.1s ease-out;
-}
-.links li:active,
-footer a:active {
-    transform: rotate(360deg)
-}
+
+/* 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ |Nav|                                                                   │
+  └─────────────────────────────────────────────────────────────────────────┘
+ */
 .links a {
     color: black;
     font-weight: 800;
@@ -44,6 +46,14 @@ footer a:active {
     color: chartreuse;
     font-size: 2.7rem;
     text-shadow: 0px 0px 7px black;
+}
+.links li {
+    list-style: none;
+    transition: all 0.1s ease-out;
+}
+.links li:active,
+footer a:active {
+    transform: rotate(360deg)
 }
 #logomain {
     align-items: center;
@@ -75,9 +85,12 @@ nav ul {
     font-size: 3rem;
     text-shadow: 0px 0px 15px rgb(116, 7, 7);
 }
-/* nav end */
 
-/* hoodie section for shop START */
+/* 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ |HOODIE SECTION|                                                        │
+  └─────────────────────────────────────────────────────────────────────────┘
+ */
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
@@ -458,8 +471,12 @@ figcaption {
     text-align: center;
     text-shadow: 0px 0px 5px black;
 }
-/* TODO: */
-/* hoodie section for shop END */
+
+/* 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │ |FOOTER|                                                                │
+  └─────────────────────────────────────────────────────────────────────────┘
+ */
 footer {
     background-color: #fffce8;
     color: black;
