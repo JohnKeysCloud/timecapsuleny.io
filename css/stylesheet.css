@@ -326,7 +326,7 @@ input[type="radio"]:checked {
 }
 #sb_essenced_scentbox {
     background: white;
-    box-shadow: inset 2rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
+    box-shadow: inset 1rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
     border-radius: 100rem;
     /* border: 3px ridge #fffce8; */
     color: rgb(55, 55, 55);
@@ -339,7 +339,7 @@ input[type="radio"]:checked {
     transform: rotate(11deg);
     
     position: absolute;
-    bottom: 11.2rem;
+    bottom: 11.1rem;
     left: 5.1rem;
 }
 #sb_essenced_scentbox:hover {
@@ -349,7 +349,7 @@ input[type="radio"]:checked {
 #scent_box {
     align-items: center;
     background: white;
-    box-shadow: inset 4rem 0.1rem 0.3rem silver, 1px 2px 1.5rem chartreuse;
+    box-shadow: inset 3rem 0.1rem 0.3rem silver, 1px 2px 1.5rem chartreuse;
     border-radius: 10rem;
     /* border: 1px ridge silver; */
     display: flex;
@@ -411,7 +411,7 @@ input[type="radio"]:checked {
 }
 #twk_scentbox {
     background: white;
-    box-shadow: inset 3rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
+    box-shadow: inset 2rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
     /* border: 1px ridge silver; */
     border-radius: 33rem;
     color: #67e0f8;
@@ -433,8 +433,6 @@ input[type="radio"]:checked {
 #twk_scentbox:hover {
     color: black;
     text-shadow: -1px -2px 3px red;
-
-
 }
 #sb_span_container > #twk_scentbox:hover {
     text-shadow: 0 0 1rem red;
