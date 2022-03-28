@@ -202,6 +202,12 @@ nav ul {
     font-size: 1.7rem;
     margin: 0;
 }
+.hoodie_des_list_item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    text-shadow: 0 0 25px chartreuse;
+}
 #hoodie_ul {
     display: flex;
     flex-direction: column;
@@ -215,13 +221,16 @@ nav ul {
 #hoodie_ul:hover {
     transform: scale(1.125);
 }
-.hoodie_des_list_item {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 1rem;
-    text-shadow: 0 0 25px chartreuse;
-}
 /* TODO: make id for below? */
+@keyframes border-pulse {
+    from {
+        border: 1.3px solid red;
+    }
+
+    to {
+        border: 3.3px solid chartreuse;
+    }
+}
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
@@ -234,7 +243,6 @@ input[type="radio"] {
     transform: scale(1.8);
     width: 1.3rem;
 }
-
 input[type="radio"]::before {
     background-color: chartreuse;
     border-radius: 10px;
@@ -247,7 +255,6 @@ input[type="radio"]::before {
     transition: all 0.7s ease-in;
     width: 1rem;
 }
-
 input[type="radio"]:checked::before {
     background-color: #633e1a;
     border-radius: 10px;
@@ -269,69 +276,6 @@ input[type="radio"]:checked {
     border: 2px solid chartreuse;
     box-shadow: 0 0 6px #633e1a;
 }
-#whole_level {
-    align-items: center;
-    border-radius: 20px;
-    color: red;
-    display: flex;
-    font-family: "PixeBoy";
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 0 0 0 10.5rem;
-    position: relative;
-    text-shadow: 0 3px 3.3px black;
-    transition: all 0.5s ease-in;
-}
-#whole_level:hover {
-    color: #01FFF4;
-    margin-bottom: 0rem;
-    text-shadow: 0 3px 3.3px red;
-    transform: scale(1.1);
-}
-#level_semicolon {
-    color: #633e1a;
-    font-size: 4.3rem;
-    font-weight: bold;
-    margin: -0.3rem 0.8rem 0 0.8rem;
-}
-#level_num {
-    color: rgb(77, 33, 155);
-    font-size: 5rem;
-    margin-top: 0.3rem;
-    text-shadow: 0 3px 2px white;
-    transition: all 1s ease-in-out;
-}
-#timelessArtifact {
-    color: #ffffff;
-    font-size: 1.7rem;
-    position: absolute;
-    right: 6.1rem;
-    text-shadow: 0 0 0.5rem black;
-    top: 12.8rem;
-    transition: all 0.7s ease-in-out;
-}
-#timelessArtifact:hover {
-    color: cyan;
-    font-weight: bold;
-    margin: 0 -0.8rem 0 0;
-    text-shadow: 0 0px 4px black;
-    transform: scale(1.03);
-}
-#level_num:hover {
-        text-shadow: 0 3px 3.3px red;
-}
-#price_row {
-    display: flex;
-    justify-content: space-between;
-    margin: -1.5rem 0 0 0;
-    width: 100%;
-}
-#price {
-    font-family: "pixeboy";
-    font-size: 5.5rem;
-    margin: 0.5rem 0 0 0;
-    text-shadow: 0 0 2px red;
-}
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
@@ -352,8 +296,34 @@ input[type="radio"]:checked {
     /* opacity: 0%; */
     z-index: 1;
 }
-
-
+#level_num {
+    color: rgb(77, 33, 155);
+    font-size: 5rem;
+    margin-top: 0.3rem;
+    text-shadow: 0 3px 2px white;
+    transition: all 1s ease-in-out;
+}
+#level_num:hover {
+    text-shadow: 0 3px 3.3px red;
+}
+#level_semicolon {
+    color: #633e1a;
+    font-size: 4.3rem;
+    font-weight: bold;
+    margin: -0.3rem 0.8rem 0 0.8rem;
+}
+#price_row {
+    display: flex;
+    justify-content: space-between;
+    margin: -1.5rem 0 0 0;
+    width: 100%;
+}
+#price {
+    font-family: "pixeboy";
+    font-size: 5.5rem;
+    margin: 0.5rem 0 0 0;
+    text-shadow: 0 0 2px red;
+}
 #scent_box {
     align-items: center;
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
@@ -380,6 +350,41 @@ input[type="radio"]:checked {
 #scent_des {
     font-size: 1.4rem;
 }
+#send_2_moon {
+    gap: 5rem;
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+    margin: 1rem 0 0 2rem;
+}
+#size_input {
+    background: linear-gradient(to bottom, white, #fffce8);
+    border: 2px groove silver;
+    border-radius: 33px;
+    color: #633e1a;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0px 0.8rem;
+    text-shadow: 0 0 2px red;
+}
+#timelessArtifact {
+    color: #ffffff;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 6.1rem;
+    text-shadow: 0 0 0.5rem black;
+    top: 12.8rem;
+    transition: all 0.7s ease-in-out;
+}
+#timelessArtifact:hover {
+    color: cyan;
+    font-weight: bold;
+    margin: 0 -0.8rem 0 0;
+    text-shadow: 0 0px 4px black;
+    transform: scale(1.03);
+}
 #twk_scentbox {
     background: linear-gradient(to bottom, #fffce8, white, #fffce8);
     border: 3px ridge silver;
@@ -390,7 +395,7 @@ input[type="radio"]:checked {
     text-shadow: 0 0 4px red;
 }
 #vanilla_select {
-    background: linear-gradient(to bottom,#fffce8, white, skyblue);
+    background: linear-gradient(to bottom, #fffce8, white, skyblue);
     border: 1px ridge silver;
     border-radius: 20px;
     box-shadow: 0px 3px 5px red;
@@ -408,33 +413,24 @@ input[type="radio"]:checked {
     box-shadow: 0px 3px 8px red;
     transform: scale(1.3);
 }
-@keyframes border-pulse {
-    from {
-        border: 1.3px solid red;
-    }
-
-    to {
-        border: 3.3px solid chartreuse;
-    }
-}
-#size_input {
-    background: linear-gradient(to bottom, white, #fffce8);
-    border: 2px groove silver;
-    border-radius: 33px;
-    color: #633e1a;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: 0px 0.8rem;
-    text-shadow: 0 0 2px red;
-}
-#send_2_moon {
-    gap: 5rem;
+#whole_level {
     align-items: center;
+    border-radius: 20px;
+    color: red;
     display: flex;
-    height: 6rem;
-    justify-content: center;
-    margin: 1rem 0 0 2rem;
+    font-family: "PixeBoy";
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 0 0 10.5rem;
+    position: relative;
+    text-shadow: 0 3px 3.3px black;
+    transition: all 0.5s ease-in;
+}
+#whole_level:hover {
+    color: #01FFF4;
+    margin-bottom: 0rem;
+    text-shadow: 0 3px 3.3px red;
+    transform: scale(1.1);
 }
 
 /* 
