@@ -350,6 +350,15 @@ input[type="radio"]:checked {
 #scent_des {
     font-size: 1.4rem;
 }
+#scented_scentbox {
+    background: linear-gradient(to bottom, #fffce8, white, #fffce8);
+    font-family: 'roboto mono';
+    font-size: 2rem;
+    border: 3px ridge #fffce8;
+    border-radius: 10px;
+    color: rgb(0, 255, 255);
+    text-shadow: 0 0 4px red;
+}
 #send_2_moon {
     gap: 5rem;
     align-items: center;
@@ -387,12 +396,16 @@ input[type="radio"]:checked {
 }
 #twk_scentbox {
     background: linear-gradient(to bottom, #fffce8, white, #fffce8);
-    border: 3px ridge silver;
+    border: 3px ridge #fffce8;
     border-radius: 10px;
     color: rgb(0, 255, 255);
     font-family: "GoshaSansRegular";
     font-size: 2.2rem;
     text-shadow: 0 0 4px red;
+
+    position: absolute;
+    bottom: 10rem;
+    right: 2.7rem;
 }
 #vanilla_select {
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
