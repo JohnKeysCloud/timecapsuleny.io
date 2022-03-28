@@ -183,8 +183,8 @@ nav ul {
     flex-direction: column;
     position: relative;
 }
-/* TODO: */
-/* .hoodie_clr_sel_LEFT {
+/* TODO: 
+.hoodie_clr_sel_LEFT {
 } */
 .hoodie_clr_sel_RIGHT > h3 {
     background: url('../imgs/cloudsabove.gif');
@@ -324,40 +324,62 @@ input[type="radio"]:checked {
     margin: 0.5rem 0 0 0;
     text-shadow: 0 0 2px red;
 }
+#sb_cloud_hack {
+    height: 0.6rem;
+}
+#sb_essenced_scentbox {
+    background: white;
+    box-shadow: inset 2rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
+    border-radius: 100rem;
+    /* border: 3px ridge #fffce8; */
+    color: rgb(55, 55, 55);
+    font-family: 'Roboto Mono';
+    font-size: 1.4rem;
+    padding: 3rem 0rem 0 10rem;
+    text-shadow: 0 0px 3px red;
+    transform: rotate(13deg);
+
+    position: absolute;
+    bottom: 11.2rem;
+    left: 5.1rem;
+}
 #scent_box {
     align-items: center;
-    background: linear-gradient(to bottom, #fffce8, white, skyblue);
-    border: 3px ridge silver;
+    background: white;
+    box-shadow: inset 2.2rem 0.1rem 0.2rem silver, 1px 2px 1.5rem chartreuse;
     border-radius: 10rem;
-    box-shadow: inset 0 0 10px chartreuse;
+    /* border: 1px ridge silver; */
+    color: rgb(77, 77, 77);
     display: flex;
     flex-direction: column;
-    font-size: 1.7rem;
-    font-weight: bold;
     left: 26rem;
     list-style-type: none;
-    padding: 1.3rem 0 0rem 1.3rem;
     padding-left: 1rem;
-    position: absolute;
-    text-shadow: 0 0 25px chartreuse;
-    top: 16.5rem;
-    transition: all 0.5s ease-in-out;
+    padding: 3rem 0.3rem 0rem 0.7rem;
+    text-align: center;
+    text-shadow: 0 2px 2px chartreuse;
+    transform: rotate(11deg);
+    transition: all 1.1s ease-out;
     width: 23rem;
+    
+    position: absolute;
+    top: 21.8rem;
+    z-index: 1;
 }
 #scent_box:hover {
-    transform: scale(1.08);
+    color: black;
+    font-family: "GoshaSansRegular";
+    /* font-size:1rem; */
+    transform: scale(1.03);
+    text-shadow: 0 2px 2px chartreuse;
+    top: 21.1rem;
+    left: 13.7rem;
+    box-shadow: inset 2.2rem 0.1rem 0.5rem silver, 10rem 1.5rem 10rem black;
+
 }
 #scent_des {
-    font-size: 1.4rem;
-}
-#scented_scentbox {
-    background: linear-gradient(to bottom, #fffce8, white, #fffce8);
-    font-family: 'roboto mono';
-    font-size: 2rem;
-    border: 3px ridge #fffce8;
-    border-radius: 10px;
-    color: rgb(0, 255, 255);
-    text-shadow: 0 0 4px red;
+    font-family: "PixeBoy";
+    font-size: 1.6rem; 
 }
 #send_2_moon {
     gap: 5rem;
@@ -395,17 +417,26 @@ input[type="radio"]:checked {
     transform: scale(1.03);
 }
 #twk_scentbox {
-    background: linear-gradient(to bottom, #fffce8, white, #fffce8);
-    border: 3px ridge #fffce8;
-    border-radius: 10px;
-    color: rgb(0, 255, 255);
+    background: white;
+    box-shadow: inset 2rem 0.5rem 2px silver, 0 0 0.5rem chartreuse;
+    /* border: 1px ridge silver; */
+    border-radius: 33rem;
+    color: rgb(77, 77, 77);
+    display: flex;
+    align-content: top;
     font-family: "GoshaSansRegular";
     font-size: 2.2rem;
-    text-shadow: 0 0 4px red;
+    padding: 2.1rem 0 0 0;
+    text-shadow: 0 2px 5px chartreuse;
+    transform: rotate(-15deg);
 
     position: absolute;
-    bottom: 10rem;
-    right: 2.7rem;
+    bottom: 11rem;
+    right: 4.7rem;
+    z-index: 1;
+}
+#twk_scentbox:hover {
+    color: black;
 }
 #vanilla_select {
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
