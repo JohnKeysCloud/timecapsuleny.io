@@ -333,19 +333,23 @@ input[type="radio"]:checked {
     font-family: 'Roboto Mono';
     font-size: 1.4rem;
     font-weight: bold;
-    padding: 3rem 0rem 0 10rem;
-    text-shadow: 0 0px 3px red;
-    transition: all 0.5s ease-in;
+    padding: 3rem 0 0 10rem;
+    text-shadow: 0 0px 3px chartreuse;
+    transition: all 0.4s ease-in;
     transform: rotate(11deg);
-
+    
     position: absolute;
     bottom: 11.2rem;
     left: 5.1rem;
 }
+#sb_essenced_scentbox:hover {
+    color: red;
+    text-shadow: -1.5px 1.5px 1px #67e0f8;
+}
 #scent_box {
     align-items: center;
     background: white;
-    box-shadow: inset 2.2rem 0.1rem 0.2rem silver, 1px 2px 1.5rem chartreuse;
+    box-shadow: inset 4rem 0.1rem 0.3rem silver, 1px 2px 1.5rem chartreuse;
     border-radius: 10rem;
     /* border: 1px ridge silver; */
     display: flex;
@@ -365,20 +369,26 @@ input[type="radio"]:checked {
     z-index: 1;
 }
 #scent_box:hover {
-    color: black;
     font-family: "GoshaSansRegular";
     /* font-size:1rem; */
     transform: scale(1.03);
     text-shadow: 0 2px 2px chartreuse;
     top: 21.1rem;
-    left: 13.7rem;
-    box-shadow: inset 2.2rem 0.1rem 0.2rem silver, 12rem 1.3rem 8.5rem black;
+    left: 13.3rem;
+    transform: scale(1.2);
+    box-shadow: inset 3rem 0.1rem 0.2rem silver, 12rem 3rem 8rem 1rem black;
 
 }
 #scent_des {
     color: rgb(77, 77, 77);
     font-family: "PixeBoy";
     font-size: 1.6rem; 
+    transition: all 0.5 ease-in;
+}
+#scent_des:hover {
+    color: black;
+    font-family: "PixeBoy";
+    font-size: 1.6rem;
 }
 #send_2_moon {
     gap: 5rem;
@@ -401,18 +411,18 @@ input[type="radio"]:checked {
 }
 #twk_scentbox {
     background: white;
-    box-shadow: inset 2rem 0.5rem 2px silver, 0 0 0.5rem chartreuse;
+    box-shadow: inset 3rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
     /* border: 1px ridge silver; */
     border-radius: 33rem;
-    color: rgb(103, 224, 248);
+    color: #67e0f8;
     display: flex;
     align-content: top;
     font-family: "GoshaSansRegular";
     font-size: 2.2rem;
     font-weight: bold;
     padding: 2.1rem 0 0 0;
-    text-shadow: 2px 2px 3.3px rgb(255, 11, 11);
-    transition: all 0.5s ease-in;
+    text-shadow: 2px 3px 2.5px red;
+    transition: all 0.4s ease-in;
     transform: rotate(-15deg);
 
     position: absolute;
@@ -420,11 +430,14 @@ input[type="radio"]:checked {
     right: 4.5rem;
     z-index: 1;
 }
-#sb_span_container>#twk_scentbox:hover {
-    text-shadow: 0 0 1rem red;
-}
-#sb_span_container:hover > span {
+#twk_scentbox:hover {
     color: black;
+    text-shadow: -1px -2px 3px red;
+
+
+}
+#sb_span_container > #twk_scentbox:hover {
+    text-shadow: 0 0 1rem red;
 }
 #timelessArtifact {
     color: #ffffff;
