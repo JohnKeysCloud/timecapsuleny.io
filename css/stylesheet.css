@@ -100,42 +100,46 @@ nav ul {
   │ |HOODIE SECTION|                                                        │
   └─────────────────────────────────────────────────────────────────────────┘
  */
+#cart_add_btn {
+    background: linear-gradient(to bottom, #fffce8, wheat);
+    border: 2px groove silver;
+    border-radius: 30px;
+    height: 3rem;
+    padding: 0 0.8rem;
+
+}
+#cart_add_btn > a {
+    color: #633e1a;
+    font-family: 'GoshaSansRegular';
+    font-size: 1.8rem;
+    text-decoration: none;
+}
 #cloud_hoodie_subheader {
-align-items: flex-end;
-color: #633e1a;
-font-size: 2.4rem;
-justify-content: space-between;
-margin-top: 2rem;
-transition: all 1s ease-in-out;
+    align-items: flex-end;
+    color: #633e1a;
+    font-size: 2.4rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    transition: all 1s ease-in-out;
 }
 #cloud_soft {
-display: flex;
-font-size: 1.3rem;
-justify-content: flex-end;
-margin: 0.5rem 0 0 0;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: flex-end;
+    margin: 0.5rem 0 0 0;
 }
 #cloud_span:hover {
-transform: scale(1.5);
-}
-.color_opt {
-gap: 1.3rem;
-align-items: center;
-color: #633e1a;
-display: flex;
-display: flex;
-position: relative;
-text-shadow: 0 0 1px red;
-z-index: 1;
+    transform: scale(1.5);
 }
 #color_box_legend:hover {
-        text-shadow: 0 0 5px red;
-        transform: rotate(720deg) scale(2);
+    text-shadow: 0 0 5px red;
+    transform: rotate(720deg) scale(2);
 }
 #color_box {
-border: none;
-font-size: 2.3rem;
-margin: 2rem 0 0 13rem;
-position: relative;
+    border: none;
+    font-size: 2.3rem;
+    margin: 2rem 0 0 13rem;
+    position: relative;
 }
 #color_box_span:before {
     content: url(/imgs/size_cloud.gif);
@@ -156,19 +160,15 @@ position: relative;
     transition: all 0.4s ease-in;
     z-index: 1;
 }
-#cart_add_btn {
-    background: linear-gradient(to bottom, #fffce8, wheat);
-    border: 2px groove silver;
-    border-radius: 30px;
-    height: 3rem;
-    padding: 0 0.8rem;
-
-}
-#cart_add_btn>a {
+.color_opt {
+    gap: 1.3rem;
+    align-items: center;
     color: #633e1a;
-    font-family: 'GoshaSansRegular';
-    font-size: 1.8rem;
-    text-decoration: none;
+    display: flex;
+    display: flex;
+    position: relative;
+    text-shadow: 0 0 1px red;
+    z-index: 1;
 }
 .hoodie_clr_sel {
     display: flex;
@@ -202,7 +202,73 @@ position: relative;
     font-size: 1.7rem;
     margin: 0;
 }
+#hoodie_ul {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono';
+    list-style-type: '\1F4AD';
+    margin-left: 0.5rem;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    width: 50%
+}
+#hoodie_ul:hover {
+    transform: scale(1.125);
+}
+.hoodie_des_list_item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    text-shadow: 0 0 25px chartreuse;
+}
+/* TODO: make id for below? */
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fffce8;
+    border: 2px solid chartreuse;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 3px #633e1a;
+    height: 1.3rem;
+    outline: none;
+    transform: scale(1.8);
+    width: 1.3rem;
+}
 
+input[type="radio"]::before {
+    background-color: chartreuse;
+    border-radius: 10px;
+    content: " ";
+    display: block;
+    font-size: 1.2em;
+    height: 1rem;
+    transform: translate(0px, -3px) scale(0.0);
+    transform-origin: center;
+    transition: all 0.7s ease-in;
+    width: 1rem;
+}
+
+input[type="radio"]:checked::before {
+    background-color: #633e1a;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    font-size: 1.2em;
+    height: 0.9rem;
+    transform: translate(-0.5px, -0.5px) scale(0.8);
+    transform-origin: center;
+    transition: all 0.8s ease-in;
+    width: 0.9rem;
+}
+input[type="radio"]:indeterminate {
+    animation: 0.4s linear infinite alternate border-pulse;
+    border: 2px solid chartreuse;
+}
+input[type="radio"]:checked {
+    animation: 0.2s linear infinite alternate border-pulse;
+    border: 2px solid chartreuse;
+    box-shadow: 0 0 6px #633e1a;
+}
 #whole_level {
     align-items: center;
     border-radius: 20px;
@@ -287,25 +353,6 @@ position: relative;
     z-index: 1;
 }
 
-#hoodie_ul{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto Mono';
-    list-style-type: '\1F4AD';
-    margin-left: 0.5rem;
-    transform: scale(1);
-    transition: all 0.5s ease-in-out;
-    width: 50%
-}
-#hoodie_ul:hover {
-    transform: scale(1.125);
-}
-.hoodie_des_list_item {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 1rem;
-    text-shadow: 0 0 25px chartreuse;
-}
 
 #scent_box {
     align-items: center;
@@ -360,52 +407,6 @@ position: relative;
 #vanilla_select:hover {
     box-shadow: 0px 3px 8px red;
     transform: scale(1.3);
-}
-/* TODO: make id for below? */
-input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fffce8;
-    border: 2px solid chartreuse;
-    border-radius: 1.6rem;
-    box-shadow: 0 0 3px #633e1a;
-    height: 1.3rem;
-    outline: none;
-    transform: scale(1.8);
-    width: 1.3rem;
-}
-input[type="radio"]::before {
-    background-color: chartreuse;
-    border-radius: 10px;
-    content: " ";
-    display: block;
-    font-size: 1.2em;
-    height: 1rem;
-    transform: translate(0px, -3px) scale(0.0);
-    transform-origin: center;
-    transition: all 0.7s ease-in;
-    width: 1rem;
-}
-input[type="radio"]:checked::before {
-    background-color: #633e1a;
-    border-radius: 10px;
-    content: "";
-    display: block;
-    font-size: 1.2em;
-    height: 0.9rem;
-    transform: translate(-0.5px, -0.5px) scale(0.8);
-    transform-origin: center;
-    transition: all 0.8s ease-in;
-    width: 0.9rem;
-}
-input[type="radio"]:indeterminate {
-    animation: 0.4s linear infinite alternate border-pulse;
-    border: 2px solid chartreuse;
-}
-input[type="radio"]:checked {
-    animation: 0.2s linear infinite alternate border-pulse;
-    border: 2px solid chartreuse;
-    box-shadow: 0 0 6px #633e1a;
 }
 @keyframes border-pulse {
     from {
