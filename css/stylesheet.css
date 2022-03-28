@@ -404,14 +404,14 @@ input[type="radio"]:checked {
     box-shadow: inset 2rem 0.5rem 2px silver, 0 0 0.5rem chartreuse;
     /* border: 1px ridge silver; */
     border-radius: 33rem;
-    color: rgb(77, 77, 77);
+    color: rgb(103, 224, 248);
     display: flex;
     align-content: top;
     font-family: "GoshaSansRegular";
     font-size: 2.2rem;
     font-weight: bold;
     padding: 2.1rem 0 0 0;
-    text-shadow: 0 2px 5px red;
+    text-shadow: 2px 2px 3.3px rgb(255, 11, 11);
     transition: all 0.5s ease-in;
     transform: rotate(-15deg);
 
