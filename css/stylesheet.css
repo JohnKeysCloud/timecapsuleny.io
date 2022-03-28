@@ -326,16 +326,16 @@ input[type="radio"]:checked {
 }
 #sb_essenced_scentbox {
     background: white;
-    box-shadow: inset 1rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
+    box-shadow: inset 1rem 0.2rem 3px silver, -2.5px 0 0.5rem chartreuse;
     border-radius: 100rem;
     /* border: 3px ridge #fffce8; */
     color: rgb(55, 55, 55);
-    font-family: 'Roboto Mono';
-    font-size: 1.4rem;
+    font-family: 'GoshaSansRegular';
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 3rem 0 0 10rem;
-    text-shadow: 0 0px 3px chartreuse;
-    transition: all 0.4s ease-in;
+    text-shadow: 1px 2px 2px chartreuse;
+    transition: all 0.1s ease-in;
     transform: rotate(11deg);
     
     position: absolute;
@@ -343,8 +343,16 @@ input[type="radio"]:checked {
     left: 5.1rem;
 }
 #sb_essenced_scentbox:hover {
-    color: red;
-    text-shadow: -1.5px 1.5px 1px #67e0f8;
+    border-bottom: 5.8px dotted #67e0f8;
+    box-shadow: inset 2rem 0.2rem 3px silver, 0px -0.3rem 2rem chartreuse;
+    font-size: 1.6rem;
+    margin-top: -5rem;
+    text-shadow: 4px 0px 2px chartreuse;
+    transform: rotate(13deg);
+
+
+    bottom: 10rem;
+    left: 4rem;
 }
 #scent_box {
     align-items: center;
@@ -361,7 +369,7 @@ input[type="radio"]:checked {
     text-align: center;
     text-shadow: 0 2px 2px chartreuse;
     transform: rotate(11deg);
-    transition: all 1.1s ease-out;
+    transition: all 0.8s ease-out;
     width: 23rem;
     
     position: absolute;
@@ -376,7 +384,7 @@ input[type="radio"]:checked {
     top: 21.1rem;
     left: 13.3rem;
     transform: scale(1.2);
-    box-shadow: inset 3rem 0.1rem 0.2rem silver, 12rem 3rem 8rem 1rem black;
+    box-shadow: inset 3rem 0.1rem 0.2rem silver, 0rem -2rem 13rem 3rem black;
 
 }
 #scent_des {
@@ -412,7 +420,6 @@ input[type="radio"]:checked {
 #twk_scentbox {
     background: white;
     box-shadow: inset 2rem 0.2rem 3px silver, 0 0 0.5rem chartreuse;
-    /* border: 1px ridge silver; */
     border-radius: 33rem;
     color: #67e0f8;
     display: flex;
@@ -421,8 +428,8 @@ input[type="radio"]:checked {
     font-size: 2.2rem;
     font-weight: bold;
     padding: 2.1rem 0 0 0;
-    text-shadow: 2px 3px 2.5px red;
-    transition: all 0.4s ease-in;
+    text-shadow: 1px 2px 2.5px red;
+    transition: all 0.1s ease-in-out;
     transform: rotate(-15deg);
 
     position: absolute;
@@ -431,8 +438,11 @@ input[type="radio"]:checked {
     z-index: 1;
 }
 #twk_scentbox:hover {
-    color: black;
-    text-shadow: -1px -2px 3px red;
+    border-bottom: 5.5px dotted #67e0f8;
+    box-shadow: inset 2rem 0.2rem 3px silver, 0px -0.3rem 2rem chartreuse;
+    font-size: 2.3rem;
+    text-shadow: 1px 2px 3.3px red;
+    transform: rotate(-18deg);
 }
 #sb_span_container > #twk_scentbox:hover {
     text-shadow: 0 0 1rem red;
