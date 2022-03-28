@@ -35,6 +35,15 @@ body{
   │ |Nav|                                                                   │
   └─────────────────────────────────────────────────────────────────────────┘
  */
+/* 
+  ┌────────────────────────────────────────────────────────────────────────────┐
+  │ TODO:                                                                      │
+  │ #nav-item3:active {                                                        │
+  │     font-family: MAKE PIXELATED;                                           │
+  │     transform: IDK DO SUMN DIF                                             │
+  │ }                                                                          │
+  └────────────────────────────────────────────────────────────────────────────┘
+ */
 .links a {
     color: black;
     font-weight: 800;
@@ -91,6 +100,76 @@ nav ul {
   │ |HOODIE SECTION|                                                        │
   └─────────────────────────────────────────────────────────────────────────┘
  */
+#cloud_hoodie_subheader {
+align-items: flex-end;
+color: #633e1a;
+font-size: 2.4rem;
+justify-content: space-between;
+margin-top: 2rem;
+transition: all 1s ease-in-out;
+}
+#cloud_soft {
+display: flex;
+font-size: 1.3rem;
+justify-content: flex-end;
+margin: 0.5rem 0 0 0;
+}
+#cloud_span:hover {
+transform: scale(1.5);
+}
+.color_opt {
+gap: 1.3rem;
+align-items: center;
+color: #633e1a;
+display: flex;
+display: flex;
+position: relative;
+text-shadow: 0 0 1px red;
+z-index: 1;
+}
+#color_box_legend:hover {
+        text-shadow: 0 0 5px red;
+        transform: rotate(720deg) scale(2);
+}
+#color_box {
+border: none;
+font-size: 2.3rem;
+margin: 2rem 0 0 13rem;
+position: relative;
+}
+#color_box_span:before {
+    content: url(/imgs/size_cloud.gif);
+    left: -3.8rem;
+    opacity: 55%;
+    position: absolute;
+    top: -3.5rem;
+    transform: scale(1.5);
+    z-index: 0;
+}
+#color_box_legend {
+    color: #633e1a;
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-left: 3.8rem;
+    position: relative;
+    text-shadow: 0 0 2px red;
+    transition: all 0.4s ease-in;
+    z-index: 1;
+}
+#cart_add_btn {
+    background: linear-gradient(to bottom, #fffce8, wheat);
+    border: 2px groove silver;
+    border-radius: 30px;
+    height: 3rem;
+    padding: 0 0.8rem;
+
+}
+#cart_add_btn>a {
+    color: #633e1a;
+    font-family: 'GoshaSansRegular';
+    font-size: 1.8rem;
+    text-decoration: none;
+}
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
@@ -123,14 +202,7 @@ nav ul {
     font-size: 1.7rem;
     margin: 0;
 }
-#cloud_hoodie_subheader {
-    align-items: flex-end;
-    color: #633e1a;
-    font-size: 2.4rem;
-    justify-content: space-between;
-    margin-top: 2rem;
-    transition: all 1s ease-in-out;
-}
+
 #whole_level {
     align-items: center;
     border-radius: 20px;
@@ -214,12 +286,7 @@ nav ul {
     /* opacity: 0%; */
     z-index: 1;
 }
-#cloud_soft {
-    display: flex;
-    font-size: 1.3rem;
-    justify-content: flex-end;
-    margin: 0.5rem 0 0 0;
-}
+
 #hoodie_ul{
     display: flex;
     flex-direction: column;
@@ -239,24 +306,7 @@ nav ul {
     padding-left: 1rem;
     text-shadow: 0 0 25px chartreuse;
 }
-#cloud_span:hover {
-    transform: scale(1.5);
-}
-#color_box {
-    border: none;
-    font-size: 2.3rem;
-    margin: 2rem 0 0 13rem;
-    position: relative;
-}
-#color_box_span:before {
-    content: url(/imgs/size_cloud.gif);
-    left: -3.8rem;
-    opacity: 55%;
-    position: absolute;
-    top: -3.5rem;
-    transform: scale(1.5);
-    z-index: 0;
-}
+
 #scent_box {
     align-items: center;
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
@@ -310,30 +360,6 @@ nav ul {
 #vanilla_select:hover {
     box-shadow: 0px 3px 8px red;
     transform: scale(1.3);
-}
-.color_opt {
-    gap: 1.3rem;
-    align-items: center;
-    color: #633e1a;
-    display: flex;
-    display: flex;
-    position: relative;
-    text-shadow: 0 0 1px red;
-    z-index: 1;
-}
-#color_box_legend {
-    color: #633e1a;
-    font-size: 2.7rem;
-    font-weight: bold;
-    margin-left: 3.8rem;
-    position: relative;
-    text-shadow: 0 0 2px red;
-    transition: all 0.4s ease-in;
-    z-index: 1;
-}
-#color_box_legend:hover {
-    text-shadow: 0 0 5px red;
-    transform: rotate(720deg) scale(2);
 }
 /* TODO: make id for below? */
 input[type="radio"] {
@@ -401,20 +427,6 @@ input[type="radio"]:checked {
     padding: 0px 0.8rem;
     text-shadow: 0 0 2px red;
 }
-#cart_add_btn {
-    background: linear-gradient(to bottom, #fffce8, wheat);
-    border: 2px groove silver;
-    border-radius: 30px;
-    height: 3rem;
-    padding: 0 0.8rem;
-
-}
-#cart_add_btn > a {
-    color: #633e1a;
-    font-family: 'GoshaSansRegular';
-    font-size: 1.8rem;
-    text-decoration: none;
-}
 #send_2_moon {
     gap: 5rem;
     align-items: center;
@@ -422,54 +434,6 @@ input[type="radio"]:checked {
     height: 6rem;
     justify-content: center;
     margin: 1rem 0 0 2rem;
-}
-/* TODO: */
-/* #nav-item3:active {
-    font-family: MAKE PIXELATED;
-    transform: IDK DO SUMN DIF
-} */
-.temp_section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;
-    margin-top: 88px;
-}
-.temp_section h2{
-    color: black;
-    margin-bottom: 88px;
-}
-#cloudsbelow {
-    height: 333px;
-    width: 100%;
-}
-#midlogo {
-    display: flex;
-    height: 333px;
-    justify-content: center;
-    margin: 0;
-    margin-top: -333px;
-    transition: all 3s ease-in-out;
-}
-#midlogo:hover {
-    transform: 
-    scale(1.5)
-    rotate(720deg);
-}
-figcaption {
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-}
-#musicplayer {
-    gap: 11px;
-    color: chartreuse;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.8rem;
-    font-weight: bolder;
-    margin-top: 133px;
-    opacity: 80%;
-    text-align: center;
-    text-shadow: 0px 0px 5px black;
 }
 
 /* 
