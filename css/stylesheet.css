@@ -448,6 +448,53 @@ input[type="radio"]:checked {
 
 /* 
   ┌─────────────────────────────────────────────────────────────────────────┐
+  │ |TEMP SECTION|                                                          │
+  └─────────────────────────────────────────────────────────────────────────┘
+ */
+#cloudsbelow {
+    height: 333px;
+    width: 100%;
+}
+figcaption {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+#midlogo {
+    display: flex;
+    justify-content: center;
+    height: 333px;
+    margin: 0;
+    margin-top: -333px;
+    transition: all 3s ease-in-out;
+}
+#midlogo:hover {
+    transform: scale(1.5) rotate(720deg);
+}
+#musicplayer {
+    color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    gap: 11px;
+    margin-top: 133px;
+    opacity: 80%;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+}
+.temp_section {
+    align-items: center;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 88px;
+}
+.temp_section h2 {
+    margin-bottom: 88px;
+    color: black;
+}
+
+/* 
+  ┌─────────────────────────────────────────────────────────────────────────┐
   │ |FOOTER|                                                                │
   └─────────────────────────────────────────────────────────────────────────┘
  */
