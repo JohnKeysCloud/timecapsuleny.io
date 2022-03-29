@@ -349,7 +349,7 @@ input[type="radio"]:checked {
     font-size: 1.8rem;
     margin-top: -5rem;
     text-shadow: 2px 1px 2px red;
-    transform: rotate(15deg);
+    transform: rotate(11deg);
 
 
     bottom: 9.5rem;
@@ -443,7 +443,7 @@ input[type="radio"]:checked {
     box-shadow: inset -0.6rem 0.3rem 3px silver, 0px -0.3rem 3rem chartreuse;
     font-size: 2.3rem;
     text-shadow: 1px 2px 3.3px red;
-    transform: rotate(-22deg);
+    transform: rotate(-20deg);
 
     bottom: 10.8rem;
     right: 3.8rem;
