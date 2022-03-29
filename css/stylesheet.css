@@ -66,7 +66,7 @@ footer a:active {
 }
 #logomain {
     align-items: center;
-    background-image: linear-gradient(transparent, #fffce8), url('../imgs/cloudsabove.gif');
+    background-image: linear-gradient(transparent, #fffce8), url('/images/cloudsabove.gif');
     background-size: cover;
     display: flex;
     height: 133px;
@@ -125,7 +125,6 @@ nav ul {
 }
 #cloud_hoodie_subheader {
     align-items: flex-end;
-    color: #633e1a;
     font-size: 2.4rem;
     justify-content: space-between;
     margin-top: 2rem;
@@ -151,9 +150,9 @@ nav ul {
     position: relative;
 }
 #color_box_span:before {
-    content: url(/imgs/size_cloud.gif);
+    content: url('/images/size_cloud.gif');
     left: -3.8rem;
-    opacity: 55%;
+    opacity: 63%;
     position: absolute;
     top: -3.5rem;
     transform: scale(1.5);
@@ -196,7 +195,7 @@ nav ul {
 .hoodie_clr_sel_LEFT {
 } */
 .hoodie_clr_sel_RIGHT > h3 {
-    background: url('../imgs/cloudsabove.gif');
+    background: url('/images/cloudsabove.gif');
     background-size: cover;
     box-shadow: inset 0 0 22px #fffce8, 0 0 33px chartreuse;
     border-radius: 13rem;
@@ -283,7 +282,7 @@ input[type="radio"]:checked {
     border-radius: 1000px;
     bottom: 18.6rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
-    content: url(/imgs/c.gif);
+    content: url('/images/c.gif');
     padding: 0.3rem;
     position: absolute;
     right: -27.2rem;
