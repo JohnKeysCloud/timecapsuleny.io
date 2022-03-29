@@ -150,7 +150,7 @@ nav ul {
     position: relative;
 }
 #color_box_span:before {
-    content: url('/images/size_cloud.gif');
+    content: url('../images/size_cloud.gif');
     left: -3.8rem;
     opacity: 63%;
     position: absolute;
@@ -282,7 +282,7 @@ input[type="radio"]:checked {
     border-radius: 1000px;
     bottom: 18.6rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
-    content: url('/images/c.gif');
+    content: url('../images/c.gif');
     padding: 0.3rem;
     position: absolute;
     right: -27.2rem;
