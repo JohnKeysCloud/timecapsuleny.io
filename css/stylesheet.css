@@ -443,9 +443,9 @@ input[type="radio"]:checked {
     box-shadow: inset -0.6rem 0.3rem 3px silver, 0px -0.3rem 2rem chartreuse;
     font-size: 2.3rem;
     text-shadow: 1px 2px 3.3px red;
-    transform: rotate(-18deg);
+    transform: rotate(-22deg);
 
-    bottom: 10.5rem;
+    bottom: 10.8rem;
     right: 3.8rem;
 }
 #sb_span_container > #twk_scentbox:hover {
