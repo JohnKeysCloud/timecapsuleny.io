@@ -328,7 +328,7 @@ input[type="radio"]:checked {
 }
 #sb_essenced_scentbox {
     background: white;
-    box-shadow: inset -1.3rem 0.2rem 2px silver, -2.6px -4px 0.5rem chartreuse;
+    box-shadow: inset -1.3rem 0.2rem 2px silver, -0.3rem -0.4rem 0.5rem chartreuse;
     border-radius: 100rem;
     color: #67e0f8;
     font-family: 'GoshaSansRegular';
@@ -353,7 +353,7 @@ input[type="radio"]:checked {
 
 
     bottom: 9.5rem;
-    left: 4.5rem;
+    left: 4.7rem;
 }
 #scent_box {
     align-items: center;
