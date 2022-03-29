@@ -434,7 +434,7 @@ input[type="radio"]:checked {
     transform: rotate(-15deg);
 
     position: absolute;
-    bottom: 10.8rem;
+    bottom: 11.1rem;
     right: 4.5rem;
     z-index: 1;
 }
