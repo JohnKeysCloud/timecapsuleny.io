@@ -291,8 +291,8 @@ input[type="radio"]:checked {
 }
 #level_icon:hover:before {
     border: 3px ridge rgb(77, 33, 155);
-    bottom: 8rem;
-    right: 51.5rem;
+    bottom: 9rem;
+    right: 54rem;
     transform: scale(1.6) rotate(720deg);
     /* opacity: 0%; */
     z-index: 1;
