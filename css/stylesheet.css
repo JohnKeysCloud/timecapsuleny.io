@@ -369,7 +369,7 @@ input[type="radio"]:checked {
     text-align: center;
     text-shadow: 0 2px 2px chartreuse;
     transform: rotate(11deg);
-    transition: all 0.8s ease-out;
+    transition: all 0.7s ease-out;
     width: 23rem;
     
     position: absolute;
@@ -384,7 +384,7 @@ input[type="radio"]:checked {
     top: 21.1rem;
     left: 13.3rem;
     transform: scale(1.2);
-    box-shadow: inset 3rem 0.1rem 0.2rem silver, 0rem 1rem 3rem 1.3rem  chartreuse;
+    box-shadow: inset 3rem 0.1rem 0.2rem silver, 0rem 1rem 3rem 0.4rem  chartreuse;
 
 }
 #scent_des {
