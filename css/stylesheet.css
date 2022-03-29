@@ -369,12 +369,12 @@ input[type="radio"]:checked {
     padding: 3rem 0.3rem 0rem 0.7rem;
     text-align: center;
     text-shadow: 0 2px 2px chartreuse;
-    transform: rotate(11deg);
+    transform: rotate(8deg);
     transition: all 0.7s ease-out;
     width: 23rem;
     
     position: absolute;
-    top: 22.3rem;
+    top: 21.9rem;
     z-index: 1;
 }
 #scent_box:hover {
