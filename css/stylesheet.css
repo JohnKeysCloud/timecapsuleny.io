@@ -328,7 +328,7 @@ input[type="radio"]:checked {
 }
 #sb_essenced_scentbox {
     background: white;
-    box-shadow: inset -1rem 0.6rem 3px silver, -2.6px -4px 0.5rem chartreuse;
+    box-shadow: inset -1.3rem 0.2em 3px silver, -2.6px -4px 0.5rem chartreuse;
     border-radius: 100rem;
     color: #67e0f8;
     font-family: 'GoshaSansRegular';
@@ -420,7 +420,7 @@ input[type="radio"]:checked {
 }
 #twk_scentbox {
     background: white;
-    box-shadow: inset -0.6rem 0.5rem 2px silver, -3px -4px 0.5rem chartreuse;
+    box-shadow: inset -0.6rem 0.2rem 2px silver, -3px -4px 0.5rem chartreuse;
     border-radius: 33rem;
     color: #67e0f8;
     display: flex;
@@ -444,6 +444,9 @@ input[type="radio"]:checked {
     font-size: 2.3rem;
     text-shadow: 1px 2px 3.3px red;
     transform: rotate(-18deg);
+
+    bottom: 10.5rem;
+    right: 3.8rem;
 }
 #sb_span_container > #twk_scentbox:hover {
     text-shadow: 0 0 1rem red;
