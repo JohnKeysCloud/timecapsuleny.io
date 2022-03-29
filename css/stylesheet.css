@@ -100,6 +100,15 @@ nav ul {
   │ |HOODIE SECTION|                                                        │
   └─────────────────────────────────────────────────────────────────────────┘
  */
+@keyframes border-pulse {
+    from {
+        border: 1.3px solid red;
+    }
+
+    to {
+        border: 3.3px solid chartreuse;
+    }
+}
 #cart_add_btn {
     background: linear-gradient(to bottom, #fffce8, wheat);
     border: 2px groove silver;
@@ -206,9 +215,11 @@ nav ul {
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 1rem;
-    text-shadow: 0 0 25px chartreuse;
+    text-shadow: 2.5px 2.5px 2.5px chartreuse;
 }
 #hoodie_ul {
+    /* border-right: 3px solid chartreuse; */
+    /* border-radius: 10rem; */
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono';
@@ -222,15 +233,6 @@ nav ul {
     transform: scale(1.125);
 }
 /* TODO: make id for below? */
-@keyframes border-pulse {
-    from {
-        border: 1.3px solid red;
-    }
-
-    to {
-        border: 3.3px solid chartreuse;
-    }
-}
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
@@ -331,7 +333,7 @@ input[type="radio"]:checked {
     /* border: 3px ridge #fffce8; */
     color: rgb(55, 55, 55);
     font-family: 'GoshaSansRegular';
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     padding: 3rem 0 0 10rem;
     text-shadow: 1px 1px 2px chartreuse;
@@ -345,7 +347,7 @@ input[type="radio"]:checked {
 #sb_essenced_scentbox:hover {
     border-bottom: 5.8px dotted #67e0f8;
     box-shadow: inset 2rem 0.2rem 3px silver, 0px -0.3rem 2rem chartreuse;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: -5rem;
     text-shadow: 4px 0px 2px chartreuse;
     transform: rotate(13deg);
