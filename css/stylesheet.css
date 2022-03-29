@@ -195,7 +195,7 @@ nav ul {
 .hoodie_clr_sel_LEFT {
 } */
 .hoodie_clr_sel_RIGHT > h3 {
-    background: url('/images/cloudsabove.gif');
+    background: url('../images/cloudsabove.gif');
     background-size: cover;
     box-shadow: inset 0 0 22px #fffce8, 0 0 33px chartreuse;
     border-radius: 13rem;
