@@ -148,7 +148,7 @@ nav ul {
     font-size: 2.3rem;
     /* margin: 2rem 0 0 14.1rem; */
     position: relative;
-    top: 4rem;
+    top: 5rem;
     left: 14.3rem;
 }
 #color_box_span:before {
@@ -206,19 +206,19 @@ nav ul {
 
 }
 #fluffy_words {
-    box-shadow: 0 0 10px red;
+    /* box-shadow: 0 0 10px red; */
     color: black;
     border-radius: 33rem;
     font-family: 'PixeBoy';
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-shadow: 0.2rem 0.2rem 0.2rem red;
     transition: all 1s ease-in-out;
     position: absolute;
-    top: 35.3rem;
+    top: 35rem;
     left: 4rem;
-    transform: rotate(-25deg);
+    transform: rotate(-11deg);
     z-index: 1;
-    width: 13.6rem;
+    width: 18rem;
     padding: 2rem
 }
 #fluffy_words:hover {
@@ -227,8 +227,15 @@ nav ul {
     font-size: 2.7rem;
     width: 50rem;
     transform: rotate(0deg);
-    top: 36rem;
-    left: -0.5rem ;
+    top: 34.5rem;
+    left: 3.6rem ;
+}
+#fluffy_words:before {
+    content: url(../images/warning.gif);
+    transform: scale(0.06);
+    position: absolute;
+    top: -16.9rem;
+    left: -21.9rem;
 }
 .hoodie_clr_sel {
     display: flex;
@@ -332,7 +339,7 @@ input[type="radio"]:checked {
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    bottom: 23.5rem;
+    bottom: 26.1rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     content: url('../images/c.gif');
     padding: 0.3rem;
@@ -365,7 +372,6 @@ input[type="radio"]:checked {
     font-weight: bold;
     margin: -0.3rem 0.8rem 0 0.8rem;
 }
-
 #price_row {
     display: flex;
     justify-content: space-between;
@@ -456,7 +462,7 @@ input[type="radio"]:checked {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 5.5rem 0 0 2rem;
+    margin: 8rem 0 0 2rem;
 }
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
