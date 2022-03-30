@@ -113,8 +113,9 @@ nav ul {
     background: linear-gradient(to bottom, #fffce8, wheat);
     border: 2px groove silver;
     border-radius: 30px;
-    height: 3rem;
-    padding: 0 0.8rem;
+    padding: 1.8rem 2rem;
+    box-shadow: 0 0 2rem chartreuse;
+
 
 }
 #cart_add_btn > a {
@@ -146,8 +147,10 @@ nav ul {
 #color_box {
     border: none;
     font-size: 2.3rem;
-    margin: 2rem 0 0 14.1rem;
+    /* margin: 2rem 0 0 14.1rem; */
     position: relative;
+    top: 4rem;
+    left: 14.3rem;
 }
 #color_box_span:before {
     content: url('../images/size_cloud.gif');
@@ -280,7 +283,7 @@ input[type="radio"]:checked {
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    bottom: 18.6rem;
+    bottom: 21.7rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     content: url('../images/c.gif');
     padding: 0.3rem;
@@ -382,7 +385,7 @@ input[type="radio"]:checked {
     transform: scale(1.03);
     text-shadow: 0 2px 2px chartreuse;
     top: 21.1rem;
-    left: 13.3rem;
+    left: 14rem;
     transform: scale(1.2);
     box-shadow: inset -2rem -1.7rem 0.2rem silver, 0rem -1rem 3rem 0.4rem  chartreuse;
 
@@ -402,9 +405,8 @@ input[type="radio"]:checked {
     gap: 5rem;
     align-items: center;
     display: flex;
-    height: 6rem;
     justify-content: center;
-    margin: 1rem 0 0 2rem;
+    margin: 5.5rem 0 0 2rem;
 }
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
@@ -414,8 +416,9 @@ input[type="radio"]:checked {
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
     font-size: 1.8rem;
     font-weight: 700;
-    padding: 0px 0.8rem;
+    padding: 1.8rem 3.3rem;
     text-shadow: 0 0 2px red;
+    box-shadow: 0 0 2rem chartreuse;
 }
 #twk_scentbox {
     background: white;
