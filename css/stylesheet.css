@@ -76,6 +76,7 @@ footer a:active {
 #logomain img {
     height: 77%;
     transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 #logomain img:hover {
     opacity: 77%;
@@ -132,10 +133,8 @@ nav ul {
     transition: all 1s ease-in-out;
 }
 #cloud_soft {
-    display: flex;
     font-size: 1.3rem;
-    justify-content: flex-end;
-    margin: 0.5rem 0 0 0;
+    margin: -16rem 0 0 0;
 }
 #cloud_span:hover {
     transform: scale(1.5);
@@ -181,6 +180,56 @@ nav ul {
     text-shadow: 0 0 1px red;
     z-index: 1;
 }
+#fluffy_cloud:before {
+    background: linear-gradient(to bottom, chartreuse, red);
+    position: absolute;
+    content: url(../images/coolcloud.png);
+    opacity: 0;
+    transform: scale(0.07);
+    top: -48.5rem;
+    right: 13.6rem;
+    padding: 100px;
+    z-index: 1;
+    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
+    border-radius: 33rem;
+    
+    transition: all 2s ease-out;
+    z-index: 0;
+}
+
+#fluffy_cloud:hover:before {
+    top: -1.2rem;
+    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
+    right: -27.1rem;
+    transform: scale(0.4) rotate(1448deg);
+    opacity: 100%;
+
+}
+#fluffy_words {
+    box-shadow: 0 0 10px red;
+    color: black;
+    border-radius: 33rem;
+    font-family: 'PixeBoy';
+    font-size: 1.7rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem red;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 35.3rem;
+    left: 4rem;
+    transform: rotate(-25deg);
+    z-index: 1;
+    width: 13.6rem;
+    padding: 2rem
+}
+#fluffy_words:hover {
+    box-shadow: none;
+    color: chartreuse;
+    font-size: 2.7rem;
+    width: 50rem;
+    transform: rotate(0deg);
+    top: 36rem;
+    left: -0.5rem ;
+}
 .hoodie_clr_sel {
     display: flex;
     flex-direction: row;
@@ -220,8 +269,8 @@ nav ul {
     text-shadow: 2.5px 2.5px 2.5px chartreuse;
 }
 #hoodie_ul {
-    /* border-right: 3px solid chartreuse; */
-    /* border-radius: 10rem; */
+    /* TODO: border-right: 3px solid chartreuse; */
+    /* TODO: border-radius: 10rem; */
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono';
@@ -229,7 +278,7 @@ nav ul {
     margin-left: 0.5rem;
     transform: scale(1);
     transition: all 0.5s ease-in-out;
-    width: 50%
+    width: 50%;
 }
 #hoodie_ul:hover {
     transform: scale(1.125);
@@ -283,7 +332,7 @@ input[type="radio"]:checked {
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    bottom: 21.7rem;
+    bottom: 23.5rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     content: url('../images/c.gif');
     padding: 0.3rem;
@@ -316,6 +365,7 @@ input[type="radio"]:checked {
     font-weight: bold;
     margin: -0.3rem 0.8rem 0 0.8rem;
 }
+
 #price_row {
     display: flex;
     justify-content: space-between;
