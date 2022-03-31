@@ -436,7 +436,6 @@ input[type="radio"]:checked {
     text-shadow: 0 0 2px red;
 }
 #sb_essenced_scentbox {
-    border-top: 3.3px solid black;
     background: white;
     box-shadow: inset -1.3rem 0.7rem 3px silver, -0.1rem -0.4rem 0.5rem chartreuse;
     border-radius: 100rem;
@@ -448,24 +447,24 @@ input[type="radio"]:checked {
     text-shadow: 1px 1px 2px red;
     transition: all 0.1s ease-in;
     transform: rotate(8deg);
-    
+
     position: absolute;
-    bottom: 10.8rem;
+    bottom: 10rem;
     left: 4.5rem;
 }
 #sb_essenced_scentbox:hover {
     border-bottom: 5.8px dotted #67e0f8;
-    box-shadow: inset -1.1rem 0.2rem 3px silver, 0px -0.8rem 2rem chartreuse;
+    box-shadow: inset -1.1rem 0.2rem 3px silver, 0px 0.3rem 3rem chartreuse;
     font-size: 1.8rem;
+    margin-top: -5rem;
     text-shadow: 2px 1px 2px red;
     transform: rotate(11deg);
 
 
-    bottom: 10.9rem;
+    bottom: 9.5rem;
     left: 4.7rem;
 }
 #scent_box {
-    border: 3.3px solid black;
     align-items: center;
     background: white;
     box-shadow: inset -3rem -1.7rem 0.3rem silver, -0.3rem 0.3rem 1rem 0.2rem chartreuse;
@@ -482,7 +481,7 @@ input[type="radio"]:checked {
     transform: rotate(8deg);
     transition: all 0.7s ease-out;
     width: 23rem;
-    
+
     position: absolute;
     top: 21.9rem;
     z-index: 1;
@@ -495,7 +494,7 @@ input[type="radio"]:checked {
     top: 21.1rem;
     left: 14rem;
     transform: scale(1.2);
-    box-shadow: inset -2rem -1.7rem 0.2rem silver, 0rem -1rem 3rem 0.4rem  chartreuse;
+    box-shadow: inset -2rem -1.7rem 0.2rem silver, 0rem -1rem 3rem 0.4rem chartreuse;
 
 }
 #scent_des {
@@ -529,11 +528,10 @@ input[type="radio"]:checked {
     box-shadow: 0 0 2rem chartreuse;
 }
 #twk_scentbox {
-    border-top: 3.3px solid black;
     background: white;
     box-shadow: inset -1rem 0.7rem 2px silver, -0.2rem -0.4rem 0.7rem chartreuse;
-    color: #67e0f8;
     border-radius: 33rem;
+    color: #67e0f8;
     display: flex;
     align-content: top;
     font-family: "GoshaSansRegular";
@@ -545,7 +543,7 @@ input[type="radio"]:checked {
     transform: rotate(-15deg);
 
     position: absolute;
-    bottom: 12rem;
+    bottom: 11.1rem;
     right: 4.5rem;
     z-index: 1;
 }
@@ -556,7 +554,7 @@ input[type="radio"]:checked {
     text-shadow: 1px 2px 3.3px red;
     transform: rotate(-20deg);
 
-    bottom: 12.1rem;
+    bottom: 10.8rem;
     right: 3.8rem;
 }
 #sb_span_container > #twk_scentbox:hover {
