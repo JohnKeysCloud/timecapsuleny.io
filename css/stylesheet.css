@@ -232,16 +232,16 @@ nav ul {
 }
 #fluffy_words {
     /* box-shadow: 0 0 10px red; */
-    color: black;
+    color: chartreuse;
     border-radius: 33rem;
     font-family: 'PixeBoy';
-    font-size: 1.8rem;
-    text-shadow: 0 0 0.8rem red;
+    font-size: 2.3rem;
+    text-shadow: 0 0 0.3rem red;
     transition: all 1s ease-in-out;
     position: absolute;
     top: 31.3rem;
-    left: 4rem;
-    transform: rotate(-11deg);
+    left: 1.55rem;
+    transform: rotate(-8deg);
     z-index: 1;
     width: 18rem;
     padding: 2.2rem
@@ -264,16 +264,16 @@ nav ul {
 }
 #fluffy_words_2 {
     /* box-shadow: 0 0 10px red; */
-    color: black;
+    color: chartreuse;
     border-radius: 33rem;
     font-family: 'PixeBoy';
-    font-size: 1.8rem;
-    text-shadow: 0 0 0.8rem red;
+    font-size: 2.3rem;
+    text-shadow: 0 0 0.3rem red;
     transition: all 1s ease-in-out;
     position: absolute;
-    top: 33rem;
-    left: 33rem;
-    transform: rotate(11deg);
+    top: 34rem;
+    left: 34rem;
+    transform: rotate(8deg);
     z-index: 1;
     width: 18rem;
     padding: 2.2rem
