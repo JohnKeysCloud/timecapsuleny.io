@@ -146,22 +146,13 @@ nav ul {
 #color_box {
     border: none;
     font-size: 2.3rem;
-    /* margin: 2rem 0 0 14.1rem; */
+    margin: 0;
+    padding: 2.5rem;
     position: relative;
-    top: 5rem;
     left: 14.3rem;
-}
-#color_box_span:before {
-    content: url('../images/size_cloud.gif');
-    left: -3.8rem;
-    opacity: 63%;
-    position: absolute;
-    top: -3.5rem;
-    transform: scale(1.5);
-    z-index: 0;
+    width: max-content;
 }
 #color_box_legend {
-    color: #633e1a;
     font-size: 2.7rem;
     font-weight: bold;
     margin-left: 3.8rem;
@@ -171,39 +162,72 @@ nav ul {
     z-index: 1;
 }
 .color_opt {
-    gap: 1.3rem;
+    text-shadow: 1px 2px 2.5px chartreuse;
+    background-color: white;
+    border: 3px ridge black;
+    border-radius: 33rem;
     align-items: center;
-    color: #633e1a;
     display: flex;
-    display: flex;
+    padding: 0;
+    gap: 1rem;
     position: relative;
-    text-shadow: 0 0 1px red;
+    width: 21.8rem;
+    margin-bottom: 8px;
     z-index: 1;
+    padding: 0.8rem;
+    box-shadow: inset 0rem -1.7rem 0.3rem silver, -0.3rem 0.3rem 1rem 0.2rem chartreuse;  
 }
+/* TODO:
+#color_opt_1 {
+}
+#color_opt_2 {
+}
+#color_opt_3 {
+} */
 #fluffy_cloud:before {
     background: linear-gradient(to bottom, chartreuse, red);
-    position: absolute;
+    border-radius: 33rem;
+    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     content: url(../images/coolcloud.png);
     opacity: 0;
-    transform: scale(0.07);
-    top: -48.5rem;
-    right: 13.6rem;
     padding: 100px;
-    z-index: 1;
-    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    border-radius: 33rem;
-    
+    position: absolute;
+    right: 6.6rem;
+    top: 13.9rem;
+    transform: scale(0.02);
     transition: all 2s ease-out;
     z-index: 0;
 }
-
 #fluffy_cloud:hover:before {
     top: -1.2rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     right: -27.1rem;
     transform: scale(0.4) rotate(1448deg);
-    opacity: 100%;
-
+    opacity: 70%;
+}
+#fluffy_cloud_2:before {
+    background: linear-gradient(to bottom, chartreuse, red);
+    border-radius: 33rem;
+    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
+    content: url(../images/coolcloud.png);
+    opacity: 0;
+    padding: 100px;
+    position: absolute;
+    right: -27.1rem;
+    top: -1.2rem;
+    transform: scale(0.02);
+    transition: all 2s ease-out;
+    z-index: 0;
+    
+    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
+    /*  */
+}
+#fluffy_cloud_2:hover:before {
+    top: 24.5rem;
+    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
+    right: -15rem;
+    transform: scale(0.6) rotate(1440deg);
+    opacity: 70%;
 }
 #fluffy_words {
     /* box-shadow: 0 0 10px red; */
@@ -219,13 +243,13 @@ nav ul {
     transform: rotate(-11deg);
     z-index: 1;
     width: 18rem;
-    padding: 2rem
+    padding: 2.2rem
 }
 #fluffy_words:hover {
     box-shadow: none;
     color: chartreuse;
-    font-size: 2.7rem;
-    width: 50rem;
+    font-size: 2rem;
+    width: 22rem;
     transform: rotate(0deg);
     top: 34.5rem;
     left: 3.6rem ;
@@ -236,6 +260,31 @@ nav ul {
     position: absolute;
     top: -16.9rem;
     left: -21.9rem;
+}
+#fluffy_words_2 {
+    /* box-shadow: 0 0 10px red; */
+    color: black;
+    border-radius: 33rem;
+    font-family: 'PixeBoy';
+    font-size: 1.8rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem red;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 35rem;
+    left: 31rem;
+    transform: rotate(11deg);
+    z-index: 1;
+    width: 18rem;
+    padding: 2.2rem
+}
+#fluffy_words_2:hover {
+    box-shadow: none;
+    color: chartreuse;
+    font-size: 2rem;
+    width: 22rem;
+    transform: rotate(0deg);
+    top: 34.5rem;
+    left: 32rem;   
 }
 .hoodie_clr_sel {
     display: flex;
@@ -316,7 +365,7 @@ input[type="radio"]::before {
     width: 1rem;
 }
 input[type="radio"]:checked::before {
-    background-color: #633e1a;
+    background-color: black;
     border-radius: 10px;
     content: "";
     display: block;
@@ -339,7 +388,7 @@ input[type="radio"]:checked {
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    bottom: 26.1rem;
+    bottom: 31.1rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     content: url('../images/c.gif');
     padding: 0.3rem;
@@ -385,6 +434,7 @@ input[type="radio"]:checked {
     text-shadow: 0 0 2px red;
 }
 #sb_essenced_scentbox {
+    border-top: 3.3px solid black;
     background: white;
     box-shadow: inset -1.3rem 0.7rem 3px silver, -0.1rem -0.4rem 0.5rem chartreuse;
     border-radius: 100rem;
@@ -398,22 +448,22 @@ input[type="radio"]:checked {
     transform: rotate(8deg);
     
     position: absolute;
-    bottom: 10rem;
+    bottom: 10.8rem;
     left: 4.5rem;
 }
 #sb_essenced_scentbox:hover {
     border-bottom: 5.8px dotted #67e0f8;
-    box-shadow: inset -1.1rem 0.2rem 3px silver, 0px 0.3rem 3rem chartreuse;
+    box-shadow: inset -1.1rem 0.2rem 3px silver, 0px -0.8rem 2rem chartreuse;
     font-size: 1.8rem;
-    margin-top: -5rem;
     text-shadow: 2px 1px 2px red;
     transform: rotate(11deg);
 
 
-    bottom: 9.5rem;
+    bottom: 10.9rem;
     left: 4.7rem;
 }
 #scent_box {
+    border: 3.3px solid black;
     align-items: center;
     background: white;
     box-shadow: inset -3rem -1.7rem 0.3rem silver, -0.3rem 0.3rem 1rem 0.2rem chartreuse;
@@ -462,7 +512,7 @@ input[type="radio"]:checked {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 8rem 0 0 2rem;
+    margin: 0rem 0 0 2rem;
 }
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
@@ -477,10 +527,11 @@ input[type="radio"]:checked {
     box-shadow: 0 0 2rem chartreuse;
 }
 #twk_scentbox {
+    border-top: 3.3px solid black;
     background: white;
     box-shadow: inset -1rem 0.7rem 2px silver, -0.2rem -0.4rem 0.7rem chartreuse;
-    border-radius: 33rem;
     color: #67e0f8;
+    border-radius: 33rem;
     display: flex;
     align-content: top;
     font-family: "GoshaSansRegular";
@@ -492,7 +543,7 @@ input[type="radio"]:checked {
     transform: rotate(-15deg);
 
     position: absolute;
-    bottom: 11.1rem;
+    bottom: 12rem;
     right: 4.5rem;
     z-index: 1;
 }
@@ -503,7 +554,7 @@ input[type="radio"]:checked {
     text-shadow: 1px 2px 3.3px red;
     transform: rotate(-20deg);
 
-    bottom: 10.8rem;
+    bottom: 12.1rem;
     right: 3.8rem;
 }
 #sb_span_container > #twk_scentbox:hover {
