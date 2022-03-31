@@ -145,21 +145,23 @@ nav ul {
 }
 #color_box {
     border: none;
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin: 0;
     padding: 2.5rem;
     position: relative;
-    left: 14.3rem;
+    left: 12rem;
+    top: 1rem;
     width: max-content;
 }
 #color_box_legend {
-    font-size: 2.7rem;
+    font-size: 3.3rem;
     font-weight: bold;
-    margin-left: 3.8rem;
     position: relative;
-    text-shadow: 0 0 2px red;
+    margin-bottom: -3rem;
+    text-shadow: 0 0 2px chartreuse;
     transition: all 0.4s ease-in;
     z-index: 1;
+    text-align: center;
 }
 .color_opt {
     text-shadow: 1px 2px 2.5px chartreuse;
@@ -399,7 +401,7 @@ input[type="radio"]:checked {
 }
 #level_icon:hover:before {
     border: 3px ridge rgb(77, 33, 155);
-    bottom: 9rem;
+    bottom: 22rem;
     right: 54rem;
     transform: scale(1.6) rotate(720deg);
     /* opacity: 0%; */
