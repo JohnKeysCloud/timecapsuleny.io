@@ -110,6 +110,13 @@ nav ul {
         border: 3.3px solid chartreuse;
     }
 }
+#curomame_hoodie {
+    height: 55%;
+    transition: all 2s ease-in-out;
+}
+#curomame_hoodie:hover {
+    transform: scale(1.7);
+}
 #cart_add_btn {
     background: linear-gradient(to bottom, #fffce8, wheat);
     border: 2px groove silver;
@@ -389,7 +396,7 @@ input[type="radio"]:checked {
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    bottom: 22.5rem;
+    bottom: 66.8rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     content: url('../images/c.gif');
     padding: 0.3rem;
