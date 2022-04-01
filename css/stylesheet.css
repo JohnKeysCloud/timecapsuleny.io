@@ -105,7 +105,6 @@ nav ul {
     from {
         border: 1.3px solid red;
     }
-
     to {
         border: 3.3px solid chartreuse;
     }
@@ -119,12 +118,10 @@ nav ul {
 }
 #cart_add_btn {
     background: linear-gradient(to bottom, #fffce8, wheat);
-    border: 2px groove silver;
     border-radius: 30px;
-    padding: 1.8rem 2rem;
+    border: 2px groove silver;
     box-shadow: 0 0 2rem chartreuse;
-
-
+    padding: 1.8rem 2rem;
 }
 #cart_add_btn > a {
     color: #633e1a;
@@ -155,10 +152,11 @@ nav ul {
     font-size: 2rem;
     margin: 0;
     padding: 2.5rem;
+    width: max-content;
+    
     position: relative;
     left: 12rem;
     top: 1rem;
-    width: max-content;
 }
 #color_box_legend {
     /* background: linear-gradient(to right, red, blue, green); */
@@ -166,13 +164,14 @@ nav ul {
     color: white;
     font-size: 2.2rem;
     font-weight: bold;
-    position: relative;
     padding: 1rem;
     margin-bottom: -2rem;
     text-shadow: 0 0 12px black;
     transition: all 0.4s ease-in;
-    z-index: 1;
     text-align: center;
+    
+    position: relative;
+    z-index: 1;
 }
 .color_opt {
     align-items: center;
@@ -184,10 +183,11 @@ nav ul {
     gap: 1rem;
     margin-bottom: 8px;
     padding: 0.8rem;
-    position: relative;
     text-shadow: 1px 2px 2.5px chartreuse;
     width: 21.8rem;
     transition: 0.5s ease;
+    
+    position: relative;
     z-index: 1;
 }
 #color_opt_1:hover {
@@ -208,19 +208,21 @@ nav ul {
     content: url(../images/coolcloud.png);
     opacity: 0;
     padding: 100px;
+    transform: scale(0.02);
+    transition: all 2s ease-out;
+    
     position: absolute;
     right: 6.6rem;
     top: 13.9rem;
-    transform: scale(0.02);
-    transition: all 2s ease-out;
     z-index: 0;
 }
 #fluffy_cloud:hover:before {
-    top: -1.2rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    right: -27.1rem;
     transform: scale(0.4) rotate(1448deg);
     opacity: 70%;
+
+    right: -27.1rem;
+    top: -1.2rem;
 }
 #fluffy_cloud_2:after {
     background: linear-gradient(to bottom, chartreuse, red);
@@ -228,35 +230,38 @@ nav ul {
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     content: url(../images/coolcloud.png);
     padding: 100px;
+    transform: scale(0.02);
+    transition: all 2s ease-out;
+    
     position: absolute;
     right: -27.1rem;
     top: -1.2rem;
-    transform: scale(0.02);
-    transition: all 2s ease-out;
     z-index: 0;    
 }
 #fluffy_cloud_2:hover:after {
-    top: 24.5rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    right: -15rem;
-    transform: scale(0.6) rotate(1440deg);
     opacity: 70%;
+    transform: scale(0.6) rotate(1440deg);
+    
+    right: -15rem;
+    top: 24.5rem;
 }
 #fluffy_words {
-    /* box-shadow: 0 0 10px red; */
     border-radius: 33rem;
+    /* box-shadow: 0 0 10px red; */
     color: red;
     font-family: 'PixeBoy';
     font-size: 2.3rem;
+    padding: 2.2rem;
     text-shadow: 0 0 0.3rem chartreuse;
-    transition: all 1s ease-in-out;
-    position: absolute;
-    top: 31.3rem;
-    left: 1.55rem;
     /* transform: rotate(-8deg); */
-    z-index: 1;
+    transition: all 1s ease-in-out;
     width: 18rem;
-    padding: 2.2rem
+    
+    position: absolute;
+    left: 1.55rem;
+    top: 31.3rem;
+    z-index: 1;
 }
 #fluffy_words:hover {
     box-shadow: none;
@@ -265,40 +270,44 @@ nav ul {
     width: 22rem;
     transform: rotate(-8deg);
     text-shadow: 0 0 0.3rem red;
-    top: 30.5rem;
+
     left: 3.7rem ;
+    top: 30.5rem;
 }
 #fluffy_words:before {
     content: url(../images/warning.gif);
     transform: scale(0.06);
+    
     position: absolute;
-    top: -16.9rem;
     left: -21.9rem;
+    top: -16.9rem;
 }
 #fluffy_words_2 {
-    /* box-shadow: 0 0 10px red; */
     border-radius: 33rem;
+    /* box-shadow: 0 0 10px red; */
     color: red;
     font-family: 'PixeBoy';
     font-size: 2.3rem;
+    padding: 2.2rem;
     text-shadow: 0 0 0.3rem chartreuse;
     transition: all 1s ease-in-out;
-    position: absolute;
-    top: 35rem;
-    left: 37.5rem;
-    z-index: 1;
     width: 12.4rem;
-    padding: 2.2rem
+    
+    position: absolute;
+    left: 37.5rem;
+    top: 35rem;
+    z-index: 1;
 }
 #fluffy_words_2:hover {
     box-shadow: none;
     color: chartreuse;
     font-size: 2rem;
-    width: 16rem;
     text-shadow: 0 0 0.3rem red;
-    top: 35rem;
-    left: 38rem;  
     transform: rotate(-8deg);
+    width: 16rem;
+    
+    left: 38rem;  
+    top: 35rem;
 }
 .hoodie_clr_sel {
     display: flex;
@@ -311,6 +320,7 @@ nav ul {
     align-content: space-between;
     display: flex;
     flex-direction: column;
+
     position: relative;
 }
 /* TODO: 
@@ -501,15 +511,14 @@ input[type="radio"]:checked {
     z-index: 1;
 }
 #scent_box:hover {
+    box-shadow: inset -2rem -1.7rem 0.2rem silver, 0rem -1rem 3rem 0.4rem chartreuse;
     font-family: "GoshaSansRegular";
     /* font-size:1rem; */
-    transform: scale(1.03);
     text-shadow: 0 2px 2px chartreuse;
-    top: 21.1rem;
-    left: 14rem;
     transform: scale(1.2);
-    box-shadow: inset -2rem -1.7rem 0.2rem silver, 0rem -1rem 3rem 0.4rem chartreuse;
 
+    left: 14rem;
+    top: 21.1rem;
 }
 #scent_des {
     color: rgb(77, 77, 77);
@@ -523,30 +532,29 @@ input[type="radio"]:checked {
     font-size: 1.6rem;
 }
 #send_2_moon {
-    gap: 5rem;
     align-items: center;
     display: flex;
+    gap: 5rem;
     justify-content: center;
     margin: 0rem 0 0 2rem;
 }
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
-    border: 2px groove silver;
     border-radius: 33px;
+    border: 2px groove silver;
+    box-shadow: 0 0 2rem chartreuse;
     color: #633e1a;
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
     font-size: 1.8rem;
     font-weight: 700;
     padding: 1.8rem 3.3rem;
     text-shadow: 0 0 2px red;
-    box-shadow: 0 0 2rem chartreuse;
 }
 #twk_scentbox {
     align-content: top;
     background: white;
     border-radius: 33rem;
     border-top: 1px ridge silver;
-    bottom: 11.1rem;
     box-shadow: inset -1rem 0.7rem 2px silver, -0.2rem -0.4rem 0.7rem chartreuse;
     color: #67e0f8;
     display: flex;
@@ -554,11 +562,13 @@ input[type="radio"]:checked {
     font-size: 2.2rem;
     font-weight: bold;
     padding: 1.8rem 0 0 0;
-    position: absolute;
-    right: 4.5rem;
     text-shadow: 1px 2px 2.5px red;
     transform: rotate(-15deg);
     transition: all 0.1s ease-in-out;
+    
+    position: absolute;
+    bottom: 11.1rem;
+    right: 4.5rem;
     z-index: 1;
 }
 #twk_scentbox:hover {
@@ -577,11 +587,12 @@ input[type="radio"]:checked {
 #timelessArtifact {
     color: #ffffff;
     font-size: 1.7rem;
+    text-shadow: 0 2px 0.7rem black;
+    transition: all 0.7s ease-in-out;
+    
     position: absolute;
     right: 6.5rem;
-    text-shadow: 0 2px 0.7rem black;
     top: 12.8rem;
-    transition: all 0.7s ease-in-out;
 }
 #timelessArtifact:hover {
     color: cyan;
@@ -618,9 +629,10 @@ input[type="radio"]:checked {
     font-size: 4rem;
     font-weight: bold;
     margin: 0 0 0 9.8rem;
-    position: relative;
     text-shadow: 0 3px 3.3px black;
     transition: all 0.5s ease-in;
+    
+    position: relative;
 }
 #whole_level:hover {
     color: #01FFF4;
