@@ -213,24 +213,20 @@ nav ul {
     transform: scale(0.4) rotate(1448deg);
     opacity: 70%;
 }
-#fluffy_cloud_2:before {
+#fluffy_cloud_2:after {
     background: linear-gradient(to bottom, chartreuse, red);
     border-radius: 33rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     content: url(../images/coolcloud.png);
-    opacity: 0;
     padding: 100px;
     position: absolute;
     right: -27.1rem;
     top: -1.2rem;
     transform: scale(0.02);
     transition: all 2s ease-out;
-    z-index: 0;
-    
-    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    /*  */
+    z-index: 0;    
 }
-#fluffy_cloud_2:hover:before {
+#fluffy_cloud_2:hover:after {
     top: 24.5rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     right: -15rem;
@@ -239,8 +235,8 @@ nav ul {
 }
 #fluffy_words {
     /* box-shadow: 0 0 10px red; */
-    color: chartreuse;
     border-radius: 33rem;
+    color: chartreuse;
     font-family: 'PixeBoy';
     font-size: 2.3rem;
     text-shadow: 0 0 0.3rem red;
@@ -271,8 +267,8 @@ nav ul {
 }
 #fluffy_words_2 {
     /* box-shadow: 0 0 10px red; */
-    color: chartreuse;
     border-radius: 33rem;
+    color: chartreuse;
     font-family: 'PixeBoy';
     font-size: 2.3rem;
     text-shadow: 0 0 0.3rem red;
