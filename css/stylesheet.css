@@ -161,11 +161,15 @@ nav ul {
     width: max-content;
 }
 #color_box_legend {
-    font-size: 3.3rem;
+    /* background: linear-gradient(to right, red, blue, green); */
+    border-radius: 33rem;
+    color: white;
+    font-size: 2.2rem;
     font-weight: bold;
     position: relative;
-    margin-bottom: -3rem;
-    text-shadow: 0 0 2px chartreuse;
+    padding: 1rem;
+    margin-bottom: -2rem;
+    text-shadow: 0 0 12px black;
     transition: all 0.4s ease-in;
     z-index: 1;
     text-align: center;
@@ -183,15 +187,20 @@ nav ul {
     position: relative;
     text-shadow: 1px 2px 2.5px chartreuse;
     width: 21.8rem;
+    transition: 0.5s ease;
     z-index: 1;
 }
-/* TODO:
-#color_opt_1 {
+#color_opt_1:hover {
+    transform: rotate(3deg);
 }
-#color_opt_2 {
+#color_opt_2:hover {
+    transform: rotate(-3deg);
+
 }
-#color_opt_3 {
-} */
+#color_opt_3:hover {
+    transform: rotate(3deg);
+
+}
 #fluffy_cloud:before {
     background: linear-gradient(to bottom, chartreuse, red);
     border-radius: 33rem;
@@ -236,15 +245,15 @@ nav ul {
 #fluffy_words {
     /* box-shadow: 0 0 10px red; */
     border-radius: 33rem;
-    color: chartreuse;
+    color: red;
     font-family: 'PixeBoy';
     font-size: 2.3rem;
-    text-shadow: 0 0 0.3rem red;
+    text-shadow: 0 0 0.3rem chartreuse;
     transition: all 1s ease-in-out;
     position: absolute;
     top: 31.3rem;
     left: 1.55rem;
-    transform: rotate(-8deg);
+    /* transform: rotate(-8deg); */
     z-index: 1;
     width: 18rem;
     padding: 2.2rem
@@ -254,7 +263,8 @@ nav ul {
     color: chartreuse;
     font-size: 2rem;
     width: 22rem;
-    transform: rotate(0deg);
+    transform: rotate(-8deg);
+    text-shadow: 0 0 0.3rem red;
     top: 30.5rem;
     left: 3.7rem ;
 }
@@ -268,17 +278,16 @@ nav ul {
 #fluffy_words_2 {
     /* box-shadow: 0 0 10px red; */
     border-radius: 33rem;
-    color: chartreuse;
+    color: red;
     font-family: 'PixeBoy';
     font-size: 2.3rem;
-    text-shadow: 0 0 0.3rem red;
+    text-shadow: 0 0 0.3rem chartreuse;
     transition: all 1s ease-in-out;
     position: absolute;
-    top: 34rem;
-    left: 34rem;
-    transform: rotate(8deg);
+    top: 35rem;
+    left: 37.5rem;
     z-index: 1;
-    width: 18rem;
+    width: 12.4rem;
     padding: 2.2rem
 }
 #fluffy_words_2:hover {
@@ -286,9 +295,10 @@ nav ul {
     color: chartreuse;
     font-size: 2rem;
     width: 16rem;
-    transform: rotate(0deg);
-    top: 33rem;
-    left: 32rem;   
+    text-shadow: 0 0 0.3rem red;
+    top: 35rem;
+    left: 38rem;  
+    transform: rotate(-8deg);
 }
 .hoodie_clr_sel {
     display: flex;
@@ -392,7 +402,7 @@ input[type="radio"]:checked {
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
-    bottom: 66.8rem;
+    bottom: 34.8rem;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
     content: url('../images/c.gif');
     padding: 0.3rem;
