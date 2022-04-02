@@ -208,21 +208,21 @@ nav ul {
     content: url(../images/coolcloud.png);
     opacity: 0;
     padding: 100px;
-    transform: scale(0.02);
-    transition: all 2s ease-out;
+    transform: scale(0.03);
+    transition: all 1.8s ease-in;
     
     position: absolute;
-    right: 6.6rem;
-    top: 13.9rem;
+    right: 2rem;
+    top: 11.1rem;
     z-index: 0;
 }
 #fluffy_cloud:hover:before {
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    transform: scale(0.4) rotate(1448deg);
-    opacity: 70%;
+    transform: scale(0.42) rotate(-712deg);
+    opacity: 44%;
 
-    right: -27.1rem;
-    top: -1.2rem;
+    right: -26.9rem;
+    top: -0.3rem;
 }
 #fluffy_cloud_2:after {
     background: linear-gradient(to bottom, chartreuse, red);
@@ -251,28 +251,41 @@ nav ul {
     /* box-shadow: 0 0 10px red; */
     color: red;
     font-family: 'PixeBoy';
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 2.2rem;
     text-shadow: 0 0 0.3rem chartreuse;
     /* transform: rotate(-8deg); */
-    transition: all 1s ease-in-out;
-    width: 18rem;
+    transition: all 1.8s ease-out;
+    width: 13rem;
     
     position: absolute;
     left: 1.1rem;
-    top: 34rem;
+    top: 31.4rem;
     z-index: 1;
 }
 #fluffy_words:hover {
     box-shadow: none;
     color: chartreuse;
     font-size: 2rem;
-    width: 22rem;
-    transform: rotate(-8deg);
+    width: 23.2rem;
+    transform: rotate(-15deg);
     text-shadow: 0 0 0.3rem red;
-
-    left: 3.7rem ;
-    top: 34.5rem;
+    transition: all 1.8s ease-in-out;
+}
+#fluffy_words:after {
+    content: '🚀';
+    position: absolute;
+    top: 3.3rem;
+    right: 1rem;
+    transition: all 1.8s ease-in;
+    transform: scale(1.8) rotate(11deg);
+}
+#fluffy_words:hover:after {
+    content: '🚀';
+    position: absolute;
+    top: -9.3rem;
+    right: -20.7rem;
+    transform: rotate(-386deg) scale(3);
 }
 #fluffy_words:before {
     content: url(../images/warning.gif);
@@ -303,11 +316,8 @@ nav ul {
     color: chartreuse;
     font-size: 2rem;
     text-shadow: 0 0 0.3rem red;
-    transform: rotate(-8deg);
+    transform: rotate(-3deg);
     width: 16rem;
-    
-    left: 38rem;  
-    top: 35rem;
 }
 .hoodie_clr_sel {
     display: flex;
@@ -342,8 +352,9 @@ nav ul {
     font-size: 1.7rem;
     margin: 0;
 }
-.hoodie_des_list_item {
+.hoodie_li {
     font-size: 1.6rem;
+    font-family: "GoshaSansRegular";
     font-weight: bold;
     padding-left: 1rem;
     text-shadow: 2.5px 2.5px 2.5px chartreuse;
@@ -361,7 +372,7 @@ nav ul {
     width: 50%;
 }
 #hoodie_ul:hover {
-    margin-left: -1.09rem;
+    margin-left: -1.06rem;
     transform: scale(1.1);
 }
 /* TODO: make id for below? */
