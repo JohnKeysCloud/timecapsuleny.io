@@ -218,7 +218,7 @@ nav ul {
 }
 #fluffy_cloud:hover:before {
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    transform: scale(0.42) rotate(-712deg);
+    transform: scale(0.42) rotate(-352deg);
     opacity: 22%;
 
     right: -26.9rem;
