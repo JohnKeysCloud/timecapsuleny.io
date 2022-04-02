@@ -143,10 +143,6 @@ nav ul {
 #cloud_span:hover {
     transform: scale(1.5);
 }
-#color_box_legend:hover {
-    text-shadow: 0 0 5px red;
-    transform: rotate(720deg) scale(2);
-}
 #color_box {
     border: none;
     font-size: 2rem;
@@ -156,22 +152,26 @@ nav ul {
     
     position: relative;
     left: 12rem;
-    top: 1rem;
+    top: 0rem;
 }
 #color_box_legend {
     /* background: linear-gradient(to right, red, blue, green); */
     border-radius: 33rem;
-    color: white;
-    font-size: 2.2rem;
+    color: #fffce8;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 1rem;
     margin-bottom: -2rem;
-    text-shadow: 0 0 12px black;
+    text-shadow: 0 0 13px red;
     transition: all 0.4s ease-in;
     text-align: center;
     
     position: relative;
     z-index: 1;
+}
+#color_box_legend:hover {
+    text-shadow: 0 0 5px red;
+    transform: rotate(720deg) scale(2);
 }
 .color_opt {
     align-items: center;
@@ -251,7 +251,7 @@ nav ul {
     /* box-shadow: 0 0 10px red; */
     color: red;
     font-family: 'PixeBoy';
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 2.2rem;
     text-shadow: 0 0 0.3rem chartreuse;
     /* transform: rotate(-8deg); */
@@ -259,8 +259,8 @@ nav ul {
     width: 18rem;
     
     position: absolute;
-    left: 1.55rem;
-    top: 31.3rem;
+    left: 1.1rem;
+    top: 34rem;
     z-index: 1;
 }
 #fluffy_words:hover {
@@ -272,7 +272,7 @@ nav ul {
     text-shadow: 0 0 0.3rem red;
 
     left: 3.7rem ;
-    top: 30.5rem;
+    top: 34.5rem;
 }
 #fluffy_words:before {
     content: url(../images/warning.gif);
@@ -287,7 +287,7 @@ nav ul {
     /* box-shadow: 0 0 10px red; */
     color: red;
     font-family: 'PixeBoy';
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 2.2rem;
     text-shadow: 0 0 0.3rem chartreuse;
     transition: all 1s ease-in-out;
@@ -343,7 +343,7 @@ nav ul {
     margin: 0;
 }
 .hoodie_des_list_item {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     padding-left: 1rem;
     text-shadow: 2.5px 2.5px 2.5px chartreuse;
@@ -355,13 +355,14 @@ nav ul {
     flex-direction: column;
     font-family: 'Roboto Mono';
     list-style-type: '\1F4AD';
-    margin-left: 0.5rem;
+    margin-left: -1.95rem;
     transform: scale(1);
     transition: all 0.5s ease-in-out;
     width: 50%;
 }
 #hoodie_ul:hover {
-    transform: scale(1.125);
+    margin-left: -1.09rem;
+    transform: scale(1.1);
 }
 /* TODO: make id for below? */
 input[type="radio"] {
