@@ -206,14 +206,14 @@ nav ul {
     border-radius: 33rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     content: url(../images/coolcloud.png);
-    opacity: 77%;
+    opacity: 70%;
     padding: 100px;
-    transform: scale(0);
+    transform: scale(0) rotate(-33deg);
     transition: all 2.2s ease-in;
     
     position: absolute;
-    right: 2rem;
-    top: 11.1rem;
+    right: 0.8rem;
+    top: 10.8rem;
     z-index: 0;
 }
 #fluffy_cloud:hover:before {
@@ -222,7 +222,7 @@ nav ul {
     opacity: 22%;
 
     right: -26.9rem;
-    top: -0.3rem;
+    top: 0.7rem;
 }
 #fluffy_cloud_2:after {
     background: linear-gradient(to bottom, chartreuse, red);
@@ -260,7 +260,7 @@ nav ul {
     
     position: absolute;
     left: 1.1rem;
-    top: 31.4rem;
+    top: 31rem;
     z-index: 1;
 }
 #fluffy_words:hover {
@@ -283,8 +283,8 @@ nav ul {
 #fluffy_words:hover:after {
     content: '🚀';
     position: absolute;
-    top: -9.3rem;
-    right: -20.7rem;
+    top: -8.55rem;
+    right: -20.3rem;
     transform: rotate(-386deg) scale(3);
 }
 #fluffy_words:before {
