@@ -212,8 +212,8 @@ nav ul {
     transition: all 2.2s ease-in;
     
     position: absolute;
-    right: 0.8rem;
-    top: 10.8rem;
+    right: 1.1rem;
+    top: 10.5rem;
     z-index: 0;
 }
 #fluffy_cloud:hover:before {
