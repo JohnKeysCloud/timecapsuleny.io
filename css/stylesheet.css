@@ -154,7 +154,8 @@ nav ul {
     left: 12rem;
     top: 0rem;
 }
-#color_box_legend {
+#color_box_legend,
+.size_container > label {
     /* background: linear-gradient(to right, red, blue, green); */
     border-radius: 33rem;
     color: #fffce8;
@@ -169,7 +170,8 @@ nav ul {
     position: relative;
     z-index: 1;
 }
-#color_box_legend:hover {
+#color_box_legend:hover,
+.size_container > label:hover {
     text-shadow: 0 0 5px red;
     transform: rotate(720deg) scale(2);
 }
@@ -550,6 +552,7 @@ input[type="radio"]:checked {
     justify-content: center;
     margin: 0rem 0 0 2rem;
 }
+
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
     border-radius: 33px;
