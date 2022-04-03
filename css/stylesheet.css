@@ -481,7 +481,7 @@ input[type="radio"]:checked {
     border-radius: 33rem;
     box-shadow: inset 0 0 1rem red;
     height: 6.3rem;
-    transition: all 2.8s ease-in;
+    transition: all 2.09s ease-in;
     width: 6.3rem;
     
     position: absolute;
@@ -489,7 +489,7 @@ input[type="radio"]:checked {
     top: 39.1rem;
 }
 #rocket_border:hover {
-    transform: rotate(-1440deg);
+    transform: rotate(-1080deg);
 
 }
 #sb_essenced_scentbox {
