@@ -210,12 +210,12 @@ nav ul {
     content: url(../images/coolcloud.png);
     opacity: 70%;
     padding: 100px;
-    transform: scale(0) rotate(-33deg);
+    transform: scale(0.00) rotate(-33deg);
     transition: all 2.2s ease-in;
     
     position: absolute;
     right: 7.1rem;
-    top: 16.5rem;
+    top: 17.5rem;
 }
 #fluffy_cloud:hover:before {
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
@@ -275,14 +275,18 @@ nav ul {
 }
 /* ROCKET BELOW */
 #fluffy_words:after {
+    border-radius: 33rem;
     content: '🚀';
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     position: absolute;
-    top: 9rem;
-    right: 7rem;
-    transition: all 2.2s ease-in;
+    top: 9.8rem;
+    right: 6.5rem;
+    transition: top, right, transform, 2.2s ease-in;
     transform: scale(2) rotate(11deg);
 }
 #fluffy_words:hover:after {
+    border: none;
+    box-shadow: none;
     content: '🚀';
     position: absolute;
     top: -8.55rem;
@@ -423,15 +427,7 @@ input[type="radio"]:checked {
     border: 2px solid chartreuse;
     box-shadow: 0 0 6px #633e1a;
 }
-#launch_pad {
-    /* content: url('../images/launchpad.webp'); */
-    height: 8rem;
-    transform: rotate(0deg);
-    
-    position: absolute;
-    left: 0rem;
-    top: 36.8rem;
-}
+
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
@@ -479,6 +475,21 @@ input[type="radio"]:checked {
     font-size: 5.5rem;
     margin: 0.5rem 0 0 0;
     text-shadow: 0 0 2px red;
+}
+#rocket_border {
+    border: 3px dashed red;
+    border-radius: 33rem;
+    box-shadow: inset 0 0 1rem red;
+    height: 6.3rem;
+    transition: all 0.1s ease-in;
+    width: 6.3rem;
+    
+    position: absolute;
+    left: 3.3rem;
+    top: 39.1rem;
+}
+#rocket_border:hover {
+    opacity: 0;
 }
 #sb_essenced_scentbox {
     background: white;
@@ -561,7 +572,6 @@ input[type="radio"]:checked {
     justify-content: center;
     margin: 0rem 0 0 2rem;
 }
-
 #size_input {
     background: linear-gradient(to bottom, white, #fffce8);
     border-radius: 33px;
