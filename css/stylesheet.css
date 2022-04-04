@@ -269,7 +269,7 @@ nav ul {
     color: chartreuse;
     font-size: 2rem;
     width: 23.9rem;
-    transform: rotate(-15deg);
+    transform: rotate(-12deg);
     text-shadow: 0 0 0.3rem red;
     transition: all 2.2s ease-in-out;
 
