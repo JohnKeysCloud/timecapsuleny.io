@@ -280,7 +280,7 @@ nav ul {
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     position: absolute;
     top: 9.8rem;
-    right: 6.5rem;
+    right: 7.3rem;
     transition: top, right, transform, 2.2s ease-in;
     transform: scale(2) rotate(11deg);
 }
@@ -427,7 +427,6 @@ input[type="radio"]:checked {
     border: 2px solid chartreuse;
     box-shadow: 0 0 6px #633e1a;
 }
-
 #level_icon::before {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
@@ -485,12 +484,11 @@ input[type="radio"]:checked {
     width: 6.3rem;
     
     position: absolute;
-    left: 3.3rem;
-    top: 39.1rem;
+    left: 2.4rem;
+    top: 39rem;
 }
 #rocket_border:hover {
     transform: rotate(-1080deg);
-
 }
 #sb_essenced_scentbox {
     background: white;
