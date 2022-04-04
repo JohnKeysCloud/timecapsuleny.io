@@ -210,12 +210,12 @@ nav ul {
     content: url(../images/coolcloud.png);
     opacity: 70%;
     padding: 100px;
-    transform: scale(0.00) rotate(-33deg);
+    transform: scale(0) rotate(-33deg);
     transition: all 2.2s ease-in;
     
     position: absolute;
-    right: 7.1rem;
-    top: 17.5rem;
+    right: 6.8rem;
+    top: 16.3rem;
 }
 #fluffy_cloud:hover:before {
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
@@ -257,7 +257,7 @@ nav ul {
     text-shadow: 0 0 0.3rem chartreuse;
     /* transform: rotate(-8deg); */
     transition: all 2.2s ease-out;
-    width: 13rem;
+    width: 13.8rem;
     
     position: absolute;
     left: 1.1rem;
@@ -268,10 +268,13 @@ nav ul {
     box-shadow: none;
     color: chartreuse;
     font-size: 2rem;
-    width: 23.2rem;
+    width: 23.9rem;
     transform: rotate(-15deg);
     text-shadow: 0 0 0.3rem red;
     transition: all 2.2s ease-in-out;
+
+    left: 1.1rem;
+    top: 30rem;
 }
 /* ROCKET BELOW */
 #fluffy_words:after {
@@ -279,8 +282,8 @@ nav ul {
     content: '🚀';
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     position: absolute;
-    top: 9.8rem;
-    right: 7.3rem;
+    top: 8.1rem;
+    right: 6.3rem;
     transition: top, right, transform, 2.2s ease-in;
     transform: scale(2) rotate(11deg);
 }
@@ -289,9 +292,9 @@ nav ul {
     box-shadow: none;
     content: '🚀';
     position: absolute;
-    top: -8.55rem;
-    right: -20.3rem;
-    transform: rotate(-386deg) scale(3);
+    top: -8rem;
+    right: -19.4rem;
+    transform: rotate(-386deg) scale(4);
 }
 #fluffy_words:before {
     content: url(../images/warning.gif);
@@ -441,9 +444,9 @@ input[type="radio"]:checked {
 }
 #level_icon:hover:before {
     border: 3px ridge rgb(77, 33, 155);
-    bottom: 22rem;
-    right: 54rem;
-    transform: scale(1.6) rotate(720deg);
+    bottom: 21rem;
+    right: 57rem;
+    transform: scale(1.9) rotate(720deg);
     /* opacity: 0%; */
     z-index: 1;
 }
@@ -484,8 +487,8 @@ input[type="radio"]:checked {
     width: 6.3rem;
     
     position: absolute;
-    left: 2.4rem;
-    top: 39rem;
+    left: 4.2rem;
+    top: 37.3rem;
 }
 #rocket_border:hover {
     transform: rotate(-1080deg);
