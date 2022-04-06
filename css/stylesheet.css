@@ -226,28 +226,6 @@ nav ul {
     right: -26.9rem;
     top: 0.7rem;
 }
-#fluffy_cloud_2:after {
-    background: linear-gradient(to bottom, chartreuse, red);
-    border-radius: 33rem;
-    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    content: url(../images/coolcloud.png);
-    padding: 100px;
-    transform: scale(0.02);
-    transition: all 2s ease-out;
-    
-    position: absolute;
-    right: -27.1rem;
-    top: -1.2rem;
-    z-index: 0;    
-}
-#fluffy_cloud_2:hover:after {
-    box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
-    opacity: 70%;
-    transform: scale(0.6) rotate(1440deg);
-    
-    right: -15rem;
-    top: 24.5rem;
-}
 #fluffy_words {
     border-radius: 33rem;
     /* box-shadow: 0 0 10px red; */
@@ -304,30 +282,6 @@ nav ul {
     position: absolute;
     left: -21.9rem;
     top: -16.9rem;
-}
-#fluffy_words_2 {
-    border-radius: 33rem;
-    /* box-shadow: 0 0 10px red; */
-    color: red;
-    font-family: 'PixeBoy';
-    font-size: 2rem;
-    padding: 2.2rem;
-    text-shadow: 0 0 0.3rem chartreuse;
-    transition: all 1s ease-in-out;
-    width: 12.4rem;
-    
-    position: absolute;
-    left: 37.5rem;
-    top: 35rem;
-    z-index: 1;
-}
-#fluffy_words_2:hover {
-    box-shadow: none;
-    color: chartreuse;
-    font-size: 2rem;
-    text-shadow: 0 0 0.3rem red;
-    transform: rotate(-3deg);
-    width: 16rem;
 }
 .hoodie_clr_sel {
     display: flex;
