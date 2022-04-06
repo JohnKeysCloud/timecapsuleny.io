@@ -176,6 +176,7 @@ nav ul {
     text-shadow: 0 0 5px red;
     transform: scale(1.1);
 }
+/* TODO: make color options rounded color circles with name labels going around them  */
 .color_opt {
     align-items: center;
     background-color: white;
