@@ -174,7 +174,7 @@ nav ul {
 #color_box_legend:hover,
 .size_container > label:hover {
     text-shadow: 0 0 5px red;
-    transform: rotate(720deg) scale(2);
+    transform: scale(1.1);
 }
 .color_opt {
     align-items: center;
