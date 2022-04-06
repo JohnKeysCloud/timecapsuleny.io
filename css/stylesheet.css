@@ -265,15 +265,15 @@ nav ul {
     top: 8.1rem;
     right: 6.3rem;
     transition: top, right, transform, 2.2s ease-in;
-    transform: scale(2) rotate(11deg);
+    transform: scale(2) rotate(22deg);
 }
 #fluffy_words:hover:after {
     border: none;
     box-shadow: none;
     content: '🚀';
     position: absolute;
-    top: -8rem;
-    right: -19.4rem;
+    top: -9.8rem;
+    right: -19.2rem;
     transform: rotate(-386deg) scale(4);
 }
 #fluffy_words:before {
