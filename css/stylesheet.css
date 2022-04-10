@@ -189,19 +189,19 @@ nav ul {
     padding: 0.8rem;
     text-shadow: 1px 2px 2.5px chartreuse;
     width: 21.8rem;
-    transition: 0.5s ease;
+    transition: all 0.1s ease;
     
     position: relative;
     z-index: 1;
 }
-#color_opt_1:hover {
-    transform: rotate(3deg);
+#color_opt_1:active {
+    transform: scale(1.02);
 }
-#color_opt_2:hover {
-    transform: rotate(-3deg);
+#color_opt_2:active {
+    transform: scale(1.02);
 
 }
-#color_opt_3:hover {
+#color_opt_3:active {
     transform: rotate(3deg);
 
 }
