@@ -217,13 +217,13 @@ nav ul {
     flex-direction: column;
     font-family: 'Roboto Mono';
     list-style-type: '\1F4AD';
-    margin: 1rem 0 0 -1.95rem;
+    margin: 1rem 0 0 -1.75rem;
     transform: scale(1);
     transition: all 0.5s ease-in-out;
     width: 50%;
 }
 #hoodie_ul:hover {
-    margin-left: -1.06rem;
+    margin-left: -0.8rem;
     transform: scale(1.1);
 }
 /* TODO: make id for below? */
