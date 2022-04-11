@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>EXAMPLE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="example.js"></script>
+    <style>
+      @font-face {
+        font-family: 'Gosha';
+        src: url(fonts/GoshaReg.woff2);
+      }
+      @font-face {
+        font-family: 'Pix';
+        src: url(fonts/Pix.woff2);
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        background-color: #fffce8;
+        color: red;
+        font-family: 'Gosha';
+        font-style: italic;
+        text-shadow: 0 0 3px black;
+      }
+
+      @keyframes border-pulse {
+        from {
+          border: 11px solid chartreuse;
+        }
+        to {
+          border: 18px solid #FF3300;
+        }
+      }
+      @keyframes border-pulse-2 {
+          from {
+          border: 3px solid chartreuse;
+        }
+        to {
+          border: 5px solid #FF3300;
+        }
+      }
+      #capcoin {
+        height: 100px;
+        transition: all 2s ease-in-out;
+      }
+      #capcoin:hover {
+        transform: scale(1.8);
+      }
+      table {
+        background: linear-gradient(to bottom, black, #fffce8, black);
+        border-radius: 77rem;
+        box-shadow: inset 0 0 50px #fffce8, 0 0 55px red;
+        font-family: 'Pix' ;
+        font-size: 3rem;
+        margin: 18rem auto 18rem auto;
+        padding: 22rem 11rem 22rem 11rem;
+
+        animation: 0.3s linear infinite alternate border-pulse;
+
+
+        transition: all 1.8s ease-in;
+        transform: rotate(0) scale(0.3);
+      }
+      table:hover {
+        transform: rotate(360deg) scale(1);
+        animation: 0.8s linear infinite alternate border-pulse-2;
+      }
+      th {
+        background: none;
+        border: none;
+        color: chartreuse;
+        font-size: 4.8rem;
+        padding: 0rem 3rem 0rem 3rem;
+        text-align: end;
+        text-shadow: 0 0 3px black;
+        transition: transform[scale] 1s ease, transform[hover]scale 2s ease;
+      }
+      th:hover {
+        background: none;
+        border: none;
+        color: chartreuse;
+        text-shadow: 0 0 3px black;
+        transform: scale(1.3) rotate(360deg);
+      }
+      td {
+        background-color: rgb(77, 77, 77);
+        border-radius: 33rem;
+        border: 3px solid chartreuse;
+        box-shadow: 0 0 18px chartreuse;
+        padding: 0rem 3rem 0rem 3rem;
+        text-align: end;
+      }
+      .name_col {
+        padding-left: 1rem;
+        text-align: start;
+      }
+      .rank_col {
+        padding-right: 1rem;
+        text-align: end;
+      }
+      .score_col {
+        padding-right: 1rem;
+        text-align: end;
+      }
+
+      .first_place {
+        color: #FFFF33;
+        text-shadow: 0 0 8px #FFFF33;
+      }
+      .second_place {
+        color: #fff330;
+        text-shadow: 0 0 8px #fff330;
+      }
+      .third_place {
+        color: #ffd728;
+        text-shadow: 0 0 8px #ffd728;
+      }
+      .fourth_place {
+        color: #ffe52c;
+        text-shadow: 0 0 8px #ffe52c;
+      }
+      .fifth_place {
+        color: #ffac1e;
+        text-shadow: 0 0 8px #ffac1e;
+      }
+      .sixth_place {
+        color: #ff9c1a;
+        text-shadow: 0 0 8px #ff9c1a;
+      }
+      .seventh_place {
+        color: #ff8915;
+        text-shadow: 0 0 8px #ff8915;
+      }
+      .eigth_place {
+        color: #ff700f;
+        text-shadow: 0 0 8px #ff700f;
+      }
+      .ninth_place {
+        color: #ffbc22;
+        text-shadow: 0 0 8px #ffbc22;
+      }
+      .tenth_place {
+        color: #FF3300;
+        text-shadow: 0 0 8px #FF3300;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- TODO: ADD "HOVER TO ACTIVATE" ROTATING AROUND TABLE" -->
+
+    <table>
+      <tr>
+      <th><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin""> </th>
+      <th>RANK</th>
+      <th>PLAYER NAME</th>
+      <th>SCORE</th>
+      </tr>
+      <tr class="first_place">
+      <td></td>
+      <td class="rank_col">1st</td>
+      <td class="name_col">Cloud</td>
+      <td class="score_col">110000</td>
+      </tr>  
+      <tr class="second_place">
+      <td></td>
+      <td class="rank_col">2nd</td>
+      <td class="name_col">TAKENOTES</td>
+      <td class="score_col">109000</td>
+      </tr>  
+      <tr class="third_place">
+      <td></td>
+      <td class="rank_col">3rd</td>
+      <td class="name_col">PLAYER 3</td>
+      <td class="score_col">108000</td>
+      </tr>  
+      <tr class="fourth_place">
+      <td></td>
+      <td class="rank_col">4th</td>
+      <td class="name_col">PLAYER 4</td>
+      <td class="score_col">107000</td>
+      </tr>  
+      <tr class="fifth_place">
+      <td></td>
+      <td class="rank_col">5th</td>
+      <td class="name_col">PLAYER 5</td>
+      <td class="score_col">106000</td>
+      </tr>  
+      <tr class="sixth_place">
+      <td></td>
+      <td class="rank_col">6th</td>
+      <td class="name_col">PLAYER 6</td>
+      <td class="score_col">106000</td>
+      </tr>  
+      <tr class="seventh_place">
+      <td></td>
+      <td class="rank_col">7th</td>
+      <td class="name_col">PLAYER 7</td>
+      <td class="score_col">106000</td>
+      </tr>  
+      <tr class="eigth_place">
+      <td></td>
+      <td class="rank_col">8th</td>
+      <td class="name_col">PLAYER 8</td>
+      <td class="score_col">106000</td>
+      </tr>  
+      <tr class="ninth_place">
+      <td></td>
+      <td class="rank_col">9th</td>
+      <td class="name_col">PLAYER 9</td>
+      <td class="score_col">106000</td>
+      </tr>  
+      <tr class="tenth_place">
+      <td></td>
+      <td class="rank_col">10th</td>
+      <td class="name_col">PLAYER 10</td>
+      <td class="score_col">106000</td>
+      </tr>  
+    </table>
+
+  </body>
+
+</html>
