@@ -37,7 +37,7 @@
         }
       }
       @keyframes border-pulse-2 {
-          from {
+        from {
           border: 3px solid chartreuse;
         }
         to {
@@ -78,7 +78,7 @@
         padding: 0rem 3rem 0rem 3rem;
         text-align: end;
         text-shadow: 0 0 3px black;
-        transition: transform[scale] 1s ease, transform[hover]scale 2s ease;
+        transition: scale 1s ease, rotate 2s ease;
       }
       th:hover {
         background: none;
@@ -154,11 +154,12 @@
 
   <body>
 
-    <!-- TODO: ADD "HOVER TO ACTIVATE" ROTATING AROUND TABLE" -->
+    <!-- TODO: ADD "HOVER TO ACTIVATE" ROTATING AROUND TABLE"
+    Fix HEADER ROTATION TRANSITION -->
 
     <table>
       <tr>
-      <th><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin""> </th>
+      <th><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin"></th>
       <th>RANK</th>
       <th>PLAYER NAME</th>
       <th>SCORE</th>
