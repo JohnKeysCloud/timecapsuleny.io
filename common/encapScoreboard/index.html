@@ -53,10 +53,13 @@
       }
       table {
         background: rgb(22, 22, 22);
+        border: 2px solid black;
+        /* border-collapse: collapse; */
         border-radius: 8rem;
         box-shadow: inset 0 0 18px chartreuse, 0 0 55px red;
         font-family: 'Pix' ;
         font-size: 3rem;
+        letter-spacing: 3px;
         margin: 0rem auto 0rem auto;
         padding: 5rem 8rem 5rem 8rem;
 
@@ -95,6 +98,16 @@
         padding: 0rem 3rem 0rem 3rem;
         text-align: end;
       }
+      tr:nth-child(even) td {
+        background-color: rgb(55,55,55);
+      }
+      tr:nth-child(odd) td {
+        background-color: rgb(44,44,44);
+      }
+      .coin_col {
+        border: none;
+      }
+
       .name_col {
         padding-left: 1rem;
         text-align: start;
@@ -159,67 +172,67 @@
 
     <table>
       <tr>
-      <th><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin"></th>
-      <th>RANK</th>
-      <th>PLAYER NAME</th>
-      <th>SCORE</th>
+      <th scope="col"><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin"></th>
+      <th scope="col">RANK</th>
+      <th scope="col">PLAYER NAME</th>
+      <th scope="col">SCORE</th>
       </tr>
       <tr class="first_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">1st</td>
       <td class="name_col">Cloud</td>
       <td class="score_col">110000</td>
       </tr>  
       <tr class="second_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">2nd</td>
       <td class="name_col">TAKENOTES</td>
       <td class="score_col">109000</td>
       </tr>  
       <tr class="third_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">3rd</td>
       <td class="name_col">PLAYER 3</td>
       <td class="score_col">108000</td>
       </tr>  
       <tr class="fourth_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">4th</td>
       <td class="name_col">PLAYER 4</td>
       <td class="score_col">107000</td>
       </tr>  
       <tr class="fifth_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">5th</td>
       <td class="name_col">PLAYER 5</td>
       <td class="score_col">106000</td>
       </tr>  
       <tr class="sixth_place">
-      <td></td>
+      <td class="coin_col" width="10px"></td>
       <td class="rank_col">6th</td>
       <td class="name_col">PLAYER 6</td>
       <td class="score_col">106000</td>
       </tr>  
       <tr class="seventh_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">7th</td>
       <td class="name_col">PLAYER 7</td>
       <td class="score_col">106000</td>
       </tr>  
       <tr class="eigth_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">8th</td>
       <td class="name_col">PLAYER 8</td>
       <td class="score_col">106000</td>
       </tr>  
       <tr class="ninth_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">9th</td>
       <td class="name_col">PLAYER 9</td>
       <td class="score_col">106000</td>
       </tr>  
       <tr class="tenth_place">
-      <td></td>
+      <td class="coin_col"></td>
       <td class="rank_col">10th</td>
       <td class="name_col">PLAYER 10</td>
       <td class="score_col">106000</td>
