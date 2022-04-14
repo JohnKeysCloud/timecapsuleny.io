@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
   <head>
     <title>scoreBoard</title>
     <meta charset="utf-8">
@@ -27,73 +26,86 @@
         font-style: italic;
         text-shadow: 0 0 3px black;
       }
-
+      
       @keyframes border-pulse {
         from {
-          border: 5px solid chartreuse;
+          border: 2px solid chartreuse;
         }
         to {
           border: 3px solid #FF3300;
         }
       }
-      @keyframes border-pulse-2 {
+      @keyframes border-pulse-2 { 
         from {
           border: 3px solid chartreuse;
         }
         to {
           border: 5px solid #FF3300;
         }
+      } 
+      @keyframes letter-spaz {
+        from {
+          letter-spacing: -1px;
+          transform: scale(1);
+
+        }
+        to {
+          letter-spacing: -1.02px;
+          transform: scale(1.1);
+          text-shadow: 0 0 22px chartreuse;
+        }
       }
       #capcoin {
-        height: 100px;
-        transition: all 2s ease-in-out;
+        width: 8rem;
       }
       #capcoin:hover {
-        transform: scale(1.8);
+        transform: scale(1.03);
       }
       table {
         background: rgb(22, 22, 22);
         border: 2px solid black;
         /* border-collapse: collapse; */
-        border-radius: 8rem;
+        border-radius: 8.8rem;
         box-shadow: inset 0 0 18px chartreuse, 0 0 55px red;
-        font-family: 'Pix' ;
-        font-size: 3rem;
-        letter-spacing: 3px;
+        font-family: 'Pix';
+        font-size: 2.4rem;
+        letter-spacing: 3.3px;
         margin: 0rem auto 0rem auto;
-        padding: 5rem 8rem 5rem 8rem;
+        padding: 5rem 8rem 8rem 8rem;
 
-        animation: 1s linear infinite alternate border-pulse;
+        animation: 0.8s linear infinite alternate border-pulse;
 
         transition: all 0.3s ease-in;
-        transform: rotate(0) scale(0.8);
+        /* transform: rotate(0) scale(0.8); */
       }
       table:hover {
         animation: 0.3s linear infinite alternate border-pulse-2;
-
-        transform: scale(0.82);
+        /* transform: scale(1.01); */
       }
-      th {
+      .header {
         background: none;
         border: none;
         color: chartreuse;
-        font-size: 4.8rem;
+        font-size: 3.3rem;
         padding: 0rem 3rem 0rem 3rem;
         text-align: end;
-        text-shadow: 0 0 3px black;
-        transition: scale 1s ease, rotate 2s ease;
+        transition: all 6s ease-out;
+        
+        animation: 0.33s linear infinite alternate letter-spaz;
       }
       th:hover {
+        animation: none;
         background: none;
         border: none;
-        color: chartreuse;
-        text-shadow: 0 0 3px black;
-        transform: scale(1.3) rotate(360deg);
+        color: red;
+        letter-spacing: -1px;
+        text-shadow: 0 0 22px chartreuse;
+        transform: scale(1.3);
       }
       td {
         background-color: rgb(55, 55, 55);
-        border-radius: 33rem;
         border: 3px solid chartreuse;
+        border-radius: 33rem;
         box-shadow: 0 0 18px chartreuse;
         padding: 0rem 3rem 0rem 3rem;
         text-align: end;
@@ -104,23 +116,29 @@
       tr:nth-child(odd) td {
         background-color: rgb(44,44,44);
       }
-      .coin_col {
+      tr:nth-child(odd) .coin_cells {
+        background-color: black;
         border: none;
+        box-shadow: inset 0 0 18px red;    
       }
-
-      .name_col {
+      tr:nth-child(even) .coin_cells {
+        background-color: black;
+        border: none;
+        box-shadow: inset 0 0 18px red;
+      
+      }
+      .name_cells {
         padding-left: 1rem;
         text-align: start;
       }
-      .rank_col {
+      .rank_cells {
         padding-right: 1rem;
         text-align: end;
       }
-      .score_col {
+      .score_cells {
         padding-right: 1rem;
         text-align: end;
       }
-
       .first_place {
         color: #FFFF33;
         text-shadow: 0 0 8px #FFFF33;
@@ -164,81 +182,85 @@
 
     </style>
   </head>
-
   <body>
 
     <!-- TODO: ADD "HOVER TO ACTIVATE" ROTATING AROUND TABLE" -->
 
-
     <table>
+      <caption>Encapsulation</caption>
+      <colgroup>
+        <col span="1" class="coin_col">
+        <col span="1" class="rank_col">
+        <col span="1" class="name_col">
+        <col span="1" class="score_col">
+      </colgroup>
       <tr>
-      <th scope="col"><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin"></th>
-      <th scope="col">RANK</th>
-      <th scope="col">PLAYER NAME</th>
-      <th scope="col">SCORE</th>
+        <th scope="col"><img id="capcoin" src="img/encapCoin.gif" alt="CapCoin"></th>
+        <th class="header" scope="col">RANK</th>
+        <th class="header" scope="col">PLAYER NAME</th>
+        <th class="header" scope="col">SCORE</th>
       </tr>
       <tr class="first_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">1st</td>
-      <td class="name_col">Cloud</td>
-      <td class="score_col">110000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">1st</td>
+        <td class="name_cells">Cloud</td>
+        <td class="score_cells">110000</td>
       </tr>  
       <tr class="second_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">2nd</td>
-      <td class="name_col">TAKENOTES</td>
-      <td class="score_col">109000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">2nd</td>
+        <td class="name_cells">TAKENOTES</td>
+        <td class="score_cells">109000</td>
       </tr>  
       <tr class="third_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">3rd</td>
-      <td class="name_col">PLAYER 3</td>
-      <td class="score_col">108000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">3rd</td>
+        <td class="name_cells">PLAYER 3</td>
+        <td class="score_cells">108000</td>
       </tr>  
       <tr class="fourth_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">4th</td>
-      <td class="name_col">PLAYER 4</td>
-      <td class="score_col">107000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">4th</td>
+        <td class="name_cells">PLAYER 4</td>
+        <td class="score_cells">107000</td>
       </tr>  
       <tr class="fifth_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">5th</td>
-      <td class="name_col">PLAYER 5</td>
-      <td class="score_col">106000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">5th</td>
+        <td class="name_cells">PLAYER 5</td>
+        <td class="score_cells">106000</td>
       </tr>  
       <tr class="sixth_place">
-      <td class="coin_col" width="10px"></td>
-      <td class="rank_col">6th</td>
-      <td class="name_col">PLAYER 6</td>
-      <td class="score_col">106000</td>
+        <td class="coin_cells"></td>
+        <td class="rank_cells">6th</td>
+        <td class="name_cells">PLAYER 6</td>
+        <td class="score_cells">106000</td>
       </tr>  
       <tr class="seventh_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">7th</td>
-      <td class="name_col">PLAYER 7</td>
-      <td class="score_col">106000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">7th</td>
+        <td class="name_cells">PLAYER 7</td>
+        <td class="score_cells">106000</td>
       </tr>  
       <tr class="eigth_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">8th</td>
-      <td class="name_col">PLAYER 8</td>
-      <td class="score_col">106000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">8th</td>
+        <td class="name_cells">PLAYER 8</td>
+        <td class="score_cells">106000</td>
       </tr>  
       <tr class="ninth_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">9th</td>
-      <td class="name_col">PLAYER 9</td>
-      <td class="score_col">106000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">9th</td>
+        <td class="name_cells">PLAYER 9</td>
+        <td class="score_cells">106000</td>
       </tr>  
       <tr class="tenth_place">
-      <td class="coin_col"></td>
-      <td class="rank_col">10th</td>
-      <td class="name_col">PLAYER 10</td>
-      <td class="score_col">106000</td>
+        <td class="coin_cells""></td>
+        <td class="rank_cells">10th</td>
+        <td class="name_cells">PLAYER 10</td>
+        <td class="score_cells">106000</td>
       </tr>  
     </table>
 
   </body>
-
 </html>
