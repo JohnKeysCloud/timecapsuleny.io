@@ -13,18 +13,22 @@
 <style>
     @keyframes border-pulse {
         from {
-            border: 2px solid skyblue;
+            border: 5px solid chartreuse;
         }
-
+        50% {
+            border: 7px solid skyblue;
+        }
         to {
-            border: 7.3px solid rgb(255, 132, 122);
+            border: 5.5px solid rgb(255, 132, 122);
         }
     }
     @keyframes border-pulse-2 {
         from {
-            border: 2px solid skyblue;
+            border: 5px solid chartreuse;
         }
-
+        50% {
+            border: 3px solid skyblue;
+        }
         to {
             border: 7.3px solid rgb(255, 132, 122);
         }
@@ -52,11 +56,34 @@
         transform: scale(1.5);
     }
     caption {
-        color: skyblue;
-        font-size: 8rem;
+        color: red;
+        text-shadow: 0 0 8px black;
+        font-size: 5rem;
     }
     .coin_col {
         width: 21%;
+    }
+    .name_cells {
+        padding-left: 1.3rem;
+        text-align: start;
+    }
+    .name_col {
+        width: 44%;
+    }
+    .rank_cells,
+    .score_cells {
+        padding-right: 1.3rem;
+        text-align: end;
+    }
+    .rank_col {
+        width: 15%;
+    }
+    #sb_clouds {
+        position: absolute;
+        height: 333px;
+        width: 100%;
+        top: 500px;
+        z-index: 0;
     }
     .sb_header {
         background: none;
@@ -77,23 +104,8 @@
         text-shadow: 0 0 5px black;
         transform: scale(1.3);
     }
-    .name_cells {
-        padding-left: 1.3rem;
-        text-align: start;
-    }
-    .name_col {
-        width: 48%;
-    }
-    .rank_cells,
-    .score_cells {
-        padding-right: 1.3rem;
-        text-align: end;
-    }
-    .rank_col {
-        width: 12%;
-    }
     .score_col {
-        width: 18%;
+        width: 20%;
     }
     table {
         animation: 0.7s linear infinite alternate border-pulse;
@@ -102,18 +114,19 @@
         background: linear-gradient(to bottom, white, #fffce8, silver);
         border: 2px solid #fffce8;
         /* border-collapse: collapse; */
-        border-radius: 8.8rem;
-        box-shadow: inset 0 0 18px skyblue, 0 0 55px red;
+        border-radius: 21rem;
+        box-shadow: inset 0 0 18px skyblue, 0 0 55px chartreuse;
         font-family: 'PixeBoy';
         font-style: italic;
         /* TODO: adjust @media query for bigger than */
         margin: 5rem auto 5rem auto;
-        padding: 5rem 8rem 8rem 8rem;
+        padding: 5rem 10rem 8rem 10rem;
         table-layout: fixed;
         text-shadow: 0 0 3px black;
         transition: all 0.8s ease-in;
         transform: scale(0.8);
         width: 888px;
+        z-index: 1;
     }
     table:hover {
         animation: 1.3s linear infinite alternate border-pulse-2;
@@ -305,7 +318,7 @@
                 </tr>
             </table>
         </div>
-    <img id='cloudsbelow' src="images/cloud1.webp" alt="">
+    <img id='sb_clouds' src="images/cloud1.webp" alt="">
 
     </section>    
     <!-- <section class="temp_section">
