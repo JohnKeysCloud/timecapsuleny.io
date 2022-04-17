@@ -26,13 +26,15 @@
     }
     @keyframes border-pulse-2 {
         from {
-            border: 5px solid chartreuse;
+            border: 3px solid chartreuse;
+            transform: scale(0.8);
         }
         50% {
-            border: 3px solid skyblue;
+            border: 5px solid skyblue;
         }
         to {
-            border: 7.3px solid rgb(255, 132, 122);
+            border: 3.3px solid rgb(255, 132, 122);
+            transform: scale(0.83);
         }
     }
     @keyframes letter-spaz {
@@ -127,7 +129,7 @@
         width: 20%;
     }
     table {
-        animation: 0.7s linear infinite alternate sb-hover;
+        animation: 0.5s linear infinite alternate sb-hover;
         /* background: url(../../images/cloudsabove.gif); */
         /* background-size: cover; */
         background: linear-gradient(to bottom, white, #fffce8, silver);
@@ -143,12 +145,12 @@
         table-layout: fixed;
         text-shadow: 0 0 3px black;
         transition: all 5s ease-in;
-        transform: scale(0.8);
+        /* transform: scale(0.8); */
         width: 888px;
         z-index: 1;
     }
     table:hover {
-        animation: 1.3s linear infinite alternate border-pulse-2;
+        animation: 0.8s linear infinite alternate border-pulse-2;
         /* transform: scale(1); */
     }
     #table_container {
