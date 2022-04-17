@@ -11,17 +11,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <script src="../script.js"></script>
 <style>
-    @keyframes border-pulse {
+    @keyframes sb-hover {
         from {
             border: 5px solid chartreuse;
-            /* transform: scale(0.3); */
+            transform: scale(0.7);
         }
         50% {
             border: 7px solid skyblue;
         }
         to {
             border: 5.5px solid rgb(255, 132, 122);
-            /* transform: scale(0.5); */
+            transform: scale(0.73);
         }
     }
     @keyframes border-pulse-2 {
@@ -127,7 +127,7 @@
         width: 20%;
     }
     table {
-        animation: 0.7s linear infinite alternate border-pulse;
+        animation: 0.7s linear infinite alternate sb-hover;
         /* background: url(../../images/cloudsabove.gif); */
         /* background-size: cover; */
         background: linear-gradient(to bottom, white, #fffce8, silver);
@@ -142,14 +142,14 @@
         padding: 5rem 10rem 8rem 10rem;
         table-layout: fixed;
         text-shadow: 0 0 3px black;
-        transition: all 0.8s ease-in;
-        transform: scale(0.5);
+        transition: all 5s ease-in;
+        transform: scale(0.8);
         width: 888px;
         z-index: 1;
     }
     table:hover {
         animation: 1.3s linear infinite alternate border-pulse-2;
-        transform: scale(1);
+        /* transform: scale(1); */
     }
     #table_container {
         margin: 0 auto;
@@ -383,9 +383,8 @@
                     </tr>
                 </tbody>
             </table>
+            <img id='sb_clouds' src="images/cloud1.webp" alt="Cartoon Clouds">
         </div>
-    <img id='sb_clouds' src="images/cloud1.webp" alt="Cartoon Clouds">
-
     </section>    
     <!-- <section class="temp_section">
         <h2>encapsulation™</h2>
