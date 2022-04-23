@@ -208,7 +208,6 @@ nav ul {
 .hoodie_li {
     font-family: "GoshaSansRegular";
     font-size: 1.8rem;
-    font-weight: bold;
     padding-left: 1rem;
     text-shadow: 2.5px 2.5px 2.5px chartreuse;
 }
@@ -217,14 +216,14 @@ nav ul {
     flex-direction: column;
     font-family: 'Roboto Mono';
     list-style-type: '\1F4AD';
-    margin: 0 0 0 -3px;
+    margin: 0 0 0 -2.8px;
     transform: scale(1);
     transition: all 0.5s ease-in-out;
     width: 50%;
 }
 #hoodie_ul:hover {
-    margin-left: -0.8rem;
-    transform: scale(1.1);
+    margin-left: 2px;
+    transform: scale(1.05);
 }
 /* TODO: make id for below? */
 input[type="radio"] {
@@ -485,12 +484,13 @@ input[type="radio"]:checked {
     padding: 3rem 0.3rem 0rem 0.7rem;
     text-align: center;
     text-shadow: 0 2px 2px chartreuse;
-    transform: rotate(8deg);
+    transform: rotate(8deg) scale(1);
     transition: all 0.7s ease-out;
     width: 23rem;
 
     position: absolute;
-    top: 20.33rem;
+    top: 20rem;
+    left: 24.3rem;
     z-index: 1;
 }
 #scent_box:hover {
