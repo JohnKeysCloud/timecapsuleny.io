@@ -13,30 +13,30 @@
 <style>
     @keyframes sb-hover {
         from {
-            border: 5px solid chartreuse;
-            transform: scale(0.8);
-        }
-        50% {
-            border: 7px solid skyblue;
-        }
-        to {
-            border: 5.5px solid rgb(255, 132, 122);
-            transform: scale(0.83);
-        }
-    }
-    @keyframes sb-hover-2 {
-        from {
             border: 3px solid chartreuse;
-            transform: scale(0.83);
+            transform: scale(0.71);
         }
         50% {
             border: 5px solid skyblue;
         }
         to {
             border: 3.3px solid rgb(255, 132, 122);
-            transform: scale(0.86);
+            transform: scale(0.75);
         }
     }
+    @keyframes sb-hover-2 {
+        from {
+            border: 5px solid chartreuse;
+            transform: scale(0.74);
+        }
+        50% {
+            border: 7px solid skyblue;
+        }
+        to {
+            border: 5.5px solid rgb(255, 132, 122);
+            transform: scale(0.77);
+        }
+    }    
     @keyframes letter-spaz {
         from {
             letter-spacing: -1px;
@@ -146,7 +146,7 @@
         width: 20%;
     }
     table {
-        animation: 0.5s linear infinite alternate sb-hover;
+        animation: 1.8s linear infinite alternate sb-hover;
         /* background: url(../../images/cloudsabove.gif); */
         /* background-size: cover; */
         border: 2px solid #fffce8;
@@ -170,7 +170,7 @@
         position: relative;
     }
     table:hover {
-        animation: 1.8s linear infinite alternate sb-hover-2;
+        animation: 0.7s linear infinite alternate sb-hover-2;
     }
     #table_container {
         margin: 0 auto;
