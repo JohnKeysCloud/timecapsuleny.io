@@ -215,15 +215,17 @@ nav ul {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono';
+    font-weight: bold;
     list-style-type: '\1F4AD';
-    margin: 0 0 0 -2.8px;
-    transform: scale(1);
-    transition: all 0.5s ease-in-out;
+    margin: 0 0 0 0.5px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.03, 0.98);
+
     width: 50%;
 }
 #hoodie_ul:hover {
-    margin-left: 2px;
-    transform: scale(1.05);
+    margin-left: -2.2px;
+    transform: scale(1);
 }
 /* TODO: make id for below? */
 input[type="radio"] {
@@ -640,6 +642,9 @@ input[type="radio"]:checked {
 #whole_level:hover:after {
     transform: scale(0.07) rotate(720deg);
     /* TODO: right: -33.3rem; */
+}
+#whole_level:before {
+
 }
 
 /* 
