@@ -180,16 +180,23 @@ nav ul {
 #cloud_span:hover {
     transform: scale(1.5);
 }
+/* COLORS */
+#purin {
+    background-color: #f2ebcc;
+
+}
+#curomame {
+    background-color: black;
+
+}
 #color_box {
     border: none;
+    display: flex;
     font-size: 2rem;
-    margin: 0;
-    padding: 2.5rem;
-    width: max-content;
-    
-    position: relative;
-    left: 12rem;
-    top: 0rem;
+    /* gap: 1px; */
+    margin: 0 0 0 30px;
+    padding: 0;
+    width: 50%;
 }
 #color_box_legend,
 .size_container > label {
@@ -198,8 +205,8 @@ nav ul {
     color: #fffce8;
     font-size: 2.5rem;
     font-weight: bold;
-    padding: 1rem;
-    margin-bottom: -2rem;
+    margin: 0;
+    /* padding: 0.1rem; */
     text-shadow: 0 0 13px red;
     transition: all 0.4s ease-in;
     text-align: center;
@@ -215,16 +222,13 @@ nav ul {
 /* TODO: make color options rounded color circles with name labels going around them  */
 .color_opt {
     align-items: center;
-    background-color: white;
-    border-radius: 33rem;
-    border: 1px ridge silver;
-    box-shadow: inset 0rem -1.7rem 0.3rem silver, -0.3rem 0.3rem 1rem 0.2rem chartreuse;
     display: flex;
-    gap: 1rem;
-    margin-bottom: 8px;
-    padding: 0.8rem;
-    text-shadow: 1px 2px 2.5px chartreuse;
-    width: 21.8rem;
+    gap: 18px;
+    font-size: 1.3rem;
+    flex-direction: column;
+    /* margin-bottom: 8px; */
+    /* text-shadow: 1px 2px 2.5px chartreuse; */
+    flex-basis: 33%;
     transition: all 0.1s ease;
     
     position: relative;
@@ -259,7 +263,7 @@ nav ul {
     font-family: 'Roboto Mono';
     font-weight: bold;
     list-style-type: '\1F4AD';
-    margin: 0 0 0 0.5px;
+    margin: 0 0 11px 0px;
     transition: all 0.3s ease-in-out;
     transform: scale(1.03, 0.98);
 
@@ -275,12 +279,13 @@ input[type="radio"] {
     appearance: none;
     background-color: #fffce8;
     border: 2px solid chartreuse;
-    border-radius: 1.6rem;
+    border-radius: 50%;
     box-shadow: 0 0 3px #633e1a;
-    height: 1.3rem;
-    outline: none;
+    height: 2.3rem;
+    outline: 2px dashed chartreuse;
+    outline-offset: 2px;
     transform: scale(1.8);
-    width: 1.3rem;
+    width: 2.3rem;
 }
 input[type="radio"]::before {
     background-color: chartreuse;
