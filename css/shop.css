@@ -122,11 +122,27 @@ nav ul {
 }
 @keyframes here-flicker {
     from {
-        color:red
+        color:red;
+        font-size: 2.5rem;
 
     }
     to {
         color:chartreuse;
+    }
+    
+}
+@keyframes text-pulse {
+    from {
+        color: black;
+        text-shadow: 0 0 3px red;
+        transform: scale(1.1);
+
+    }
+    to {
+        color: yellow;
+        font-size: 0rem;
+        text-shadow: 0 0 10px yellow;
+
     }
     
 }
@@ -226,8 +242,8 @@ nav ul {
 
 }
 #here {
-    animation: 1.8s linear infinite alternate here-flicker;
-    font-size: 2.3rem;
+    animation: 0.5s linear infinite alternate here-flicker;
+    font-size: 2.5rem;
 }
 .hoodie_li {
     font-family: "GoshaSansRegular";
@@ -367,18 +383,16 @@ input[type="radio"]:checked {
 }
 #rocket_and_words {
     border-radius: 33rem;
-    color: red;
     font-family: 'PixeBoy';
     font-size: 1.8rem;
     padding: 2.2rem;
-    text-shadow: 0 0 0.3rem chartreuse;
-    transform: rotate(-8deg);
+    transform: rotate(8deg);
     transition: all 2.2s ease-in-out;
-    width: 12.3rem;
+    width: 150px;
     
     position: absolute;
-    left: 3.2rem;
-    top: 31.5rem;
+    left: 34rem;
+    top: 30.5rem;
     z-index: 0;
 }
 #rocket_and_words:hover {
@@ -387,19 +401,19 @@ input[type="radio"]:checked {
     text-shadow: 0 0 0.3rem red;
     transition: all 1.8s ease-in-out;
 
-    left: 2.7rem;
-    top: 30.8rem;
+    left: 33.2rem;
+    top: 31.5rem;
 }
 #rocket_and_words:after {
     border-radius: 33rem;
     content: '🚀';
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-    transition: top, right, transform, 2.2s ease-in;
-    transform: scale(2) rotate(5deg);
+    transition: top, right, transform, 3.3s ease-in;
+    transform: scale(4) rotate(-30deg);
     
     position: absolute;
-    right: -16px;
-    top: 40.5px;
+    top: -8rem;
+    right: 16rem;
     z-index: 0;
 }
 #rocket_and_words:hover:after {
@@ -408,34 +422,18 @@ input[type="radio"]:checked {
     content: '🚀';
     
     position: absolute;
-    top: -18.1rem;
-    right: -26rem;
-    transform: rotate(-39deg) scale(4);
+    top: -70rem;
+    right: -33.3rem;
+    transform: rotate(-3deg) scale(4);
     z-index: 0;
 }
 #rocket_and_words:before {
     content: url(../images/warning.gif);
-    transform: scale(0.06);
+    transform: scale(0.06) rotate(1deg);
     
     position: absolute;
-    left: -21.9rem;
-    top: -16.9rem;
-}
-#rocket_border {
-    border: 3.3px dashed red;
-    border-radius: 33rem;
-    box-shadow: inset 0 0 1rem red;
-    height: 6.3rem;
-    transition: all 2.09s ease-in;
-    width: 6.3rem;
-    
-    position: absolute;
-    left: 125.5px;
-    top: 328px;
-    z-index: 0;
-}
-#rocket_border:hover {
-    transform: rotate(-1080deg);
+    left: -22rem;
+    top: -16.2rem;
 }
 #rocket_container:before {
     background: linear-gradient(to bottom, chartreuse, red);
@@ -519,10 +517,10 @@ input[type="radio"]:checked {
     font-family: "GoshaSansRegular";
     /* font-size:1rem; */
     text-shadow: 0 2px 2px chartreuse;
-    transform: scale(1.2);
+    transform: scale(1.3);
 
-    left: 14rem;
-    top: 21.1rem;
+    left: 12.5rem;
+    top: 19.1rem;
 }
 #scent_des {
     color: rgb(77, 77, 77);
@@ -605,6 +603,10 @@ input[type="radio"]:checked {
     transform: scale(1.05);
     right: 51px;
     top: 86px;
+}
+#to_launch {
+    animation: 1.5s linear infinite alternate text-pulse;
+    transform: rotate(15deg);
 }
 #vanilla_select {
     background: linear-gradient(to bottom, #fffce8, white, skyblue);
