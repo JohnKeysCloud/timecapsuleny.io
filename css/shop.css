@@ -313,16 +313,23 @@ input[type="radio"]:checked {
 /* TODO: 
 .hoodie_clr_sel_LEFT {
 } */
-.item_container_right > h1 {
+.item_container_right>h1 {
     background: url('../images/cloudsabove.gif');
-    background-size: cover;
-    background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: -1px;
+    background-clip: text;
+    background-size: cover;
+    color: black;
     font-family: "pixeboy";
-    font-size: 4.5rem;
+    font-size: 4.3rem;
+    letter-spacing: -1px;
     margin: 0;
+    text-shadow: 0 0 8px chartreuse;
+    transition: all 0.8s ease-out;
+}
+.item_container_right > h1:hover {
+    color: transparent;
+    text-shadow: none;
+    transform: scale(1.05);
 }
 #level_num {
     color: rgb(77, 33, 155);
@@ -479,7 +486,6 @@ input[type="radio"]:checked {
     margin-top: -5rem;
     text-shadow: 2px 1px 2px red;
     transform: rotate(11deg);
-
 
     bottom: 9.5rem;
     left: 4.7rem;
