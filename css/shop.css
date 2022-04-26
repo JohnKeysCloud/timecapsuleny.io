@@ -357,7 +357,7 @@ input[type="radio"]:checked {
     font-family: "pixeboy";
     font-size: 5.8rem;
     margin: 0 0 -7px 15px;
-    text-shadow: 0 0 2px red;
+    text-shadow: 0 0 5px red;
     transition: all 0.3s ease-out;
     transform: scale(1.03, 0.9)
 }
