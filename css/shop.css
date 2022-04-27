@@ -296,7 +296,13 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
     content: url(../images/wonderkid.png);
     display: block;
-    transform: translate(-26px, -245px) scale(0.08) rotate(-360deg);
+    transform: translate(-35px, -255px) scale(0.05) rotate(-360deg);
+    transform-origin: center;
+    transition: all 0.8s ease-in;
+}
+input[type="radio"]:checked:hover:before {
+
+    transform: translate(-35px, -255px) scale(0.3) rotate(-360deg);
     transform-origin: center;
     transition: all 0.8s ease-in;
 }
