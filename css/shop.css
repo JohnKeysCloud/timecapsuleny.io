@@ -114,7 +114,15 @@ nav ul {
  */
 @keyframes border-pulse {
     from {
-        border: 1.3px solid red;
+        border: 1px solid red;
+    }
+    to {
+        border: 1.8px solid chartreuse;
+    }
+}
+@keyframes border-pulse-2 {
+    from {
+        border: 2px solid red;
     }
     to {
         border: 3.3px solid chartreuse;
@@ -301,16 +309,15 @@ input[type="radio"]:checked::before {
     transition: all 0.8s ease-in;
 }
 input[type="radio"]:checked:hover:before {
-
     transform: translate(-35px, -255px) scale(0.3) rotate(-360deg);
     transform-origin: center;
     transition: all 0.8s ease-in;
 }
 input[type="radio"]:indeterminate {
-    animation: 0.4s linear infinite alternate border-pulse;
+    animation: 0.5s linear infinite alternate border-pulse;
 }
 input[type="radio"]:checked {
-    animation: 0.2s linear infinite alternate border-pulse;
+    animation: 0.3s linear infinite alternate border-pulse-2;
     box-shadow: 0 0 13px red;
 }
 .item_container{
@@ -447,8 +454,8 @@ input[type="radio"]:checked {
     transition: all 1.8s ease-in;
     
     position: absolute;
-    right: -11.5rem;
-    top: -10.1rem;
+    right: -8.5rem;
+    top: -9.1rem;
     z-index: 0;
 }
 #rocket_container:hover:before {
@@ -456,7 +463,7 @@ input[type="radio"]:checked {
     transform: scale(0.7) rotate(-60deg);
     opacity: 5.5%;
 
-    right: -22rem;
+    right: -19rem;
     top: -13rem;
     z-index: 0;
 }
