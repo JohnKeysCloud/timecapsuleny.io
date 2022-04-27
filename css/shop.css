@@ -192,27 +192,25 @@ nav ul {
 #color_box {
     border: none;
     display: flex;
-    font-size: 2rem;
-    /* gap: 1px; */
-    margin: 0 0 0 30px;
+    /* gap: 30px; */
+    justify-content: center;
+    margin: 0 0 0 41px;
     padding: 0;
-    width: 50%;
+    width: 40%;
 }
 #color_box_legend,
 .size_container > label {
-    /* background: linear-gradient(to right, red, blue, green); */
-    border-radius: 33rem;
     color: #fffce8;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 20px 0;
     /* padding: 0.1rem; */
+    text-align: center;
     text-shadow: 0 0 13px red;
     transition: all 0.4s ease-in;
-    text-align: center;
     
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 #color_box_legend:hover,
 .size_container > label:hover {
@@ -223,13 +221,14 @@ nav ul {
 .color_opt {
     align-items: center;
     display: flex;
-    gap: 18px;
-    font-size: 1.3rem;
+    gap: 23px;
+    font-size: 1.8rem;
     flex-direction: column;
     /* margin-bottom: 8px; */
     /* text-shadow: 1px 2px 2.5px chartreuse; */
-    flex-basis: 33%;
+    flex-basis: 50%;
     transition: all 0.1s ease;
+    text-align: center;
     
     position: relative;
     z-index: 1;
@@ -263,7 +262,7 @@ nav ul {
     font-family: 'Roboto Mono';
     font-weight: bold;
     list-style-type: '\1F4AD';
-    margin: 0 0 11px 0px;
+    margin: 0 0 5px 0px;
     transition: all 0.3s ease-in-out;
     transform: scale(1.03, 0.98);
 
@@ -281,44 +280,32 @@ input[type="radio"] {
     border: 2px solid chartreuse;
     border-radius: 50%;
     box-shadow: 0 0 3px #633e1a;
-    height: 2.3rem;
+    height: 3rem;
     outline: 2px dashed chartreuse;
     outline-offset: 2px;
     transform: scale(1.8);
-    width: 2.3rem;
+    width: 3rem;
 }
 input[type="radio"]::before {
-    background-color: chartreuse;
-    border-radius: 10px;
-    content: " ";
+    content: url(../images/wonderkid.png);
     display: block;
-    font-size: 1.2em;
-    height: 1rem;
-    transform: translate(0px, -3px) scale(0.0);
+    transform: translate(-2.4px, -240px) scale(0);
     transform-origin: center;
     transition: all 0.7s ease-in;
-    width: 1rem;
 }
 input[type="radio"]:checked::before {
-    background-color: black;
-    border-radius: 10px;
-    content: "";
+    content: url(../images/wonderkid.png);
     display: block;
-    font-size: 1.2em;
-    height: 0.9rem;
-    transform: translate(-0.5px, -0.5px) scale(0.8);
+    transform: translate(-26px, -245px) scale(0.08) rotate(-360deg);
     transform-origin: center;
     transition: all 0.8s ease-in;
-    width: 0.9rem;
 }
 input[type="radio"]:indeterminate {
     animation: 0.4s linear infinite alternate border-pulse;
-    border: 2px solid chartreuse;
 }
 input[type="radio"]:checked {
     animation: 0.2s linear infinite alternate border-pulse;
-    border: 2px solid chartreuse;
-    box-shadow: 0 0 6px #633e1a;
+    box-shadow: 0 0 13px red;
 }
 .item_container{
     display: flex;
@@ -342,11 +329,13 @@ input[type="radio"]:checked {
     background-size: cover;
     color: black;
     font-family: "pixeboy";
-    font-size: 4.3rem;
+    font-size: 4.5rem;
     letter-spacing: -1px;
     margin: 0;
+    text-align: center;
     text-shadow: 0 0 8px chartreuse;
     transition: all 0.8s ease-out;
+    /* transform: scale(1.1); */
 }
 .item_container_right > h1:hover {
     color: transparent;
@@ -447,7 +436,7 @@ input[type="radio"]:checked {
     content: url(../images/rocket_smoke_1.gif);
     opacity: 70%;
     padding: 3px;
-    transform: scale(0.01) rotate(-55deg);
+    transform: scale(0) rotate(-55deg);
     transform-origin: bottom;
     transition: all 1.8s ease-in;
     
