@@ -202,7 +202,7 @@ nav ul {
     display: flex;
     /* gap: 30px; */
     justify-content: center;
-    margin: 0 0 0 41px;
+    margin: 0 0 0 8px;
     padding: 0;
     width: 40%;
 }
@@ -308,7 +308,7 @@ input[type="radio"]:checked::before {
     transform-origin: center;
     transition: all 0.8s ease-in;
 }
-input[type="radio"]:checked:hover:before {
+input[type="radio"]:checked:hover::before {
     transform: translate(-35px, -255px) scale(0.3) rotate(-360deg);
     transform-origin: center;
     transition: all 0.8s ease-in;
@@ -434,7 +434,7 @@ input[type="radio"]:checked {
     transform: rotate(-3deg) scale(4);
     z-index: 0;
 }
-#rocket_and_words:before {
+#rocket_and_words::before {
     content: url(../images/warning.gif);
     transform: scale(0.06) rotate(1deg);
     
@@ -442,7 +442,7 @@ input[type="radio"]:checked {
     left: -22rem;
     top: -16.2rem;
 }
-#rocket_container:before {
+#rocket_container::before {
     /* background: linear-gradient(to bottom, chartreuse, red); */
     border-radius: 33rem;
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
@@ -458,7 +458,7 @@ input[type="radio"]:checked {
     top: -9.1rem;
     z-index: 0;
 }
-#rocket_container:hover:before {
+#rocket_container:hover::before {
     box-shadow: inset 0 0 9rem 2.9em #fffce8, 0 0 10rem #fffce8;
     transform: scale(0.7) rotate(-60deg);
     opacity: 5.5%;
@@ -655,7 +655,7 @@ input[type="radio"]:checked {
     text-shadow: 0 3px 3.3px red;
     transform: scale(1.05);
 }
-#whole_level:after {
+#whole_level::after {
     border: 88px ridge rgb(77, 33, 155);
     border-radius: 1000px;
     box-shadow: inset 0 0 20rem rgb(109, 4, 150);
@@ -668,7 +668,7 @@ input[type="radio"]:checked {
     top: -28.1rem;
     right: -32.7rem;
 }
-#whole_level:hover:after {
+#whole_level:hover::after {
     transform: scale(0.07) rotate(720deg);
     /* TODO: right: -33.3rem; */
 }
